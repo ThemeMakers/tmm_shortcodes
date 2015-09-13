@@ -1,0 +1,925 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ThemeMakers Shortcodes Package\n"
+"POT-Creation-Date: 2015-07-13 21:16+0200\n"
+"PO-Revision-Date: 2015-07-13 21:16+0200\n"
+"Last-Translator: ThemeMakers Team <support@webtemplatemasters.com>\n"
+"Language-Team: ThemeMakers Team <support@webtemplatemasters.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: index.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: index.php:58
+msgid "Price table"
+msgstr ""
+
+#: index.php:59
+msgid "Google table row"
+msgstr ""
+
+#: index.php:97
+msgid "Loading ..."
+msgstr ""
+
+#: index.php:127
+msgid "Shortcode updated"
+msgstr ""
+
+#: index.php:128
+msgid "Insert Shortcode"
+msgstr ""
+
+#: index.php:129
+msgid "Edit shortcode"
+msgstr ""
+
+#: index.php:326
+msgid "Upload"
+msgstr ""
+
+#: views/accio/blog.php:62 views/accio/single_post.php:142
+msgid "Comments"
+msgstr ""
+
+#: views/accio/contact_form.php:66
+msgid "required"
+msgstr ""
+
+#: views/accio/popups/blog.php:9 views/accio/popups/recent_posts.php:6
+msgid "Category"
+msgstr ""
+
+#: views/accio/popups/blog.php:25
+msgid "Order By"
+msgstr ""
+
+#: views/accio/popups/blog.php:41
+msgid "Meta Data"
+msgstr ""
+
+#: views/accio/popups/blog.php:45
+msgid "Show/Hide Meta Info"
+msgstr ""
+
+#: views/accio/popups/blog.php:55
+msgid "Order"
+msgstr ""
+
+#: views/accio/popups/blog.php:59
+msgid "DESC"
+msgstr ""
+
+#: views/accio/popups/blog.php:60
+msgid "ASC"
+msgstr ""
+
+#: views/accio/popups/blog.php:72
+msgid "Posts Count"
+msgstr ""
+
+#: views/accio/popups/blog.php:86
+msgid "Posts"
+msgstr ""
+
+#: views/accio/popups/blog.php:90
+msgid "Example: 56,73,119. It has the most hight priority!"
+msgstr ""
+
+#: views/accio/popups/contact_form.php:8
+msgid "Choose Contact Form"
+msgstr ""
+
+#: views/accio/popups/counter.php:8
+msgid "Data Speed"
+msgstr ""
+
+#: views/accio/popups/counter.php:32 views/accio/popups/progressbar.php:19
+msgid "Progress bars"
+msgstr ""
+
+#: views/accio/popups/counter.php:33 views/accio/popups/counter.php:96
+#: views/accio/popups/progressbar.php:20 views/accio/popups/progressbar.php:82
+msgid "Add bar item"
+msgstr ""
+
+#: views/accio/popups/counter.php:50 views/accio/popups/progressbar.php:52
+#: views/accio/popups/services.php:100 views/default/popups/accordion.php:45
+#: views/default/popups/chart.php:32
+msgid "Title"
+msgstr ""
+
+#: views/accio/popups/counter.php:64
+msgid "from"
+msgstr ""
+
+#: views/accio/popups/counter.php:79
+msgid "to"
+msgstr ""
+
+#: views/accio/popups/counter.php:86 views/accio/popups/progressbar.php:72
+#: views/accio/popups/services.php:105 views/accio/popups/socialicons.php:84
+#: views/accio/popups/staff.php:48 views/default/popups/accordion.php:46
+#: views/default/popups/clients.php:38 views/default/popups/list.php:122
+#: views/default/popups/tabs.php:27
+msgid "Remove"
+msgstr ""
+
+#: views/accio/popups/counter.php:105 views/accio/popups/recent_posts.php:61
+#: views/accio/popups/services.php:136 views/accio/popups/staff.php:67
+#: views/accio/popups/testimonials.php:101
+#: views/accio/popups/text_animation.php:9
+#: views/accio/popups/tmm_twitter.php:52 views/default/popups/button.php:73
+#: views/default/popups/clients.php:61 views/default/popups/image.php:195
+#: views/default/popups/list.php:142 views/default/popups/title.php:162
+msgid "Animation"
+msgstr ""
+
+#: views/accio/popups/full_content.php:9
+msgid "Enter Content"
+msgstr ""
+
+#: views/accio/popups/portfolio.php:20
+msgid "Categories"
+msgstr ""
+
+#: views/accio/popups/portfolio.php:36 views/accio/popups/portfolio.php:40
+msgid "Posts per page"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:101
+msgid "Table Count"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:125
+msgid "Row Count"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:139
+msgid "Starter Package"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:139
+msgid "$19.95"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:139
+msgid "per month"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:139
+msgid "Get Started"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:188
+msgid "Enter text here"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:193 views/default/popups/button.php:9
+msgid "Button Text"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:195
+msgid "Button Link"
+msgstr ""
+
+#: views/accio/popups/pricing_tables.php:197
+#: views/accio/popups/pricing_tables.php:199
+msgid "Is Featured"
+msgstr ""
+
+#: views/accio/popups/progressbar.php:37
+msgid "Percentage %"
+msgstr ""
+
+#: views/accio/popups/recent_posts.php:24
+msgid "Posts count"
+msgstr ""
+
+#: views/accio/popups/recent_posts.php:50
+#: views/accio/popups/recent_posts.php:54
+#: views/accio/popups/single_post.php:96
+msgid "Show post metadata"
+msgstr ""
+
+#: views/accio/popups/recent_posts.php:78
+#: views/accio/popups/single_post.php:64
+msgid "Content Char Count"
+msgstr ""
+
+#: views/accio/popups/recent_posts.php:89
+msgid "Show \"View All Posts\" button"
+msgstr ""
+
+#: views/accio/popups/recent_posts.php:93
+msgid "Option enables \"View All Posts\" button"
+msgstr ""
+
+#: views/accio/popups/recent_posts.php:118
+msgid "All categories"
+msgstr ""
+
+#: views/accio/popups/recent_projects.php:12
+msgid "Projects Per Page"
+msgstr ""
+
+#: views/accio/popups/recent_projects.php:33
+msgid "Template"
+msgstr ""
+
+#: views/accio/popups/services.php:9 views/accio/popups/services.php:10
+#: views/accio/popups/services.php:11 views/accio/popups/services.php:12
+#: views/accio/popups/services.php:13 views/accio/popups/services.php:14
+#: views/accio/popups/services.php:15 views/accio/popups/services.php:16
+#: views/accio/popups/services.php:17 views/accio/popups/services.php:18
+#: views/accio/popups/services.php:19 views/accio/popups/services.php:20
+#: views/accio/popups/services.php:21 views/accio/popups/services.php:22
+#: views/accio/popups/services.php:23 views/accio/popups/services.php:24
+#: views/accio/popups/services.php:25 views/accio/popups/services.php:26
+#: views/accio/popups/services.php:27 views/accio/popups/services.php:28
+#: views/accio/popups/services.php:29 views/accio/popups/services.php:30
+#: views/accio/popups/services.php:31 views/accio/popups/services.php:32
+#: views/accio/popups/services.php:33 views/accio/popups/services.php:34
+#: views/accio/popups/services.php:35 views/accio/popups/services.php:36
+#: views/accio/popups/services.php:37 views/accio/popups/services.php:38
+#: views/accio/popups/services.php:39 views/accio/popups/services.php:40
+#: views/accio/popups/services.php:41 views/accio/popups/services.php:42
+#: views/accio/popups/services.php:43 views/accio/popups/services.php:44
+#: views/accio/popups/services.php:45 views/accio/popups/services.php:46
+#: views/accio/popups/services.php:47 views/accio/popups/services.php:48
+msgid "Icon"
+msgstr ""
+
+#: views/accio/popups/services.php:53
+msgid "Blocks"
+msgstr ""
+
+#: views/accio/popups/services.php:55 views/accio/popups/services.php:127
+#: views/accio/popups/socialicons.php:46 views/accio/popups/socialicons.php:95
+#: views/default/popups/accordion.php:28 views/default/popups/accordion.php:59
+#: views/default/popups/clients.php:8 views/default/popups/clients.php:52
+#: views/default/popups/tabs.php:8 views/default/popups/tabs.php:40
+msgid "Add item"
+msgstr ""
+
+#: views/accio/popups/services.php:82
+msgid "Icon View"
+msgstr ""
+
+#: views/accio/popups/services.php:104
+msgid "Delete Block"
+msgstr ""
+
+#: views/accio/popups/services.php:112 views/accio/popups/single_post.php:33
+#: views/accio/popups/single_post.php:45 views/default/popups/accordion.php:51
+#: views/default/popups/tabs.php:32
+msgid "Content"
+msgstr ""
+
+#: views/accio/popups/single_post.php:15 views/default/popups/alert.php:22
+#: views/default/popups/divider.php:8
+msgid "Select Type"
+msgstr ""
+
+#: views/accio/popups/single_post.php:39
+msgid "Excerpt"
+msgstr ""
+
+#: views/accio/popups/single_post.php:78
+msgid "Show post type media"
+msgstr ""
+
+#: views/accio/popups/single_post.php:82
+#: views/accio/popups/single_post.php:100
+#: views/default/popups/google_table.php:52
+msgid "Yes"
+msgstr ""
+
+#: views/accio/popups/single_post.php:83
+#: views/accio/popups/single_post.php:101
+#: views/default/popups/google_table.php:58
+msgid "No"
+msgstr ""
+
+#: views/accio/popups/single_post.php:117
+msgid "Read More Button"
+msgstr ""
+
+#: views/accio/popups/single_post.php:123
+msgid "No readmore button"
+msgstr ""
+
+#: views/accio/popups/single_post.php:129
+msgid "Show readmore button"
+msgstr ""
+
+#: views/accio/popups/single_post.php:148
+msgid "Button Color"
+msgstr ""
+
+#: views/accio/popups/single_post.php:164
+msgid "Button Size"
+msgstr ""
+
+#: views/accio/popups/slider.php:17
+msgid "Page slider type"
+msgstr ""
+
+#: views/accio/popups/slider.php:37
+msgid "Slider groups"
+msgstr ""
+
+#: views/accio/popups/slider.php:48
+msgid "No one slider exists"
+msgstr ""
+
+#: views/accio/popups/slider.php:74
+msgid "Layerslider plugins groups"
+msgstr ""
+
+#: views/accio/popups/slider.php:86
+msgid "No one Layerslider group exists"
+msgstr ""
+
+#: views/accio/popups/slider.php:99
+msgid "Show the direction keys"
+msgstr ""
+
+#: views/accio/popups/slider.php:103
+msgid "Show/Hide Direction Keys"
+msgstr ""
+
+#: views/accio/popups/socialicons.php:79
+msgid "http://"
+msgstr ""
+
+#: views/accio/popups/staff.php:25
+msgid "Staff"
+msgstr ""
+
+#: views/accio/popups/staff.php:26 views/accio/popups/staff.php:58
+msgid "Add staff item"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:11
+msgid "Show"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:15
+msgid "Show selected testimonial"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:16
+msgid "Show random testimonial"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:17
+msgid "Show latest testimonial"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:37
+msgid "Testimonials"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:53
+#: views/accio/popups/tmm_twitter.php:37
+msgid "Timeout"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:68
+msgid "Count"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:72 views/accio/portfolio.php:55
+msgid "All"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:90
+msgid "Show photo"
+msgstr ""
+
+#: views/accio/popups/testimonials.php:94
+msgid "Show / Hide Photo"
+msgstr ""
+
+#: views/accio/popups/text_animation.php:25 views/accio/popups/tooltip.php:54
+#: views/default/popups/alert.php:10 views/default/popups/highlight.php:9
+msgid "Enter Text"
+msgstr ""
+
+#: views/accio/popups/tmm_twitter.php:9
+msgid "Twitter Widget ID"
+msgstr ""
+
+#: views/accio/popups/tmm_twitter.php:23
+msgid "Number of tweets"
+msgstr ""
+
+#: views/accio/popups/tooltip.php:9
+msgid "Enter Link"
+msgstr ""
+
+#: views/accio/popups/tooltip.php:24
+msgid "Link target"
+msgstr ""
+
+#: views/accio/popups/tooltip.php:28
+msgid "_self"
+msgstr ""
+
+#: views/accio/popups/tooltip.php:29
+msgid "_blank"
+msgstr ""
+
+#: views/accio/popups/tooltip.php:43
+msgid "Enter Tooltip Text"
+msgstr ""
+
+#: views/accio/recent_posts.php:49
+msgid "View All Posts"
+msgstr ""
+
+#: views/default/popups/accordion.php:9 views/default/popups/tmm_video.php:8
+msgid "Type"
+msgstr ""
+
+#: views/default/popups/accordion.php:13
+msgid "Accordion"
+msgstr ""
+
+#: views/default/popups/accordion.php:14
+msgid "Toggle"
+msgstr ""
+
+#: views/default/popups/alert.php:26
+msgid "Error"
+msgstr ""
+
+#: views/default/popups/alert.php:27
+msgid "Success"
+msgstr ""
+
+#: views/default/popups/alert.php:28
+msgid "Info"
+msgstr ""
+
+#: views/default/popups/alert.php:29
+msgid "Notice"
+msgstr ""
+
+#: views/default/popups/blockquote.php:9
+msgid "Type Style"
+msgstr ""
+
+#: views/default/popups/blockquote.php:13
+msgid "Type 1"
+msgstr ""
+
+#: views/default/popups/blockquote.php:14
+msgid "Type 2"
+msgstr ""
+
+#: views/default/popups/blockquote.php:28 views/default/popups/button.php:59
+#: views/default/popups/image.php:86 views/default/popups/title.php:85
+msgid "Align"
+msgstr ""
+
+#: views/default/popups/blockquote.php:32 views/default/popups/image.php:91
+msgid "Left"
+msgstr ""
+
+#: views/default/popups/blockquote.php:33 views/default/popups/image.php:93
+msgid "Center"
+msgstr ""
+
+#: views/default/popups/blockquote.php:34 views/default/popups/image.php:92
+msgid "Right"
+msgstr ""
+
+#: views/default/popups/blockquote.php:48
+msgid "Enter text"
+msgstr ""
+
+#: views/default/popups/button.php:20 views/default/popups/image.php:109
+msgid "Size"
+msgstr ""
+
+#: views/default/popups/button.php:32 views/default/popups/title.php:104
+msgid "Color"
+msgstr ""
+
+#: views/default/popups/button.php:48
+msgid "URL"
+msgstr ""
+
+#: views/default/popups/chart.php:9
+msgid "Chart Type"
+msgstr ""
+
+#: views/default/popups/chart.php:13
+msgid "Pie Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:14
+msgid "Bar Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:15
+msgid "Column Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:16
+msgid "Geochart"
+msgstr ""
+
+#: views/default/popups/chart.php:17
+msgid "Line Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:18
+msgid "Area Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:19
+msgid "Combo Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:46
+msgid "Chart Width"
+msgstr ""
+
+#: views/default/popups/chart.php:60
+msgid "Chart Height"
+msgstr ""
+
+#: views/default/popups/chart.php:74
+msgid "Font Family"
+msgstr ""
+
+#: views/default/popups/chart.php:96 views/default/popups/title.php:48
+msgid "Font Size"
+msgstr ""
+
+#: views/default/popups/chart.php:111
+msgid "Chart Titles"
+msgstr ""
+
+#: views/default/popups/chart.php:115 views/default/popups/chart.php:132
+msgid "Example"
+msgstr ""
+
+#: views/default/popups/chart.php:128
+msgid "Chart Data"
+msgstr ""
+
+#: views/default/popups/chart.php:146
+msgid "Background Color"
+msgstr ""
+
+#: views/default/popups/clients.php:6 views/default/popups/tabs.php:6
+msgid "Items"
+msgstr ""
+
+#: views/default/popups/divider.php:12
+msgid "Divider"
+msgstr ""
+
+#: views/default/popups/divider.php:13
+msgid "Empty Space"
+msgstr ""
+
+#: views/default/popups/dropcap.php:9
+msgid "Enter Symbol"
+msgstr ""
+
+#: views/default/popups/google_map.php:9 views/default/popups/tmm_video.php:54
+msgid "Height"
+msgstr ""
+
+#: views/default/popups/google_map.php:24
+#: views/default/popups/tmm_video.php:40
+msgid "Width"
+msgstr ""
+
+#: views/default/popups/google_map.php:38
+msgid "Mode"
+msgstr ""
+
+#: views/default/popups/google_map.php:42
+msgid "Map"
+msgstr ""
+
+#: views/default/popups/google_map.php:43
+msgid "Image"
+msgstr ""
+
+#: views/default/popups/google_map.php:56
+msgid "Location mode"
+msgstr ""
+
+#: views/default/popups/google_map.php:60
+#: views/default/popups/google_map.php:105
+msgid "Address"
+msgstr ""
+
+#: views/default/popups/google_map.php:61
+msgid "Coordinates"
+msgstr ""
+
+#: views/default/popups/google_map.php:75
+msgid "Marker Latitude"
+msgstr ""
+
+#: views/default/popups/google_map.php:79
+#: views/default/popups/google_map.php:95
+msgid ""
+"Point on which the viewport will be centered. If not given and no markers "
+"are defined the viewport defaults to world view. In address Location mode it "
+"is calculated automatically!"
+msgstr ""
+
+#: views/default/popups/google_map.php:91
+msgid "Marker Longitude"
+msgstr ""
+
+#: views/default/popups/google_map.php:126
+msgid "Zoom"
+msgstr ""
+
+#: views/default/popups/google_map.php:131
+msgid "Zoom value from 1 to 19 where 19 is the greatest and 1 the smallest."
+msgstr ""
+
+#: views/default/popups/google_map.php:141
+msgid "Enable Scrollwheel"
+msgstr ""
+
+#: views/default/popups/google_map.php:145
+msgid "Set to false to disable zooming with your mouses scrollwheel."
+msgstr ""
+
+#: views/default/popups/google_map.php:154
+msgid "Maptype"
+msgstr ""
+
+#: views/default/popups/google_map.php:158
+msgid "ROADMAP"
+msgstr ""
+
+#: views/default/popups/google_map.php:159
+msgid "SATELLITE"
+msgstr ""
+
+#: views/default/popups/google_map.php:160
+msgid "HYBRID"
+msgstr ""
+
+#: views/default/popups/google_map.php:161
+msgid "TERRAIN"
+msgstr ""
+
+#: views/default/popups/google_map.php:175
+msgid "Enable Marker"
+msgstr ""
+
+#: views/default/popups/google_map.php:179
+msgid "Set to false to disable display a marker in the viewport."
+msgstr ""
+
+#: views/default/popups/google_map.php:188
+msgid "Enable Popup"
+msgstr ""
+
+#: views/default/popups/google_map.php:192
+msgid ""
+"If true the info window for this marker will be shown when the map finished "
+"loading. If html is empty this option will be ignored."
+msgstr ""
+
+#: views/default/popups/google_map.php:202
+msgid "Marker is draggable"
+msgstr ""
+
+#: views/default/popups/google_map.php:206
+msgid "Set marker draggable"
+msgstr ""
+
+#: views/default/popups/google_map.php:215
+msgid "Html Content"
+msgstr ""
+
+#: views/default/popups/google_table.php:14
+msgid "Rows count"
+msgstr ""
+
+#: views/default/popups/google_table.php:29
+msgid "Columns count"
+msgstr ""
+
+#: views/default/popups/google_table.php:46
+msgid "Show Row Number"
+msgstr ""
+
+#: views/default/popups/google_table.php:76
+msgid "string"
+msgstr ""
+
+#: views/default/popups/google_table.php:77
+msgid "number"
+msgstr ""
+
+#: views/default/popups/google_table.php:93
+msgid "Table headers"
+msgstr ""
+
+#: views/default/popups/google_table.php:125
+msgid "Table data"
+msgstr ""
+
+#: views/default/popups/image.php:8
+msgid "Image URL"
+msgstr ""
+
+#: views/default/popups/image.php:26
+msgid "Action"
+msgstr ""
+
+#: views/default/popups/image.php:30
+msgid "No link on image"
+msgstr ""
+
+#: views/default/popups/image.php:31
+msgid "Open link"
+msgstr ""
+
+#: views/default/popups/image.php:43
+msgid "Image Action Link"
+msgstr ""
+
+#: views/default/popups/image.php:54
+msgid "Link Target"
+msgstr ""
+
+#: views/default/popups/image.php:58
+msgid "Self"
+msgstr ""
+
+#: views/default/popups/image.php:59
+msgid "Blank"
+msgstr ""
+
+#: views/default/popups/image.php:69
+msgid "Link Title"
+msgstr ""
+
+#: views/default/popups/image.php:90
+msgid "None"
+msgstr ""
+
+#: views/default/popups/image.php:113
+msgid "width*height. Fore example: 500*300. Empty field means full size"
+msgstr ""
+
+#: views/default/popups/image.php:124
+msgid "Image Alt"
+msgstr ""
+
+#: views/default/popups/image.php:138
+msgid "Top Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:152
+msgid "Right Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:166
+msgid "Bottom Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:180
+msgid "Left Indent (px)"
+msgstr ""
+
+#: views/default/popups/list.php:52
+msgid "List Type"
+msgstr ""
+
+#: views/default/popups/list.php:56
+msgid "Unordered"
+msgstr ""
+
+#: views/default/popups/list.php:57
+msgid "Ordered"
+msgstr ""
+
+#: views/default/popups/list.php:58
+msgid "Circle"
+msgstr ""
+
+#: views/default/popups/list.php:66
+msgid "List Styles"
+msgstr ""
+
+#: views/default/popups/list.php:67 views/default/popups/list.php:133
+msgid "Add list item"
+msgstr ""
+
+#: views/default/popups/list.php:116
+msgid "List item content"
+msgstr ""
+
+#: views/default/popups/title.php:8
+msgid "Title Text"
+msgstr ""
+
+#: views/default/popups/title.php:22
+msgid "Title Heading"
+msgstr ""
+
+#: views/default/popups/title.php:41
+msgid "Default"
+msgstr ""
+
+#: views/default/popups/title.php:63
+msgid "Font Weight"
+msgstr ""
+
+#: views/default/popups/title.php:67
+msgid "Normal"
+msgstr ""
+
+#: views/default/popups/title.php:121
+msgid "Margin Bottom (px)"
+msgstr ""
+
+#: views/default/popups/title.php:137
+msgid "Use Website General Color"
+msgstr ""
+
+#: views/default/popups/title.php:146
+msgid "Use Border"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:8
+msgid "Link to Audio"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:23
+msgid "Audio format"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:27
+msgid "Other"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:28
+msgid "Wav"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:29
+msgid "Ogg"
+msgstr ""
+
+#: views/default/popups/tmm_video.php:26
+msgid "Youtube or Vimeo link"
+msgstr ""
+
+#: views/default/popups/tmm_video.php:30
+msgid ""
+"Examples:https://www.youtube.com/watch?v=_EBYf3lYSEg or http://vimeo."
+"com/22439234"
+msgstr ""
+
+#: views/default/tmm_video.php:28
+msgid "Unsupported video format"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ThemeMakers Shortcodes Package"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://webtemplatemasters.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Universal Shortcodes Package (Accio)"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeMakers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeforest.net/user/ThemeMakers"
+msgstr ""
