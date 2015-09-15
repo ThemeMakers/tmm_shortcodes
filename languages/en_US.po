@@ -1,0 +1,1140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ThemeMakers Shortcodes Package\n"
+"POT-Creation-Date: 2015-07-17 17:25+0200\n"
+"PO-Revision-Date: 2015-07-17 17:25+0200\n"
+"Last-Translator: Alex TM <support@webtemplatemasters.com>\n"
+"Language-Team: Alex TM <support@webtemplatemasters.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: index.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: index.php:56
+msgid "Price table"
+msgstr ""
+
+#: index.php:57
+msgid "Google table row"
+msgstr ""
+
+#: index.php:91
+msgid "Loading ..."
+msgstr ""
+
+#: index.php:124
+msgid "Shortcode updated"
+msgstr ""
+
+#: index.php:125
+msgid "Insert Shortcode"
+msgstr ""
+
+#: index.php:126
+msgid "Edit shortcode"
+msgstr ""
+
+#: index.php:299
+msgid "Upload"
+msgstr ""
+
+#: views/axioma/contact_form.php:30 views/axioma/contact_form.php:38
+#: views/axioma/contact_form.php:74 views/axioma/contact_form.php:85
+#: views/axioma/contact_form.php:94
+msgid "required"
+msgstr ""
+
+#: views/axioma/contact_form.php:123
+msgid "Add file"
+msgstr ""
+
+#: views/axioma/contact_form.php:127
+msgid "Max file size"
+msgstr ""
+
+#: views/axioma/contact_form.php:128
+msgid "Max file count"
+msgstr ""
+
+#: views/axioma/contact_form.php:136
+msgid "Submit"
+msgstr ""
+
+#: views/axioma/detail_box.php:4 views/default/popups/google_map.php:60
+#: views/default/popups/google_map.php:105
+msgid "Address"
+msgstr ""
+
+#: views/axioma/detail_box.php:7
+msgid "Phone"
+msgstr ""
+
+#: views/axioma/detail_box.php:10
+msgid "Email"
+msgstr ""
+
+#: views/axioma/masonry.php:176
+msgid "More"
+msgstr ""
+
+#: views/axioma/popups/blog.php:8
+msgid "Blog Title"
+msgstr ""
+
+#: views/axioma/popups/blog.php:21
+msgid "Blog View"
+msgstr ""
+
+#: views/axioma/popups/blog.php:25
+msgid "Classic Blog Layout"
+msgstr ""
+
+#: views/axioma/popups/blog.php:26
+msgid "Alternate Blog Layout"
+msgstr ""
+
+#: views/axioma/popups/blog.php:38 views/axioma/popups/recent_posts.php:5
+msgid "Category"
+msgstr ""
+
+#: views/axioma/popups/blog.php:54
+msgid "Order By"
+msgstr ""
+
+#: views/axioma/popups/blog.php:70
+msgid "Meta Data"
+msgstr ""
+
+#: views/axioma/popups/blog.php:74
+msgid "Show/Hide Meta Info"
+msgstr ""
+
+#: views/axioma/popups/blog.php:84
+msgid "Order"
+msgstr ""
+
+#: views/axioma/popups/blog.php:88
+msgid "DESC"
+msgstr ""
+
+#: views/axioma/popups/blog.php:89
+msgid "ASC"
+msgstr ""
+
+#: views/axioma/popups/blog.php:101
+msgid "Posts Per Page"
+msgstr ""
+
+#: views/axioma/popups/blog.php:115
+msgid "Posts"
+msgstr ""
+
+#: views/axioma/popups/blog.php:119
+msgid "Example: 56,73,119. It has the most hight priority!"
+msgstr ""
+
+#: views/axioma/popups/blog.php:130
+msgid "Show Pagination"
+msgstr ""
+
+#: views/axioma/popups/blog.php:134
+msgid "Enable Pagination"
+msgstr ""
+
+#: views/axioma/popups/contact_form.php:8
+msgid "Choose Contact Form"
+msgstr ""
+
+#: views/axioma/popups/detail_box.php:9
+msgid "Enter Address"
+msgstr ""
+
+#: views/axioma/popups/detail_box.php:20
+msgid "Enter Phone"
+msgstr ""
+
+#: views/axioma/popups/detail_box.php:31
+msgid "Enter Email"
+msgstr ""
+
+#: views/axioma/popups/icon.php:9 views/axioma/popups/progressbar.php:37
+#: views/axioma/popups/services.php:127 views/default/popups/accordion.php:64
+#: views/default/popups/chart.php:32
+msgid "Title"
+msgstr ""
+
+#: views/axioma/popups/icon.php:24 views/axioma/popups/masonry.php:49
+#: views/axioma/popups/pricing_tables.php:111
+#: views/axioma/popups/services.php:12 views/axioma/popups/services.php:40
+#: views/axioma/popups/services.php:41 views/axioma/popups/services.php:42
+#: views/axioma/popups/services.php:43 views/axioma/popups/services.php:44
+#: views/axioma/popups/services.php:45 views/axioma/popups/services.php:46
+#: views/axioma/popups/services.php:47 views/axioma/popups/services.php:48
+#: views/axioma/popups/services.php:49 views/axioma/popups/services.php:50
+#: views/axioma/popups/services.php:51 views/axioma/popups/services.php:52
+#: views/axioma/popups/services.php:53 views/axioma/popups/services.php:54
+#: views/axioma/popups/services.php:55 views/axioma/popups/services.php:56
+#: views/axioma/popups/services.php:57 views/axioma/popups/services.php:58
+#: views/axioma/popups/services.php:59 views/axioma/popups/services.php:60
+#: views/axioma/popups/services.php:61 views/axioma/popups/services.php:62
+#: views/axioma/popups/services.php:63 views/axioma/popups/services.php:64
+#: views/axioma/popups/services.php:65 views/axioma/popups/services.php:66
+#: views/axioma/popups/services.php:67 views/axioma/popups/services.php:68
+#: views/axioma/popups/services.php:69 views/axioma/popups/testimonials.php:8
+#: views/default/popups/accordion.php:9 views/default/popups/tmm_video.php:8
+msgid "Type"
+msgstr ""
+
+#: views/axioma/popups/icon.php:28
+msgid "span"
+msgstr ""
+
+#: views/axioma/popups/icon.php:45 views/default/popups/button.php:21
+msgid "URL"
+msgstr ""
+
+#: views/axioma/popups/icon.php:49
+msgid "Example: http://forums.webtemplatemasters.com/"
+msgstr ""
+
+#: views/axioma/popups/icon.php:66
+msgid "Font Weight"
+msgstr ""
+
+#: views/axioma/popups/icon.php:70 views/axioma/popups/services.php:18
+#: views/default/popups/title.php:80
+msgid "Normal"
+msgstr ""
+
+#: views/axioma/popups/icon.php:75
+msgid "Bold"
+msgstr ""
+
+#: views/axioma/popups/icon.php:88 views/axioma/popups/icon.php:588
+msgid "New Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:89 views/axioma/popups/icon.php:601
+msgid "Web Application Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:90 views/axioma/popups/icon.php:614
+msgid "Text Editor Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:91 views/axioma/popups/icon.php:627
+msgid "Directional Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:92 views/axioma/popups/icon.php:640
+msgid "Video Player Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:93 views/axioma/popups/icon.php:653
+msgid "Brand Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:94 views/axioma/popups/icon.php:666
+msgid "Medical Icons"
+msgstr ""
+
+#: views/axioma/popups/icon.php:100
+msgid "View icon group"
+msgstr ""
+
+#: views/axioma/popups/icon.php:115 views/default/popups/button.php:35
+#: views/default/popups/title.php:139
+msgid "Color"
+msgstr ""
+
+#: views/axioma/popups/icon.php:131
+msgid "Circle Style"
+msgstr ""
+
+#: views/axioma/popups/icon.php:132
+msgid "Small Circle Style"
+msgstr ""
+
+#: views/axioma/popups/icon.php:133
+msgid "Default Style"
+msgstr ""
+
+#: views/axioma/popups/icon.php:140
+msgid "Icon Style"
+msgstr ""
+
+#: views/axioma/popups/icon.php:156
+msgid "Optional Text"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:9 views/axioma/popups/portfolio.php:9
+#: views/axioma/popups/staff.php:9
+msgid "Layout"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:13 views/axioma/popups/portfolio.php:14
+msgid "3 Columns"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:14 views/axioma/popups/portfolio.php:15
+msgid "4 Columns"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:27
+msgid "Algoritm 1"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:28
+msgid "Algoritm 2"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:32
+msgid "Image Sizes"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:53 views/default/popups/accordion.php:32
+#: views/default/popups/tabs.php:13
+msgid "Type 1"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:54 views/default/popups/accordion.php:33
+#: views/default/popups/tabs.php:14
+msgid "Type 2"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:57
+msgid ""
+"Type 1 - show images of selected portfolios, Type 2 - show covers of "
+"selected portfolios"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:87
+msgid "Galleries"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:88 views/axioma/popups/masonry.php:120
+msgid "Add gallery item"
+msgstr ""
+
+#: views/axioma/popups/masonry.php:110 views/axioma/popups/progressbar.php:71
+#: views/axioma/popups/services.php:137 views/axioma/popups/socialicons.php:85
+#: views/axioma/popups/staff.php:68 views/default/popups/accordion.php:65
+#: views/default/popups/clients.php:38 views/default/popups/list.php:132
+#: views/default/popups/tabs.php:48
+msgid "Remove"
+msgstr ""
+
+#: views/axioma/popups/portfolio.php:13
+msgid "2 Columns"
+msgstr ""
+
+#: views/axioma/popups/portfolio.php:29 views/axioma/popups/portfolio.php:33
+msgid "Posts per page"
+msgstr ""
+
+#: views/axioma/popups/portfolio.php:44
+msgid "Show categories"
+msgstr ""
+
+#: views/axioma/popups/portfolio.php:48
+msgid "Show/Hide Categories"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:130
+msgid "Table Count"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:154
+msgid "Row Count"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:168
+msgid "Starter Package"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:168
+msgid "$19.95"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:168
+msgid "per month"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:168
+msgid "Get Started"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:219
+msgid "Enter text here"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:224
+msgid "Button Text"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:226
+msgid "Button Link"
+msgstr ""
+
+#: views/axioma/popups/pricing_tables.php:228
+#: views/axioma/popups/pricing_tables.php:230
+msgid "Is Featured"
+msgstr ""
+
+#: views/axioma/popups/progressbar.php:19
+msgid "Progress bars"
+msgstr ""
+
+#: views/axioma/popups/progressbar.php:20
+#: views/axioma/popups/progressbar.php:81
+msgid "Add bar item"
+msgstr ""
+
+#: views/axioma/popups/progressbar.php:51
+msgid "Percentage %"
+msgstr ""
+
+#: views/axioma/popups/recent_posts.php:20
+msgid "Posts count"
+msgstr ""
+
+#: views/axioma/popups/recent_posts.php:41
+#: views/axioma/popups/recent_posts.php:45
+msgid "Show \"Read more\" button"
+msgstr ""
+
+#: views/axioma/popups/recent_posts.php:55
+#: views/axioma/popups/recent_posts.php:59
+#: views/axioma/popups/single_post.php:96
+msgid "Show post metadata"
+msgstr ""
+
+#: views/axioma/popups/recent_posts.php:69
+#: views/axioma/popups/single_post.php:64
+msgid "Content Char Count"
+msgstr ""
+
+#: views/axioma/popups/recent_posts.php:96
+msgid "All categories"
+msgstr ""
+
+#: views/axioma/popups/recent_projects.php:12
+msgid "Projects Per Page"
+msgstr ""
+
+#: views/axioma/popups/recent_projects.php:33
+msgid "Template"
+msgstr ""
+
+#: views/axioma/popups/services.php:24
+msgid "Colorized"
+msgstr ""
+
+#: views/axioma/popups/services.php:73
+msgid "Blocks"
+msgstr ""
+
+#: views/axioma/popups/services.php:74 views/axioma/popups/services.php:149
+#: views/axioma/popups/socialicons.php:49
+#: views/axioma/popups/socialicons.php:95
+#: views/default/popups/accordion.php:47 views/default/popups/accordion.php:78
+#: views/default/popups/clients.php:8 views/default/popups/clients.php:52
+#: views/default/popups/tabs.php:29 views/default/popups/tabs.php:61
+msgid "Add item"
+msgstr ""
+
+#: views/axioma/popups/services.php:114 views/default/popups/chart.php:146
+msgid "Background Color"
+msgstr ""
+
+#: views/axioma/popups/services.php:130
+msgid "Link"
+msgstr ""
+
+#: views/axioma/popups/services.php:133 views/axioma/popups/single_post.php:33
+#: views/axioma/popups/single_post.php:45
+#: views/default/popups/accordion.php:70 views/default/popups/tabs.php:53
+msgid "Content"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:15 views/default/popups/alert.php:22
+#: views/default/popups/divider.php:8
+msgid "Select Type"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:39
+msgid "Excerpt"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:78
+msgid "Show post type media"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:82
+#: views/axioma/popups/single_post.php:100
+#: views/default/popups/google_table.php:52
+msgid "Yes"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:83
+#: views/axioma/popups/single_post.php:101
+#: views/default/popups/google_table.php:58
+msgid "No"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:117
+msgid "Read More Button"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:123
+msgid "No readmore button"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:129
+msgid "Show readmore button"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:148
+msgid "Button Color"
+msgstr ""
+
+#: views/axioma/popups/single_post.php:164
+msgid "Button Size"
+msgstr ""
+
+#: views/axioma/popups/slider.php:17
+msgid "Page slider type"
+msgstr ""
+
+#: views/axioma/popups/slider.php:37
+msgid "Slider groups"
+msgstr ""
+
+#: views/axioma/popups/slider.php:48
+msgid "No one slider exists"
+msgstr ""
+
+#: views/axioma/popups/slider.php:72
+msgid "Layerslider plugins groups"
+msgstr ""
+
+#: views/axioma/popups/slider.php:75
+msgid "Choose sliders group"
+msgstr ""
+
+#: views/axioma/popups/slider.php:83
+msgid "No one Layerslider group exists"
+msgstr ""
+
+#: views/axioma/popups/socialicons.php:80
+msgid "http://"
+msgstr ""
+
+#: views/axioma/popups/staff.php:13
+msgid "Rounded"
+msgstr ""
+
+#: views/axioma/popups/staff.php:14
+msgid "Four Columns"
+msgstr ""
+
+#: views/axioma/popups/staff.php:15
+msgid "One Third"
+msgstr ""
+
+#: views/axioma/popups/staff.php:45
+msgid "Staff"
+msgstr ""
+
+#: views/axioma/popups/staff.php:46 views/axioma/popups/staff.php:78
+msgid "Add staff item"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:25 views/default/popups/image.php:77
+#: views/default/popups/title.php:96
+msgid "Align"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:47
+msgid "Show"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:51
+msgid "Show selected testimonial"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:52
+msgid "Show random testimonial"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:53
+msgid "Show latest testimonial"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:73
+msgid "Testimonials"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:89
+msgid "Timeout"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:104
+msgid "Count"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:108 views/axioma/portfolio.php:93
+msgid "All"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:127
+msgid "Show photo"
+msgstr ""
+
+#: views/axioma/popups/testimonials.php:131
+msgid "Show/Hide Photo"
+msgstr ""
+
+#: views/axioma/popups/tooltip.php:9
+msgid "Enter Link"
+msgstr ""
+
+#: views/axioma/popups/tooltip.php:24
+msgid "Link target"
+msgstr ""
+
+#: views/axioma/popups/tooltip.php:28
+msgid "_self"
+msgstr ""
+
+#: views/axioma/popups/tooltip.php:29
+msgid "_blank"
+msgstr ""
+
+#: views/axioma/popups/tooltip.php:43
+msgid "Enter Tooltip Text"
+msgstr ""
+
+#: views/axioma/popups/tooltip.php:54 views/default/popups/alert.php:10
+#: views/default/popups/highlight.php:9
+msgid "Enter Text"
+msgstr ""
+
+#: views/axioma/single_post.php:133
+msgid "With"
+msgstr ""
+
+#: views/axioma/single_post.php:133
+msgid "Comments"
+msgstr ""
+
+#: views/axioma/single_post.php:160
+msgid "Read more"
+msgstr ""
+
+#: views/default/popups/accordion.php:13
+msgid "Accordion"
+msgstr ""
+
+#: views/default/popups/accordion.php:14
+msgid "Toggle"
+msgstr ""
+
+#: views/default/popups/accordion.php:28 views/default/popups/tabs.php:9
+msgid "Type Style"
+msgstr ""
+
+#: views/default/popups/alert.php:26
+msgid "Error"
+msgstr ""
+
+#: views/default/popups/alert.php:27
+msgid "Success"
+msgstr ""
+
+#: views/default/popups/alert.php:28
+msgid "Info"
+msgstr ""
+
+#: views/default/popups/alert.php:29
+msgid "Notice"
+msgstr ""
+
+#: views/default/popups/blockquote.php:9
+msgid "Enter text"
+msgstr ""
+
+#: views/default/popups/button.php:8
+msgid "Buttons Text"
+msgstr ""
+
+#: views/default/popups/button.php:25
+msgid "http://forums.webtemplatemasters.com/"
+msgstr ""
+
+#: views/default/popups/button.php:50 views/default/popups/image.php:100
+msgid "Size"
+msgstr ""
+
+#: views/default/popups/button.php:65
+msgid "Top Indent"
+msgstr ""
+
+#: views/default/popups/chart.php:9
+msgid "Chart Type"
+msgstr ""
+
+#: views/default/popups/chart.php:13
+msgid "Pie Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:14
+msgid "Bar Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:15
+msgid "Column Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:16
+msgid "Geochart"
+msgstr ""
+
+#: views/default/popups/chart.php:17
+msgid "Line Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:18
+msgid "Area Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:19
+msgid "Combo Chart"
+msgstr ""
+
+#: views/default/popups/chart.php:46
+msgid "Chart Width"
+msgstr ""
+
+#: views/default/popups/chart.php:60
+msgid "Chart Height"
+msgstr ""
+
+#: views/default/popups/chart.php:74 views/default/popups/title.php:125
+msgid "Font Family"
+msgstr ""
+
+#: views/default/popups/chart.php:96 views/default/popups/title.php:48
+msgid "Font Size"
+msgstr ""
+
+#: views/default/popups/chart.php:111
+msgid "Chart Titles"
+msgstr ""
+
+#: views/default/popups/chart.php:115 views/default/popups/chart.php:132
+msgid "Example"
+msgstr ""
+
+#: views/default/popups/chart.php:128
+msgid "Chart Data"
+msgstr ""
+
+#: views/default/popups/clients.php:6 views/default/popups/tabs.php:27
+msgid "Items"
+msgstr ""
+
+#: views/default/popups/divider.php:12
+msgid "Solid"
+msgstr ""
+
+#: views/default/popups/divider.php:13
+msgid "Empty Space"
+msgstr ""
+
+#: views/default/popups/dropcap.php:9
+msgid "Enter Symbol"
+msgstr ""
+
+#: views/default/popups/google_map.php:9 views/default/popups/tmm_video.php:65
+msgid "Height"
+msgstr ""
+
+#: views/default/popups/google_map.php:24
+#: views/default/popups/tmm_video.php:51
+msgid "Width"
+msgstr ""
+
+#: views/default/popups/google_map.php:38
+msgid "Mode"
+msgstr ""
+
+#: views/default/popups/google_map.php:42
+msgid "Map"
+msgstr ""
+
+#: views/default/popups/google_map.php:43
+msgid "Image"
+msgstr ""
+
+#: views/default/popups/google_map.php:56
+msgid "Location mode"
+msgstr ""
+
+#: views/default/popups/google_map.php:61
+msgid "Coordinates"
+msgstr ""
+
+#: views/default/popups/google_map.php:75
+msgid "Marker Latitude"
+msgstr ""
+
+#: views/default/popups/google_map.php:79
+#: views/default/popups/google_map.php:95
+msgid ""
+"Point on which the viewport will be centered. If not given and no markers "
+"are defined the viewport defaults to world view. In address Location mode it "
+"is calculated automatically!"
+msgstr ""
+
+#: views/default/popups/google_map.php:91
+msgid "Marker Longitude"
+msgstr ""
+
+#: views/default/popups/google_map.php:126
+msgid "Zoom"
+msgstr ""
+
+#: views/default/popups/google_map.php:131
+msgid "Zoom value from 1 to 19 where 19 is the greatest and 1 the smallest."
+msgstr ""
+
+#: views/default/popups/google_map.php:141
+msgid "Enable Scrollwheel"
+msgstr ""
+
+#: views/default/popups/google_map.php:145
+msgid "Set to false to disable zooming with your mouses scrollwheel."
+msgstr ""
+
+#: views/default/popups/google_map.php:154
+msgid "Maptype"
+msgstr ""
+
+#: views/default/popups/google_map.php:158
+msgid "ROADMAP"
+msgstr ""
+
+#: views/default/popups/google_map.php:159
+msgid "SATELLITE"
+msgstr ""
+
+#: views/default/popups/google_map.php:160
+msgid "HYBRID"
+msgstr ""
+
+#: views/default/popups/google_map.php:161
+msgid "TERRAIN"
+msgstr ""
+
+#: views/default/popups/google_map.php:175
+msgid "Enable Marker"
+msgstr ""
+
+#: views/default/popups/google_map.php:179
+msgid "Set to false to disable display a marker in the viewport."
+msgstr ""
+
+#: views/default/popups/google_map.php:188
+msgid "Enable Popup"
+msgstr ""
+
+#: views/default/popups/google_map.php:192
+msgid ""
+"If true the info window for this marker will be shown when the map finished "
+"loading. If html is empty this option will be ignored."
+msgstr ""
+
+#: views/default/popups/google_map.php:202
+msgid "Marker is draggable"
+msgstr ""
+
+#: views/default/popups/google_map.php:206
+msgid "Set marker draggable"
+msgstr ""
+
+#: views/default/popups/google_map.php:215
+msgid "Html Content"
+msgstr ""
+
+#: views/default/popups/google_table.php:14
+msgid "Rows count"
+msgstr ""
+
+#: views/default/popups/google_table.php:29
+msgid "Columns count"
+msgstr ""
+
+#: views/default/popups/google_table.php:46
+msgid "Show Row Number"
+msgstr ""
+
+#: views/default/popups/google_table.php:76
+msgid "string"
+msgstr ""
+
+#: views/default/popups/google_table.php:77
+msgid "number"
+msgstr ""
+
+#: views/default/popups/google_table.php:93
+msgid "Table headers"
+msgstr ""
+
+#: views/default/popups/google_table.php:125
+msgid "Table data"
+msgstr ""
+
+#: views/default/popups/image.php:8
+msgid "Image URL"
+msgstr ""
+
+#: views/default/popups/image.php:26
+msgid "Action"
+msgstr ""
+
+#: views/default/popups/image.php:30
+msgid "No link on image"
+msgstr ""
+
+#: views/default/popups/image.php:31
+msgid "Open link"
+msgstr ""
+
+#: views/default/popups/image.php:43
+msgid "Image Action Link"
+msgstr ""
+
+#: views/default/popups/image.php:56
+msgid "Link Target"
+msgstr ""
+
+#: views/default/popups/image.php:60
+msgid "Self"
+msgstr ""
+
+#: views/default/popups/image.php:61
+msgid "Blank"
+msgstr ""
+
+#: views/default/popups/image.php:81
+msgid "None"
+msgstr ""
+
+#: views/default/popups/image.php:82
+msgid "Left"
+msgstr ""
+
+#: views/default/popups/image.php:83
+msgid "Right"
+msgstr ""
+
+#: views/default/popups/image.php:84
+msgid "Center"
+msgstr ""
+
+#: views/default/popups/image.php:104
+msgid "width*height. Fore example: 500*300. Empty field means full size"
+msgstr ""
+
+#: views/default/popups/image.php:116
+msgid "Image Alt"
+msgstr ""
+
+#: views/default/popups/image.php:130
+msgid "Link Title"
+msgstr ""
+
+#: views/default/popups/image.php:144
+msgid "Top Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:158
+msgid "Right Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:172 views/default/popups/title.php:155
+msgid "Bottom Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:186
+msgid "Left Indent (px)"
+msgstr ""
+
+#: views/default/popups/image.php:201
+msgid "Animated"
+msgstr ""
+
+#: views/default/popups/image.php:218
+msgid "Effect Animation"
+msgstr ""
+
+#: views/default/popups/image.php:222
+msgid "No effects"
+msgstr ""
+
+#: views/default/popups/image.php:223
+msgid "Opacity"
+msgstr ""
+
+#: views/default/popups/image.php:224
+msgid "Scale"
+msgstr ""
+
+#: views/default/popups/image.php:225
+msgid "Rotate"
+msgstr ""
+
+#: views/default/popups/image.php:226
+msgid "Slide Right"
+msgstr ""
+
+#: views/default/popups/image.php:227
+msgid "Slide Left"
+msgstr ""
+
+#: views/default/popups/image.php:228
+msgid "Slide Down"
+msgstr ""
+
+#: views/default/popups/image.php:229
+msgid "Slide Up"
+msgstr ""
+
+#: views/default/popups/image.php:243
+msgid "TranslateX (%)"
+msgstr ""
+
+#: views/default/popups/image.php:258
+msgid "Duration (s)"
+msgstr ""
+
+#: views/default/popups/image.php:273
+msgid "Delay (s)"
+msgstr ""
+
+#: views/default/popups/image.php:288
+msgid "Position Absolute"
+msgstr ""
+
+#: views/default/popups/list.php:62
+msgid "List Type"
+msgstr ""
+
+#: views/default/popups/list.php:68
+msgid "Unordered"
+msgstr ""
+
+#: views/default/popups/list.php:74
+msgid "Ordered"
+msgstr ""
+
+#: views/default/popups/list.php:86
+msgid "List Styles"
+msgstr ""
+
+#: views/default/popups/list.php:87 views/default/popups/list.php:142
+msgid "Add list item"
+msgstr ""
+
+#: views/default/popups/title.php:8
+msgid "Title Text"
+msgstr ""
+
+#: views/default/popups/title.php:22
+msgid "Title Heading"
+msgstr ""
+
+#: views/default/popups/title.php:41
+msgid "Default"
+msgstr ""
+
+#: views/default/popups/title.php:63
+msgid "Letter spacing (px)"
+msgstr ""
+
+#: views/default/popups/title.php:76
+msgid "Font weight"
+msgstr ""
+
+#: views/default/popups/title.php:170
+msgid "Use Website General Color"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:8
+msgid "Link to Audio"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:23
+msgid "Audio format"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:27
+msgid "Other"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:28
+msgid "Wav"
+msgstr ""
+
+#: views/default/popups/tmm_audio.php:29
+msgid "Ogg"
+msgstr ""
+
+#: views/default/popups/tmm_video.php:23
+msgid "Full Width Youtube"
+msgstr ""
+
+#: views/default/popups/tmm_video.php:37
+msgid "Youtube or Vimeo link"
+msgstr ""
+
+#: views/default/popups/tmm_video.php:41
+msgid ""
+"Examples:https://www.youtube.com/watch?v=_EBYf3lYSEg or http://vimeo."
+"com/22439234"
+msgstr ""
+
+#: views/default/tmm_video.php:51
+msgid "Unsupported video format"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "ThemeMakers Shortcodes Package"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://webtemplatemasters.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Universal Shortcodes Package"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeMakers"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themeforest.net/user/ThemeMakers"
+msgstr ""
