@@ -61,7 +61,11 @@
 						}
 					}
 					?>
-					<blockquote class="quote-text"><?php echo $post->post_content; ?></blockquote><!--/ .quote-text-->
+					<blockquote class="quote-text">
+
+						<p><?php echo $post->post_content; ?></p>
+
+					</blockquote><!--/ .quote-text-->
 					<?php
 					?>
 					<div class="quote-author">
@@ -81,5 +85,3 @@
 	</ul>
 
 </div><!--/ .widget-container-->
-
-
