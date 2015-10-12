@@ -171,7 +171,7 @@
 
 		//***
 		tmm_ext_shortcodes.services_changer(shortcode_name);
-		jQuery("#tmm_shortcode_template .js_shortcode_template_changer").on('keyup change', function() {
+		jQuery("#tmm_shortcode_template .js_shortcode_template_changer").life('keyup change', function() {
 			tmm_ext_shortcodes.services_changer(shortcode_name);
 		});
 
@@ -189,7 +189,7 @@
 			tmm_ext_shortcodes.services_changer(shortcode_name);
 		});
 
-		jQuery(".js_add_list_item").life('click', function() {
+		jQuery(".js_add_list_item").on('click', function() {
 			var clone = jQuery(".list_item:last").clone(false);
 			var last_row = jQuery(".list_item:last");
 			jQuery(clone).insertAfter(last_row, clone);
@@ -206,6 +206,7 @@
 			if (jQuery(".list_item").length > 1) {
 				jQuery(this).parents('li').hide(200, function() {
 					jQuery(this).remove();
+					tmm_ext_shortcodes.services_changer(shortcode_name);
 				});
 			}
 			tmm_ext_shortcodes.services_changer(shortcode_name);
