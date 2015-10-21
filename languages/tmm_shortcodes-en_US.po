@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ThemeMakers Shortcodes Package\n"
-"POT-Creation-Date: 2015-07-13 21:16+0200\n"
-"PO-Revision-Date: 2015-07-13 21:16+0200\n"
-"Last-Translator: ThemeMakers Team <support@webtemplatemasters.com>\n"
-"Language-Team: ThemeMakers Team <support@webtemplatemasters.com>\n"
+"POT-Creation-Date: 2015-10-21 19:01+0200\n"
+"PO-Revision-Date: 2015-10-21 19:01+0200\n"
+"Last-Translator: Alex TM <support@webtemplatemasters.com>\n"
+"Language-Team: Alex TM <support@webtemplatemasters.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.2\n"
+"X-Generator: Poedit 1.8.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: index.php\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -20,31 +20,31 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: index.php:58
+#: index.php:56
 msgid "Price table"
 msgstr ""
 
-#: index.php:59
+#: index.php:57
 msgid "Google table row"
 msgstr ""
 
-#: index.php:97
+#: index.php:95
 msgid "Loading ..."
 msgstr ""
 
-#: index.php:127
+#: index.php:125
 msgid "Shortcode updated"
 msgstr ""
 
-#: index.php:128
+#: index.php:126
 msgid "Insert Shortcode"
 msgstr ""
 
-#: index.php:129
+#: index.php:127
 msgid "Edit shortcode"
 msgstr ""
 
-#: index.php:326
+#: index.php:324
 msgid "Upload"
 msgstr ""
 
@@ -207,13 +207,11 @@ msgid "Posts count"
 msgstr ""
 
 #: views/accio/popups/recent_posts.php:50
-#: views/accio/popups/recent_posts.php:54
-#: views/accio/popups/single_post.php:96
+#: views/accio/popups/recent_posts.php:54 views/accio/popups/single_post.php:96
 msgid "Show post metadata"
 msgstr ""
 
-#: views/accio/popups/recent_posts.php:78
-#: views/accio/popups/single_post.php:64
+#: views/accio/popups/recent_posts.php:78 views/accio/popups/single_post.php:64
 msgid "Content Char Count"
 msgstr ""
 
@@ -299,14 +297,12 @@ msgstr ""
 msgid "Show post type media"
 msgstr ""
 
-#: views/accio/popups/single_post.php:82
-#: views/accio/popups/single_post.php:100
+#: views/accio/popups/single_post.php:82 views/accio/popups/single_post.php:100
 #: views/default/popups/google_table.php:52
 msgid "Yes"
 msgstr ""
 
-#: views/accio/popups/single_post.php:83
-#: views/accio/popups/single_post.php:101
+#: views/accio/popups/single_post.php:83 views/accio/popups/single_post.php:101
 #: views/default/popups/google_table.php:58
 msgid "No"
 msgstr ""
@@ -391,8 +387,7 @@ msgstr ""
 msgid "Testimonials"
 msgstr ""
 
-#: views/accio/popups/testimonials.php:53
-#: views/accio/popups/tmm_twitter.php:37
+#: views/accio/popups/testimonials.php:53 views/accio/popups/tmm_twitter.php:37
 msgid "Timeout"
 msgstr ""
 
@@ -606,8 +601,7 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#: views/default/popups/google_map.php:24
-#: views/default/popups/tmm_video.php:40
+#: views/default/popups/google_map.php:24 views/default/popups/tmm_video.php:40
 msgid "Width"
 msgstr ""
 
