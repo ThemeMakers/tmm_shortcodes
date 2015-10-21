@@ -26,9 +26,7 @@ class TMM_Ext_Shortcodes {
 	}
 
 	public static function register() {
-		
-		load_plugin_textdomain('tmm_shortcodes', false, dirname(plugin_basename(__FILE__)) . '/languages');
-		                
+
 		add_filter('mce_buttons', array('TMM_Ext_Shortcodes', 'mce_buttons'));
 		add_filter('mce_external_plugins', array('TMM_Ext_Shortcodes', 'mce_add_rich_plugins'));
 		add_filter('mce_css', array('TMM_Ext_Shortcodes', 'plugin_mce_css'));                   
@@ -369,3 +367,12 @@ add_action('wp_enqueue_scripts', array('TMM_Ext_Shortcodes', 'wp_footer'), 1);
 
 // Enqueue admin styles and scripts
 add_action('admin_enqueue_scripts', array('TMM_Ext_Shortcodes', 'admin_head'), 1);
+
+/**
+ * Load plugin textdomain.
+ */
+function tmm_shortcodes_load_textdomain() {
+	load_plugin_textdomain( 'tmm_shortcodes', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+}
+
+add_action( 'plugins_loaded', 'tmm_shortcodes_load_textdomain' );
