@@ -1,8 +1,7 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 <?php
 $staff = explode('^', $staff);
-$i = 1;
-
+$id = '';
 ?>
 
 <section class="row accHorizontal">
@@ -12,12 +11,13 @@ $i = 1;
 	if (function_exists('icl_object_id')){
 		$post_id = icl_object_id($post_id, TMM_Staff::$slug, true, ICL_LANGUAGE_CODE);
 	}
+		$id = base_convert(microtime(), 10, 36);
 
-	$custom = TMM_Staff::get_meta_data($post_id); ?>
+		$custom = TMM_Staff::get_meta_data($post_id); ?>
 
 		<aside class="accHorizontal__item <?php if ($animation) echo $animation ?>">
-			<input type="checkbox" class="state" id="acc-<?php echo $i ?>" />
-			<label class="backdrop" for="acc-<?php echo $i ?>"><i class="fa fa-times"></i></label>
+			<input type="checkbox" class="state" id="acc-<?php echo $id ?>" />
+			<label class="backdrop" for="acc-<?php echo $id ?>"><i class="fa fa-times"></i></label>
 			<article class="acc_cBox">
 				<div class="acc_cImg">
 					<img src="<?php echo TMM_Helper::get_post_featured_image($post_id, '252*270') ?>" alt="" />
@@ -61,7 +61,7 @@ $i = 1;
 		</aside>
 
 	<?php
-		$i++;
+
 	} ?>
 	
 </section><!--/ .accHorizontal-->
