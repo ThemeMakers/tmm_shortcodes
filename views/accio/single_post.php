@@ -135,7 +135,8 @@ $post_link = post_permalink($post_id);
 	<div class="entry-meta">
 		
 		<?php if (TMM::get_option("blog_listing_show_date")) : ?>
-			<span class="date"><a href="#"><?php echo mysql2date(get_option('date_format'), $post->post_date, false) ?></a></span>
+			<?php $dateArr = date_parse($post->post_date);  ?>
+			<span class="date"><a href="<?php echo get_day_link($dateArr['year'], $dateArr['month'], $dateArr['day']) ?>"><?php echo mysql2date(get_option('date_format'), $post->post_date, false) ?></a></span>
 		<?php endif; ?>	
 			
 		<?php if (!TMM::get_option("blog_listing_show_comments")) : ?>	
