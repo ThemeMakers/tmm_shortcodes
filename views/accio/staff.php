@@ -2,9 +2,21 @@
 <?php
 $staff = explode('^', $staff);
 $id = '';
+$uniqid = uniqid();
 ?>
 
 <section class="row accHorizontal">
+
+	<script>
+		/*@cc_on
+
+		 @if (@_jscript_version == 11)
+		 document.write('<div class="items items_<?php echo $uniqid; ?>" data-id="<?php echo $uniqid; ?>">');
+
+		 @end
+
+		 @*/
+	</script>
 
 	<?php foreach ($staff as $post_id){ ?><?php
 
@@ -16,6 +28,7 @@ $id = '';
 		$custom = TMM_Staff::get_meta_data($post_id); ?>
 
 		<aside class="accHorizontal__item <?php if ($animation) echo $animation ?>">
+
 			<input type="checkbox" class="state" id="acc-<?php echo $id ?>" />
 			<label class="backdrop" for="acc-<?php echo $id ?>"><i class="fa fa-times"></i></label>
 			<article class="acc_cBox">
@@ -58,12 +71,22 @@ $id = '';
 					</ul><!--/ .social-icons-->
 				</div>
 			</article>
+
 		</aside>
 
 	<?php
 
 	} ?>
-	
+
+	<script>
+		/*@cc_on
+
+		 @if (@_jscript_version == 11)
+		 document.write('</div>');
+
+		 @end
+
+		 @*/
+	</script>
+
 </section><!--/ .accHorizontal-->
-
-
