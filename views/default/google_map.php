@@ -1,6 +1,11 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php $inique_id = uniqid();?>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<?php
+$inique_id = uniqid();
+
+$google_maps_api_key = (isset($key)) ? 'key=' . $key . '&' : '' ;
+$map_link = '//maps.google.com/maps/api/js?' . $google_maps_api_key . 'sensor=false';
+?>
+<script type="text/javascript" src="<?php echo $map_link ?>"></script>
 <?php
 wp_enqueue_script('tmm_theme_markerwithlabel_js', TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/markerwithlabel.js');
 wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/google_map.js');

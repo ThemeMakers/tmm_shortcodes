@@ -2,6 +2,21 @@
 
 <div id="tmm_shortcode_template" class="tmm_shortcode_template clearfix">
 
+    <div class="one-half">
+        <?php
+        TMM_Ext_Shortcodes::draw_shortcode_option(array(
+            'type' => 'text',
+            'title' => __('API Key', 'tmm_shortcodes'),
+            'shortcode_field' => 'key',
+            'id' => 'key',
+            'default_value' => TMM_Ext_Shortcodes::set_default_value('key', ''),
+            'description' => '<a target="_blank" href="https://developers.google.com/maps/documentation/javascript/get-api-key">Obtaining an API key</a>'
+        ));
+        ?>
+    </div><!--/ .one-half-->
+
+    <div class="one-half"></div><!--/ .one-half-->
+
 	<div class="one-half">
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
