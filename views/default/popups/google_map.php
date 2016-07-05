@@ -10,7 +10,7 @@
             'shortcode_field' => 'key',
             'id' => 'key',
             'default_value' => TMM_Ext_Shortcodes::set_default_value('key', ''),
-            'description' => '<a target="_blank" href="https://developers.google.com/maps/documentation/javascript/get-api-key">Obtaining an API key</a>'
+            'description' => '<a target="_blank" href="//forums.webtemplatemasters.com/getting-keys-for-google-maps/">Obtaining an API key</a>'
         ));
         ?>
     </div><!--/ .one-half-->
