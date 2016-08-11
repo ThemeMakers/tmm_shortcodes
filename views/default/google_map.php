@@ -2,8 +2,8 @@
 <?php
 $inique_id = uniqid();
 
-$google_maps_api_key = (isset($key)) ? 'key=' . $key . '&' : '' ;
-$map_link = '//maps.google.com/maps/api/js?' . $google_maps_api_key . 'sensor=false';
+$google_maps_api_key = (isset($key)) ? 'key=' . $key : '' ;
+$map_link = '//maps.google.com/maps/api/js?' . $google_maps_api_key . '&sensor=false';
 ?>
 <script type="text/javascript" src="<?php echo $map_link ?>"></script>
 <?php
@@ -22,7 +22,7 @@ $js_controls = '{}';
 if (isset($location_mode)) {
 	if ($location_mode == 'address') {
 		$address = str_replace(' ', '+', $address);
-		$geocode = file_get_contents('http://maps.google.com/maps/api/geocode/json?address=' . $address . '&sensor=false');
+		$geocode = file_get_contents('https://maps.google.com/maps/api/geocode/json?address=' . $address . '&sensor=false');
 		$output = json_decode($geocode);
 		if (isset($output->status) AND $output->status != 'OVER_QUERY_LIMIT') {
 			$latitude = $output->results[0]->geometry->location->lat;
@@ -44,7 +44,19 @@ if (!isset($maptype)) {
 
 	<script type="text/javascript">
 		jQuery(function() {
-			gmt_init_map(<?php echo $latitude ?>,<?php echo $longitude ?>, "google_map_<?php echo $inique_id ?>", <?php echo $zoom ?>, "<?php echo $maptype ?>", "<?php echo $content ?>", "<?php echo $enable_marker ?>", "<?php echo $enable_popup ?>", "<?php echo $enable_scrollwheel ?>",<?php echo $js_controls ?>, "<?php echo @$marker_is_draggable ?>");
+			gmt_init_map(
+				<?php echo $latitude ?>,
+                <?php echo $longitude ?>,
+                "google_map_<?php echo $inique_id ?>",
+                <?php echo $zoom ?>,
+                "<?php echo $maptype ?>",
+                "<?php echo $content ?>",
+                "<?php echo $enable_marker ?>",
+                "<?php echo $enable_popup ?>",
+                "<?php echo $enable_scrollwheel ?>",
+                <?php echo $js_controls ?>,
+                "<?php echo @$marker_is_draggable ?>"
+            );
 		});
 	</script>
 <?php else: ?>
@@ -57,6 +69,6 @@ if (!isset($maptype)) {
 	$location_mode_string = 'center=' . $latitude . ',' . $longitude;
 	?>
 
-	<img src="http://maps.googleapis.com/maps/api/staticmap?<?php echo $location_mode_string ?>&zoom=<?php echo $zoom ?>&maptype=<?php echo strtolower($maptype) ?>&size=<?php echo $width ?>x<?php echo $height ?><?php echo $marker_string ?>&sensor=false">
+	<img src="http://maps.googleapis.com/maps/api/staticmap?<?php echo $location_mode_string ?>&zoom=<?php echo (int)$zoom ?>&maptype=<?php echo strtolower($maptype) ?>&size=<?php echo (int)$width ?>x<?php echo (int)$height ?><?php echo $marker_string ?>&<?php echo $google_maps_api_key ?>&sensor=false">
 
 <?php endif; ?>
