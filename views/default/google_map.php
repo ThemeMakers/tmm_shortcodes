@@ -2,11 +2,7 @@
 <?php
 $inique_id = uniqid();
 
-$google_maps_api_key = (isset($key)) ? 'key=' . $key : '' ;
-$map_link = '//maps.google.com/maps/api/js?' . $google_maps_api_key . '&sensor=false';
-?>
-<script type="text/javascript" src="<?php echo $map_link ?>"></script>
-<?php
+wp_enqueue_script('tmm_theme_map_api_js', 'http://maps.google.com/maps/api/js?key='. TMM::get_option("api_key_google") .'&sensor=false');
 wp_enqueue_script('tmm_theme_markerwithlabel_js', TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/markerwithlabel.js');
 wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/google_map.js');
 
@@ -69,6 +65,6 @@ if (!isset($maptype)) {
 	$location_mode_string = 'center=' . $latitude . ',' . $longitude;
 	?>
 
-	<img src="http://maps.googleapis.com/maps/api/staticmap?<?php echo $location_mode_string ?>&zoom=<?php echo (int)$zoom ?>&maptype=<?php echo strtolower($maptype) ?>&size=<?php echo (int)$width ?>x<?php echo (int)$height ?><?php echo $marker_string ?>&<?php echo $google_maps_api_key ?>&sensor=false">
+	<img src="http://maps.googleapis.com/maps/api/staticmap?<?php echo $location_mode_string ?>&zoom=<?php echo (int)$zoom ?>&maptype=<?php echo strtolower($maptype) ?>&size=<?php echo (int)$width ?>x<?php echo (int)$height ?><?php echo $marker_string ?>&key=<?php echo TMM::get_option("api_key_google")?>&sensor=false">
 
 <?php endif; ?>
