@@ -1,7 +1,7 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 
 <?php
-echo wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/widgets/twitterFetcher.js');
+echo wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/widgets/twitterFetcher.min.js');
 
 $limit = $count;
 if (!$limit) $limit = 5;
