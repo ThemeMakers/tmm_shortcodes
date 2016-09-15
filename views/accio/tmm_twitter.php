@@ -1,7 +1,7 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 
 <?php
-echo wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/widgets/twitterFetcher.min.js');
+wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/widgets/twitterFetcher.min.js');
 
 $limit = $count;
 if (!$limit) $limit = 5;
@@ -11,8 +11,18 @@ $hash = md5(rand(1, 999));
 
 <script type="text/javascript">
 	jQuery(function() {
-		twitterFetcher.fetch('<?php echo $twitter_id; ?>', 'tweets_<?php echo $hash; ?>', <?php echo $limit; ?>, true);
-	});
+			var config = {
+				"id": '<?php echo TMM::get_option('twitter_widget_id'); ?>',
+				"domId": 'tweets_<?php echo esc_js($hash); ?>',
+				"maxTweets": <?php echo (int) $limit; ?>,
+				"enableLinks": true,
+				"showTime": true,
+				"showUser": false,
+				"showRetweet": false,
+				"showInteraction": false
+			};
+			twitterFetcher.fetch(config);
+		});
 </script>
 
 <div class="tmm_tweet <?php if($animation) echo $animation ?>" id="tweets_<?php echo $hash; ?>" data-timeout="<?php echo $timeout ?>"></div>
@@ -20,7 +30,7 @@ $hash = md5(rand(1, 999));
 <script type="text/javascript">
 
 	jQuery(function($) {
-		
+
 		function swipeFunc(e, dir) {
 
 			var $currentTarget = $(e.currentTarget);

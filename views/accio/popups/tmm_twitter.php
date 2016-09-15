@@ -1,20 +1,6 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 <div id="tmm_shortcode_template" class="tmm_shortcode_template clearfix">
 
-    <div class="one-half">
-		<?php
-		//username
-		TMM_Ext_Shortcodes::draw_shortcode_option(array(
-			'type' => 'text',
-			'title' => __('Twitter Widget ID', 'tmm_shortcodes'),
-			'shortcode_field' => 'content',
-			'id' => '',
-			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', '345111976353091584'),
-			'description' => ''
-		));
-		?>
-
-    </div><!--/ .one-half-->
 
 	<div class="one-half">
 		<?php
@@ -29,7 +15,7 @@
 		?>
 
     </div><!--/ .one-half-->
-	
+
 	<div class="one-half">
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
@@ -43,9 +29,9 @@
 		?>
 
     </div><!--/ .one-half-->
-		
+
 	<div class="one-half">
-		
+
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
@@ -56,8 +42,8 @@
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('animation', ''),
 			'description' => 'Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element.'
 		));
-		?>	 
-		
+		?>
+
 	</div>
 
     <div class="clear"></div>
