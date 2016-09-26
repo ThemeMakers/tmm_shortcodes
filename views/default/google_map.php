@@ -1,11 +1,18 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed');
+
+if (TMM::get_option("api_key_google")){
+
 $inique_id = uniqid();
+
 $google_maps_api_key = (TMM::get_option("api_key_google")) ? 'key=' . TMM::get_option("api_key_google") : '' ;
 $map_link = '//maps.google.com/maps/api/js?' . $google_maps_api_key . '&sensor=false';
-wp_enqueue_script('tmm_google_maps_api', $map_link);
-wp_enqueue_script('tmm_google_maps_api', '//maps.google.com/maps/api/js?' . $google_maps_api_key . '&sensor=false');
-wp_enqueue_script('tmm_theme_markerwithlabel_js', TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/markerwithlabel.js', array(), false, true);
-wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/google_map.js', array(), false, true);
+
+
+	wp_enqueue_script('tmm_google_maps_api', $map_link);
+	wp_enqueue_script('tmm_google_maps_api', '//maps.google.com/maps/api/js?' . $google_maps_api_key . '&sensor=false');
+	wp_enqueue_script('tmm_theme_markerwithlabel_js', TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/markerwithlabel.js', array(), false, true);
+	wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/google_map.js', array(), false, true);
+
 
 if (!isset($mode)) {
 	$mode = 'map';
@@ -84,4 +91,8 @@ if (!isset($maptype)) {
 
 	<img src="http://maps.googleapis.com/maps/api/staticmap?<?php echo $location_mode_string ?>&zoom=<?php echo (int) $zoom ?>&maptype=<?php echo strtolower($maptype) ?>&size=<?php echo (int)$width ?>x<?php echo (int)$height ?><?php echo $marker_string ?>&key=<?php echo TMM::get_option("api_key_google")?>&sensor=false">
 
-<?php endif; ?>
+<?php endif;
+
+}
+
+?>
