@@ -95,4 +95,8 @@ if (!isset($maptype)) {
 
 }
 
+else{
+	echo "<h4>Enter your Google Maps API key on Theme Options Page.</h4>";
+}
+
 ?>
