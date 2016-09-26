@@ -96,7 +96,9 @@ if (!isset($maptype)) {
 }
 
 else{
-	echo "<h4>Enter your Google Maps API key on Theme Options Page.</h4>";
+	echo "<h4>"; 
+	echo _e('Enter your Google Maps API key on Theme Options Page.', 'accio');
+	echo "</h4>";
 }
 
 ?>
