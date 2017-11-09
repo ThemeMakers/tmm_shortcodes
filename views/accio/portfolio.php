@@ -1,6 +1,4 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
-TMM_Functions::enqueue_script('mixitup');
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
 
 if (!$posts_per_page) { $posts_per_page = 10; }
 
@@ -25,7 +23,7 @@ $current_page_id = $post->ID;
 $args = array(
 	'tax_query' => $cats_query_array,
 	'post_type' => TMM_Portfolio::$slug,
-	'posts_per_page' => $posts_per_page,
+	'posts_per_page' => -1,
 	'paged' => $folio_page		
 );
 
@@ -51,11 +49,11 @@ foreach ($query as $p) {
 
 	<div class="col-xs-12">
 
-		<ul id="portfolio-filter" class="portfolio-filter opacity">
-			<li class="filter active" data-filter="all"><?php _e('All', 'tmm_shortcodes'); ?></li>
+		<ul class="portfolio-filter opacity controls">
+			<li class="filter control active" data-filter="all"><?php _e('All', 'tmm_shortcodes'); ?></li>
 			<?php if (!empty($folio_cat)):?>
 				<?php foreach ($folio_cat as $term_id => $cat) : ?>
-					<li class="filter" data-filter="<?php echo $cat->slug ?>"><?php echo $cat->name ?></li>
+					<li class="filter control" data-filter=".<?php echo $cat->slug ?>"><?php echo $cat->name ?></li>
 				<?php endforeach; ?>
 			<?php endif; ?>
 		</ul><!--/ #portfolio-filter -->
@@ -66,7 +64,7 @@ foreach ($query as $p) {
 
 <section class="section padding-off">
 
-	<ul id="portfolio-items" class="portfolio-items">
+	<ul class="portfolio-items" data-ppp="<?php echo $posts_per_page ?>">
 
 		<?php foreach ($query as $post): ?>
 
@@ -89,7 +87,7 @@ foreach ($query as $p) {
 
 			?>
 
-			<li class="<?php echo $categories_css_class ?> mix mix_all opacity2x">
+			<li class="<?php echo $categories_css_class ?> mix opacity2x">
 
 				<div class="work-item">
 
@@ -130,41 +128,8 @@ foreach ($query as $p) {
 			
 		<?php endforeach; ?>
 
-	</ul><!--/ #portfolio-items-->	
+	</ul><!--/ #portfolio-items-->
+
+	<div class="mixitup-page-list"></div>
 
 </section><!--/ .section-->
-
-<?php if ($w_query->max_num_pages > 1): ?>
-
-	<div class="pagenavi align-center">      
-            
-            <?php $folio_onepage = TMM_Helper::get_folio_onepage(); 
-                    $str = explode('#', $folio_onepage);
-                    $str = $str['1'];  
-                    
-                    $permalink = get_permalink($current_page_id);
-                    $pos = strpos($permalink, '?');
-                    $permalink  = ($pos === false) ? $permalink.'?' : $permalink.'&';
-            ?>
-
-		<?php if ($folio_page - 1 > 0): ?>
-                        <a href="<?php echo $permalink ?>folio_page=<?php echo($folio_page - 1); if (!empty($str)){ ?>#<?php echo $str; } ?>" class="prev page-numbers"></a>
-		<?php endif; ?>                    
-
-		<?php for ($i = 0; $i < $w_query->max_num_pages; $i++): ?>
-
-			<?php if ($folio_page == ($i + 1)): ?>
-				<span class="page-numbers current"><?php echo($i + 1) ?></span>
-			<?php else: ?>
-                        <a href="<?php echo $permalink ?>folio_page=<?php echo($i + 1); if (!empty($str)){ ?>#<?php echo $str; }?>" class="page-numbers"><?php echo ($i + 1) ?></a>
-			<?php endif; ?>
-
-		<?php endfor; ?>
-
-		<?php if ($folio_page < $w_query->max_num_pages): ?>
-                        <a href="<?php echo $permalink ?>folio_page=<?php echo($folio_page + 1); if (!empty($str)){ ?>#<?php echo $str; } ?>" class="next page-numbers"></a>
-		<?php endif; ?>
-
-	</div><!--/ .pagenavi-->
-
-<?php endif; ?>
