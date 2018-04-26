@@ -6,7 +6,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Enter Link', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter Link', 'tmm_shortcodes'),
 			'shortcode_field' => 'link',
 			'id' => 'link',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('link', '#'),
@@ -21,12 +21,12 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Link target', 'tmm_shortcodes'),
+			'title' => esc_html__('Link target', 'tmm_shortcodes'),
 			'shortcode_field' => 'link_target',
 			'id' => 'type',
 			'options' => array(
-				'_self' => __('_self', 'tmm_shortcodes'),
-				'_blank' => __('_blank', 'tmm_shortcodes'),
+				'_self' => esc_html__('_self', 'tmm_shortcodes'),
+				'_blank' => esc_html__('_blank', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('link_target', '_self'),
 			'description' => ''
@@ -40,7 +40,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'textarea',
-			'title' => __('Enter Tooltip Text', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter Tooltip Text', 'tmm_shortcodes'),
 			'shortcode_field' => 'tooltip',
 			'id' => 'tooltip',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('tooltip', ''),
@@ -51,7 +51,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'textarea',
-			'title' => __('Enter Text', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter Text', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),

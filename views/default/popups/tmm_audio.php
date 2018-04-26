@@ -5,7 +5,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'upload',
-			'title' => __('Link to Audio', 'tmm_shortcodes'),
+			'title' => esc_html__('Link to Audio', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),
@@ -20,13 +20,13 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Audio format', 'tmm_shortcodes'),
+			'title' => esc_html__('Audio format', 'tmm_shortcodes'),
 			'shortcode_field' => 'format',
 			'id' => 'format',
 			'options' => array(
-				'other' => __('Other', 'tmm_shortcodes'),
-				'wav' => __('Wav', 'tmm_shortcodes'),
-				'ogg' => __('Ogg', 'tmm_shortcodes'),
+				'other' => esc_html__('Other', 'tmm_shortcodes'),
+				'wav' => esc_html__('Wav', 'tmm_shortcodes'),
+				'ogg' => esc_html__('Ogg', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('format', 'other'),
 			'description' => ''

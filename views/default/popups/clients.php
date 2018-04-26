@@ -58,7 +58,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

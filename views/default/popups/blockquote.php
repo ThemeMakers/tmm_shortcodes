@@ -6,12 +6,12 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Type Style', 'tmm_shortcodes'),
+			'title' => esc_html__('Type Style', 'tmm_shortcodes'),
 			'shortcode_field' => 'type',
 			'id' => '',
 			'options' => array(
-				'type-1' => __('Type 1', 'tmm_shortcodes'),
-				'type-2' => __('Type 2', 'tmm_shortcodes'),
+				'type-1' => esc_html__('Type 1', 'tmm_shortcodes'),
+				'type-2' => esc_html__('Type 2', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('type', 'type-1'),
 			'description' => ''
@@ -25,13 +25,13 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Align', 'tmm_shortcodes'),
+			'title' => esc_html__('Align', 'tmm_shortcodes'),
 			'shortcode_field' => 'align',
 			'id' => '',
 			'options' => array(
-				'align-left' => __('Left', 'tmm_shortcodes'),
-				'align-center' => __('Center', 'tmm_shortcodes'),
-				'align-right' => __('Right', 'tmm_shortcodes'),
+				'align-left' => esc_html__('Left', 'tmm_shortcodes'),
+				'align-center' => esc_html__('Center', 'tmm_shortcodes'),
+				'align-right' => esc_html__('Right', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('align', ''),
 			'description' => ''
@@ -45,7 +45,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'textarea',
-			'title' => __('Enter text', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter text', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),

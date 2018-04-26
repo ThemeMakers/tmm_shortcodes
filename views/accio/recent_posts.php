@@ -46,7 +46,7 @@ $posts = get_posts($args);
 ?>
 
 <div class="align-center <?php if ($animation) echo $animation ?>">
-	<a class="button large default" href="<?php echo $permalink ?>"><?php echo __('View All Posts', 'accio') ?></a>
+	<a class="button large default" href="<?php echo $permalink ?>"><?php echo esc_html__('View All Posts', 'accio') ?></a>
 </div>
 
 <?php endif; ?>

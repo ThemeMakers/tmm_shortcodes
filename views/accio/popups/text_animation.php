@@ -6,7 +6,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),
@@ -22,7 +22,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'textarea',
-			'title' => __('Enter Text', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter Text', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),

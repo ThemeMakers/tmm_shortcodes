@@ -49,13 +49,13 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('List Type', 'tmm_shortcodes'),
+			'title' => esc_html__('List Type', 'tmm_shortcodes'),
 			'shortcode_field' => 'list_type',
 			'id' => '',
 			'options' => array(
-				0 => __('Unordered', 'tmm_shortcodes'),
-				1 => __('Ordered', 'tmm_shortcodes'),
-				2 => __('Circle', 'tmm_shortcodes'),
+				0 => esc_html__('Unordered', 'tmm_shortcodes'),
+				1 => esc_html__('Ordered', 'tmm_shortcodes'),
+				2 => esc_html__('Circle', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('list_type', 0),
 			'description' => ''
@@ -113,7 +113,7 @@
 									'css_classes' => 'list_item_content save_as_one js_shortcode_template_changer',
 									'default_value' => @$list_item_content[$key],
 									'description' => '',
-									'placeholder' => __('List item content', 'tmm_shortcodes')
+									'placeholder' => esc_html__('List item content', 'tmm_shortcodes')
 								));
 								?>
 
@@ -139,7 +139,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

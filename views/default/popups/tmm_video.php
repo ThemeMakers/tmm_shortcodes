@@ -5,7 +5,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Type', 'tmm_shortcodes'),
+			'title' => esc_html__('Type', 'tmm_shortcodes'),
 			'shortcode_field' => 'type',
 			'id' => 'type',
 			'options' => array(
@@ -23,11 +23,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Youtube or Vimeo link', 'tmm_shortcodes'),
+			'title' => esc_html__('Youtube or Vimeo link', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),
-			'description' => __('Examples:https://www.youtube.com/watch?v=_EBYf3lYSEg or http://vimeo.com/22439234', 'tmm_shortcodes')
+			'description' => esc_html__('Examples:https://www.youtube.com/watch?v=_EBYf3lYSEg or http://vimeo.com/22439234', 'tmm_shortcodes')
 		));
 		?>
 
@@ -37,7 +37,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Width', 'tmm_shortcodes'),
+			'title' => esc_html__('Width', 'tmm_shortcodes'),
 			'shortcode_field' => 'width',
 			'id' => 'width',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('width', ''),
@@ -51,7 +51,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Height', 'tmm_shortcodes'),
+			'title' => esc_html__('Height', 'tmm_shortcodes'),
 			'shortcode_field' => 'height',
 			'id' => 'height',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('height', ''),

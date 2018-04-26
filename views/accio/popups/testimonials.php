@@ -8,13 +8,13 @@
 
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Show', 'tmm_shortcodes'),
+			'title' => esc_html__('Show', 'tmm_shortcodes'),
 			'shortcode_field' => 'show',
 			'id' => 'show_testimonial_value',
 			'options' => array(
-				'mode1' => __('Show selected testimonial', 'tmm_shortcodes'),
-				'mode2' => __('Show random testimonial', 'tmm_shortcodes'),
-				'mode3' => __('Show latest testimonial', 'tmm_shortcodes'),
+				'mode1' => esc_html__('Show selected testimonial', 'tmm_shortcodes'),
+				'mode2' => esc_html__('Show random testimonial', 'tmm_shortcodes'),
+				'mode3' => esc_html__('Show latest testimonial', 'tmm_shortcodes'),
 			),
 			'default_value' => $show,
 			'description' => ''
@@ -34,7 +34,7 @@
 			<?php
 			TMM_Ext_Shortcodes::draw_shortcode_option(array(
 				'type' => 'select',
-				'title' => __('Testimonials', 'tmm_shortcodes'),
+				'title' => esc_html__('Testimonials', 'tmm_shortcodes'),
 				'options' => $testimonials,
 				'shortcode_field' => 'content',
 				'id' => '',
@@ -50,7 +50,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Timeout', 'tmm_shortcodes'),
+			'title' => esc_html__('Timeout', 'tmm_shortcodes'),
 			'shortcode_field' => 'timeout',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('timeout', 3000),
@@ -65,11 +65,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Count', 'tmm_shortcodes'),
+			'title' => esc_html__('Count', 'tmm_shortcodes'),
 			'shortcode_field' => 'count',
 			'id' => '',
 			'options' => array(
-				-1 => __('All', 'tmm_shortcodes'),
+				-1 => esc_html__('All', 'tmm_shortcodes'),
 				1 => 1,
 				2 => 2,
 				3 => 3,
@@ -87,18 +87,18 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Show photo', 'tmm_shortcodes'),
+			'title' => esc_html__('Show photo', 'tmm_shortcodes'),
 			'shortcode_field' => 'show_photo',
 			'id' => '',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('show_photo', 1),
-			'description' => __('Show / Hide Photo', 'tmm_shortcodes')
+			'description' => esc_html__('Show / Hide Photo', 'tmm_shortcodes')
 		));
 		?>
 		
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

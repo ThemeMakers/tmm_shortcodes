@@ -34,7 +34,7 @@
 									'css_classes' => 'list_item_style save_as_one js_shortcode_template_changer',
 									'default_value' => $percentages[$key],
 									'description' => '',
-									'placeholder' => __('Percentage %', 'tmm_shortcodes')
+									'placeholder' => esc_html__('Percentage %', 'tmm_shortcodes')
 								));
 								?>
 							</td>
@@ -49,7 +49,7 @@
 									'css_classes' => 'list_item_style save_as_one js_shortcode_template_changer',
 									'default_value' => $titles[$key],
 									'description' => '',
-									'placeholder' => __('Title', 'tmm_shortcodes')
+									'placeholder' => esc_html__('Title', 'tmm_shortcodes')
 								));
 								?>	
 							</td>

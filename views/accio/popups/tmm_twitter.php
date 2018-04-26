@@ -6,7 +6,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Number of tweets', 'tmm_shortcodes'),
+			'title' => esc_html__('Number of tweets', 'tmm_shortcodes'),
 			'shortcode_field' => 'count',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('count', 2),
@@ -20,7 +20,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Timeout', 'tmm_shortcodes'),
+			'title' => esc_html__('Timeout', 'tmm_shortcodes'),
 			'shortcode_field' => 'timeout',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('timeout', 6000),
@@ -35,7 +35,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

@@ -98,7 +98,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Table Count', 'tmm_shortcodes'),
+			'title' => esc_html__('Table Count', 'tmm_shortcodes'),
 			'shortcode_field' => 'count',
 			'id' => 'count',
 			'options' => array(
@@ -122,7 +122,7 @@
 		}
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Row Count', 'tmm_shortcodes'),
+			'title' => esc_html__('Row Count', 'tmm_shortcodes'),
 			'shortcode_field' => 'row_count',
 			'id' => 'row_count',
 			'options' => $row_count_array,
@@ -136,7 +136,7 @@
 	<ul id="price_tables_list">
 
 		<?php
-		$shortcodes_texts_array = array(0 => '[price_table title="' . __('Starter Package', 'tmm_shortcodes') . '" price="' . __('$19.95', 'tmm_shortcodes') . '" period="' . __('per month', 'tmm_shortcodes') . '" button_text="' . __('Get Started', 'tmm_shortcodes') . '" button_link="#" featured="0"]^^^[/price_table]');
+		$shortcodes_texts_array = array(0 => '[price_table title="' . esc_html__('Starter Package', 'tmm_shortcodes') . '" price="' . esc_html__('$19.95', 'tmm_shortcodes') . '" period="' . esc_html__('per month', 'tmm_shortcodes') . '" button_text="' . esc_html__('Get Started', 'tmm_shortcodes') . '" button_link="#" featured="0"]^^^[/price_table]');
 		
 		if (isset($_REQUEST["shortcode_mode_edit"])) {
 			$shortcodes_texts_array = array();

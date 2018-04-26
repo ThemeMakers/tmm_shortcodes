@@ -4,7 +4,7 @@
   Plugin URI: http://webtemplatemasters.com
   Description: Universal Shortcodes Package (Accio)
   Author: ThemeMakers
-  Version: 1.0.8
+  Version: 1.0.9
   Author URI: http://themeforest.net/user/ThemeMakers
  */
 
@@ -53,8 +53,8 @@ class TMM_Ext_Shortcodes {
 		}
 		
 		//quite shortcodes
-		self::$shortcodes['price_table'] = __('Price table', 'tmm_shortcodes');
-		self::$shortcodes['google_table_row'] = __('Google table row', 'tmm_shortcodes');
+		self::$shortcodes['price_table'] = esc_html__('Price table', 'tmm_shortcodes');
+		self::$shortcodes['google_table_row'] = esc_html__('Google table row', 'tmm_shortcodes');
 	
 		$shortcodes_keys = array_keys(self::$shortcodes);
 		

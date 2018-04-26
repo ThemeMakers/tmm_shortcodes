@@ -14,7 +14,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Page slider type', 'tmm_shortcodes'),
+			'title' => esc_html__('Page slider type', 'tmm_shortcodes'),
 			'shortcode_field' => 'type',
 			'id' => 'shortcode_page_slider_type',
 			'options' => TMM_Ext_Sliders::get_slider_types(),
@@ -34,7 +34,7 @@
 				<?php
 				TMM_Ext_Shortcodes::draw_shortcode_option(array(
 					'type' => 'select',
-					'title' => __('Slider groups', 'tmm_shortcodes'),
+					'title' => esc_html__('Slider groups', 'tmm_shortcodes'),
 					'shortcode_field' => 'slider_group',
 					'id' => 'slider_group',
 					'options' => $slides,
@@ -71,7 +71,7 @@
 				
 					TMM_Ext_Shortcodes::draw_shortcode_option(array(
 						'type' => 'select',
-						'title' => __('Layerslider plugins groups', 'tmm_shortcodes'),
+						'title' => esc_html__('Layerslider plugins groups', 'tmm_shortcodes'),
 						'shortcode_field' => 'layerslider_group',
 						'id' => 'layerslider_group',
 						'options' => $slides,
@@ -96,11 +96,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Show the direction keys', 'tmm_shortcodes'),
+			'title' => esc_html__('Show the direction keys', 'tmm_shortcodes'),
 			'shortcode_field' => 'show_keys',
 			'id' => 'show_keys',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('show_keys', 0),
-			'description' => __('Show/Hide Direction Keys', 'tmm_shortcodes')
+			'description' => esc_html__('Show/Hide Direction Keys', 'tmm_shortcodes')
 		));
 		?>
 		

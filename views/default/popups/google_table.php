@@ -11,7 +11,7 @@
 		//***
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Rows count', 'tmm_shortcodes'),
+			'title' => esc_html__('Rows count', 'tmm_shortcodes'),
 			'shortcode_field' => 'rows',
 			'id' => 'table_rows',
 			'options' => $numbers,
@@ -26,7 +26,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Columns count', 'tmm_shortcodes'),
+			'title' => esc_html__('Columns count', 'tmm_shortcodes'),
 			'shortcode_field' => 'cols',
 			'id' => 'table_cols',
 			'options' => $numbers,
@@ -43,19 +43,19 @@
 
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'radio',
-			'title' => __('Show Row Number', 'tmm_shortcodes'),
+			'title' => esc_html__('Show Row Number', 'tmm_shortcodes'),
 			'shortcode_field' => 'show_row_number',
 			'id' => 'show_row_number',
 			'name' => 'show_row_number',
 			'values' => array(
 				1 => array(
-					'title' => __('Yes', 'tmm_shortcodes'),
+					'title' => esc_html__('Yes', 'tmm_shortcodes'),
 					'id' => 'show_row_number_1',
 					'value' => 1,
 					'checked' => ($value_type == 1 ? 1 : 0)
 				),
 				0 => array(
-					'title' => __('No', 'tmm_shortcodes'),
+					'title' => esc_html__('No', 'tmm_shortcodes'),
 					'id' => 'show_row_number_0',
 					'value' => 0,
 					'checked' => ($value_type == 0 ? 1 : 0)
@@ -73,8 +73,8 @@
 
 <?php
 $head_types_array = array(
-	'string' => __('string', 'tmm_shortcodes'),
-	'number' => __('number', 'tmm_shortcodes')
+	'string' => esc_html__('string', 'tmm_shortcodes'),
+	'number' => esc_html__('number', 'tmm_shortcodes')
 );
 if (isset($_REQUEST["shortcode_mode_edit"])) {
 	$cols = (int) $_REQUEST["shortcode_mode_edit"]['cols'];

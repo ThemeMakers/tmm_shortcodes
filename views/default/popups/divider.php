@@ -5,12 +5,12 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Select Type', 'tmm_shortcodes'),
+			'title' => esc_html__('Select Type', 'tmm_shortcodes'),
 			'shortcode_field' => 'divider',
 			'id' => '',
 			'options' => array(
-				'divider' => __('Divider', 'tmm_shortcodes'),
-				'space' => __('Empty Space', 'tmm_shortcodes'),
+				'divider' => esc_html__('Divider', 'tmm_shortcodes'),
+				'space' => esc_html__('Empty Space', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('divider', 'divider'),
 			'description' => ''

@@ -6,7 +6,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Enter Symbol', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter Symbol', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),

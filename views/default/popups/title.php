@@ -5,7 +5,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Title Text', 'tmm_shortcodes'),
+			'title' => esc_html__('Title Text', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),
@@ -19,7 +19,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Title Heading', 'tmm_shortcodes'),
+			'title' => esc_html__('Title Heading', 'tmm_shortcodes'),
 			'shortcode_field' => 'type',
 			'id' => 'type',
 			'options' => array(
@@ -38,14 +38,14 @@
 
 	<div class="one-half">
 		<?php
-		$font_size = array('default' => __('Default', 'tmm_shortcodes'));
+		$font_size = array('default' => esc_html__('Default', 'tmm_shortcodes'));
 		for ($i = 8; $i <= 80; $i++) {
 			$font_size[$i] = $i;
 		}
 		//***
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Font Size', 'tmm_shortcodes'),
+			'title' => esc_html__('Font Size', 'tmm_shortcodes'),
 			'shortcode_field' => 'font_size',
 			'id' => 'font_size',
 			'options' => $font_size,
@@ -60,11 +60,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Font Weight', 'tmm_shortcodes'),
+			'title' => esc_html__('Font Weight', 'tmm_shortcodes'),
 			'shortcode_field' => 'font_weight',
 			'id' => 'font_weight',
 			'options' => array(
-				'normal' => __('Normal', 'tmm_shortcodes'),
+				'normal' => esc_html__('Normal', 'tmm_shortcodes'),
 				'100' => 100,
 				'200' => 200,
 				'300' => 300,
@@ -82,7 +82,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Align', 'tmm_shortcodes'),
+			'title' => esc_html__('Align', 'tmm_shortcodes'),
 			'shortcode_field' => 'align',
 			'id' => 'align',
 			'options' => array(
@@ -101,7 +101,7 @@
 		
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
-			'title' => __('Color', 'tmm_shortcodes'),
+			'title' => esc_html__('Color', 'tmm_shortcodes'),
 			'shortcode_field' => 'color',
 			'type' => 'color',
 			'description' => '',
@@ -118,7 +118,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Margin Bottom (px)', 'tmm_shortcodes'),
+			'title' => esc_html__('Margin Bottom (px)', 'tmm_shortcodes'),
 			'shortcode_field' => 'bottom_indent',
 			'id' => 'bottom_indent',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('bottom_indent', ''),
@@ -134,7 +134,7 @@
 		
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Use Website General Color', 'tmm_shortcodes'),
+			'title' => esc_html__('Use Website General Color', 'tmm_shortcodes'),
 			'shortcode_field' => 'use_general_color',
 			'id' => 'use_general_color',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('use_general_color', 0),
@@ -143,7 +143,7 @@
 		
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Use Border', 'tmm_shortcodes'),
+			'title' => esc_html__('Use Border', 'tmm_shortcodes'),
 			'shortcode_field' => 'use_border',
 			'id' => 'use_border',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('use_border', 0),
@@ -159,7 +159,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

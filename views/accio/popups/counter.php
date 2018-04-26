@@ -5,7 +5,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Data Speed', 'tmm_shortcodes'),
+			'title' => esc_html__('Data Speed', 'tmm_shortcodes'),
 			'shortcode_field' => 'speed',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('speed', 3000),
@@ -47,7 +47,7 @@
 									'css_classes' => 'list_item_style save_as_one js_shortcode_template_changer',
 									'default_value' => $title,
 									'description' => '',
-									'placeholder' => __('Title', 'tmm_shortcodes')
+									'placeholder' => esc_html__('Title', 'tmm_shortcodes')
 								));
 								?>
 							</td>
@@ -61,7 +61,7 @@
 									'css_classes' => 'list_item_style save_as_one js_shortcode_template_changer',
 									'default_value' => $from[$key],
 									'description' => '',
-									'placeholder' => __('from', 'tmm_shortcodes'),
+									'placeholder' => esc_html__('from', 'tmm_shortcodes'),
 									'display' => 1
 								));
 								?>
@@ -76,7 +76,7 @@
 									'css_classes' => 'list_item_style save_as_one js_shortcode_template_changer',
 									'default_value' => $to[$key],
 									'description' => '',
-									'placeholder' => __('to', 'tmm_shortcodes')
+									'placeholder' => esc_html__('to', 'tmm_shortcodes')
 								));
 								?>
 							</td>
@@ -102,7 +102,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

@@ -17,7 +17,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Categories', 'tmm_shortcodes'),
+			'title' => esc_html__('Categories', 'tmm_shortcodes'),
 			'shortcode_field' => 'cat_id',
 			'id' => '',
 			'options' => $categories_list,
@@ -33,11 +33,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Posts per page', 'tmm_shortcodes'),
+			'title' => esc_html__('Posts per page', 'tmm_shortcodes'),
 			'shortcode_field' => 'posts_per_page',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('posts_per_page', 10),
-			'description' => __('Posts per page', 'tmm_shortcodes'),
+			'description' => esc_html__('Posts per page', 'tmm_shortcodes'),
 		));
 		?>
 

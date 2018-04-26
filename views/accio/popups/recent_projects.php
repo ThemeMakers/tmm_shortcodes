@@ -9,7 +9,7 @@
 		}
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Projects Per Page', 'tmm_shortcodes'),
+			'title' => esc_html__('Projects Per Page', 'tmm_shortcodes'),
 			'shortcode_field' => 'count',
 			'id' => '',
 			'options' => $content,
@@ -30,7 +30,7 @@
 
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Template', 'tmm_shortcodes'),
+			'title' => esc_html__('Template', 'tmm_shortcodes'),
 			'shortcode_field' => 'template',
 			'id' => 'template',
 			'options' => $template,

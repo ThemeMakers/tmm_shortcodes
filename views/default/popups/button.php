@@ -6,7 +6,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Button Text', 'tmm_shortcodes'),
+			'title' => esc_html__('Button Text', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),
@@ -17,7 +17,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Size', 'tmm_shortcodes'),
+			'title' => esc_html__('Size', 'tmm_shortcodes'),
 			'shortcode_field' => 'size',
 			'id' => 'size',
 			'options' => TMM_OptionsHelper::get_theme_buttons_sizes(),
@@ -29,7 +29,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Color', 'tmm_shortcodes'),
+			'title' => esc_html__('Color', 'tmm_shortcodes'),
 			'shortcode_field' => 'color',
 			'id' => 'color',
 			'options' => TMM_OptionsHelper::get_theme_buttons(),
@@ -45,7 +45,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('URL', 'tmm_shortcodes'),
+			'title' => esc_html__('URL', 'tmm_shortcodes'),
 			'shortcode_field' => 'url',
 			'id' => 'url',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('url', ''),
@@ -56,7 +56,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Align', 'tmm_shortcodes'),
+			'title' => esc_html__('Align', 'tmm_shortcodes'),
 			'shortcode_field' => 'align',
 			'id' => '',
 			'options' => array(
@@ -70,7 +70,7 @@
 		
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

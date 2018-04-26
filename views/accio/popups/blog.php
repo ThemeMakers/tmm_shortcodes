@@ -6,7 +6,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Category', 'tmm_shortcodes'),
+			'title' => esc_html__('Category', 'tmm_shortcodes'),
 			'shortcode_field' => 'category',
 			'id' => 'category',
 			'options' => TMM_Helper::get_post_categories(),
@@ -22,7 +22,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Order By', 'tmm_shortcodes'),
+			'title' => esc_html__('Order By', 'tmm_shortcodes'),
 			'shortcode_field' => 'orderby',
 			'id' => 'orderby',
 			'options' => TMM_Helper::get_post_sort_array(),
@@ -38,11 +38,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Meta Data', 'tmm_shortcodes'),
+			'title' => esc_html__('Meta Data', 'tmm_shortcodes'),
 			'shortcode_field' => 'show_metadata',
 			'id' => 'show_metadata',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('show_metadata', 1),
-			'description' => __('Show/Hide Meta Info', 'tmm_shortcodes')
+			'description' => esc_html__('Show/Hide Meta Info', 'tmm_shortcodes')
 		));
 		?>
 
@@ -52,12 +52,12 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Order', 'tmm_shortcodes'),
+			'title' => esc_html__('Order', 'tmm_shortcodes'),
 			'shortcode_field' => 'order',
 			'id' => 'order',
 			'options' => array(
-				'DESC' => __('DESC', 'tmm_shortcodes'),
-				'ASC' => __('ASC', 'tmm_shortcodes'),
+				'DESC' => esc_html__('DESC', 'tmm_shortcodes'),
+				'ASC' => esc_html__('ASC', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('order', 'DESC'),
 			'description' => ''
@@ -69,7 +69,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Posts Count', 'tmm_shortcodes'),
+			'title' => esc_html__('Posts Count', 'tmm_shortcodes'),
 			'shortcode_field' => 'posts_per_page',
 			'id' => 'posts_per_page',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('posts_per_page', 5),
@@ -83,11 +83,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Posts', 'tmm_shortcodes'),
+			'title' => esc_html__('Posts', 'tmm_shortcodes'),
 			'shortcode_field' => 'posts',
 			'id' => 'posts',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('posts', ''),
-			'description' => __('Example: 56,73,119. It has the most hight priority!', 'tmm_shortcodes')
+			'description' => esc_html__('Example: 56,73,119. It has the most hight priority!', 'tmm_shortcodes')
 		));
 		?>
 

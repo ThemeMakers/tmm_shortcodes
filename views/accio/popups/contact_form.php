@@ -5,7 +5,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Choose Contact Form', 'tmm_shortcodes'),
+			'title' => esc_html__('Choose Contact Form', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'options' => TMM_Contact_Form::get_forms_names(),

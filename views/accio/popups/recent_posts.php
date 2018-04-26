@@ -21,7 +21,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Posts count', 'tmm_shortcodes'),
+			'title' => esc_html__('Posts count', 'tmm_shortcodes'),
 			'shortcode_field' => 'count',
 			'id' => 'count',
 			'options' => array(
@@ -47,18 +47,18 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Show post metadata', 'tmm_shortcodes'),
+			'title' => esc_html__('Show post metadata', 'tmm_shortcodes'),
 			'shortcode_field' => 'show_post_metadata',
 			'id' => 'show_post_metadata',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('show_post_metadata', 1),
-			'description' => __('Show post metadata', 'tmm_shortcodes')
+			'description' => esc_html__('Show post metadata', 'tmm_shortcodes')
 		));
 		?>
 		
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),
@@ -75,7 +75,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Content Char Count', 'tmm_shortcodes'),
+			'title' => esc_html__('Content Char Count', 'tmm_shortcodes'),
 			'shortcode_field' => 'char_count',
 			'id' => 'char_count',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('char_count', 140),
@@ -86,11 +86,11 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'checkbox',
-			'title' => __('Show "View All Posts" button', 'tmm_shortcodes'),
+			'title' => esc_html__('Show "View All Posts" button', 'tmm_shortcodes'),
 			'shortcode_field' => 'show_all_posts_button',
 			'id' => 'show_all_posts_button',
 			'is_checked' => TMM_Ext_Shortcodes::set_default_value('show_all_posts_button', 1),
-			'description' => __('Option enables "View All Posts" button', 'tmm_shortcodes')
+			'description' => esc_html__('Option enables "View All Posts" button', 'tmm_shortcodes')
 		));
 		?>	
 

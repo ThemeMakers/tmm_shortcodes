@@ -7,7 +7,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'textarea',
-			'title' => __('Enter Text', 'tmm_shortcodes'),
+			'title' => esc_html__('Enter Text', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),
@@ -19,14 +19,14 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Select Type', 'tmm_shortcodes'),
+			'title' => esc_html__('Select Type', 'tmm_shortcodes'),
 			'shortcode_field' => 'type',
 			'id' => 'type',
 			'options' => array(
-				'error' => __('Error', 'tmm_shortcodes'),
-				'success' => __('Success', 'tmm_shortcodes'),
-				'info' => __('Info', 'tmm_shortcodes'),
-				'notice' => __('Notice', 'tmm_shortcodes'),
+				'error' => esc_html__('Error', 'tmm_shortcodes'),
+				'success' => esc_html__('Success', 'tmm_shortcodes'),
+				'info' => esc_html__('Info', 'tmm_shortcodes'),
+				'notice' => esc_html__('Notice', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('type', 'notice'),
 			'description' => ''

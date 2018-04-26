@@ -6,12 +6,12 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Type', 'tmm_shortcodes'),
+			'title' => esc_html__('Type', 'tmm_shortcodes'),
 			'shortcode_field' => 'type',
 			'id' => 'type',
 			'options' => array(
-				'' => __('Accordion', 'tmm_shortcodes'),
-				'toggle' => __('Toggle', 'tmm_shortcodes'),
+				'' => esc_html__('Accordion', 'tmm_shortcodes'),
+				'toggle' => esc_html__('Toggle', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('type', ''),
 			'description' => ''

@@ -5,7 +5,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'upload',
-			'title' => __('Image URL', 'tmm_shortcodes'),
+			'title' => esc_html__('Image URL', 'tmm_shortcodes'),
 			'shortcode_field' => 'content',
 			'id' => '',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('content', ''),
@@ -23,12 +23,12 @@
 		//***
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Action', 'tmm_shortcodes'),
+			'title' => esc_html__('Action', 'tmm_shortcodes'),
 			'shortcode_field' => 'action',
 			'id' => 'img_shortcode_action',
 			'options' => array(
-				'none' => __('No link on image', 'tmm_shortcodes'),
-				'link' => __('Open link', 'tmm_shortcodes'),
+				'none' => esc_html__('No link on image', 'tmm_shortcodes'),
+				'link' => esc_html__('Open link', 'tmm_shortcodes'),
 			),
 			'default_value' => $action,
 			'description' => ''
@@ -40,7 +40,7 @@
 			<?php
 			TMM_Ext_Shortcodes::draw_shortcode_option(array(
 				'type' => 'text',
-				'title' => __('Image Action Link', 'tmm_shortcodes'),
+				'title' => esc_html__('Image Action Link', 'tmm_shortcodes'),
 				'shortcode_field' => 'image_action_link',
 				'id' => 'image_action_link',
 				'default_value' => TMM_Ext_Shortcodes::set_default_value('image_action_link', '#'),
@@ -51,12 +51,12 @@
 			<?php
 			TMM_Ext_Shortcodes::draw_shortcode_option(array(
 				'type' => 'select',
-				'title' => __('Link Target', 'tmm_shortcodes'),
+				'title' => esc_html__('Link Target', 'tmm_shortcodes'),
 				'shortcode_field' => 'target',
 				'id' => 'target',
 				'options' => array(
-					'_self' => __('Self', 'tmm_shortcodes'),
-					'_blank' => __('Blank', 'tmm_shortcodes'),
+					'_self' => esc_html__('Self', 'tmm_shortcodes'),
+					'_blank' => esc_html__('Blank', 'tmm_shortcodes'),
 				),
 				'default_value' => TMM_Ext_Shortcodes::set_default_value('target', '_self'),
 				'description' => ''
@@ -66,7 +66,7 @@
 			<?php
 			TMM_Ext_Shortcodes::draw_shortcode_option(array(
 				'type' => 'text',
-				'title' => __('Link Title', 'tmm_shortcodes'),
+				'title' => esc_html__('Link Title', 'tmm_shortcodes'),
 				'shortcode_field' => 'link_title',
 				'id' => 'link_title',
 				'default_value' => TMM_Ext_Shortcodes::set_default_value('link_title', ''),
@@ -83,14 +83,14 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Align', 'tmm_shortcodes'),
+			'title' => esc_html__('Align', 'tmm_shortcodes'),
 			'shortcode_field' => 'align',
 			'id' => 'align',
 			'options' => array(
-				'' => __('None', 'tmm_shortcodes'),
-				'alignleft' => __('Left', 'tmm_shortcodes'),
-				'alignright' => __('Right', 'tmm_shortcodes'),
-				'aligncenter' => __('Center', 'tmm_shortcodes'),
+				'' => esc_html__('None', 'tmm_shortcodes'),
+				'alignleft' => esc_html__('Left', 'tmm_shortcodes'),
+				'alignright' => esc_html__('Right', 'tmm_shortcodes'),
+				'aligncenter' => esc_html__('Center', 'tmm_shortcodes'),
 			),
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('align', ''),
 			'description' => ''
@@ -106,11 +106,11 @@
 		
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Size', 'tmm_shortcodes'),
+			'title' => esc_html__('Size', 'tmm_shortcodes'),
 			'shortcode_field' => 'image_size_alias',
 			'id' => 'image_size_alias',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('image_size_alias', ''),
-			'description' => __('width*height. Fore example: 500*300. Empty field means full size', 'tmm_shortcodes'),
+			'description' => esc_html__('width*height. Fore example: 500*300. Empty field means full size', 'tmm_shortcodes'),
 		));
 		?>
 
@@ -121,7 +121,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Image Alt', 'tmm_shortcodes'),
+			'title' => esc_html__('Image Alt', 'tmm_shortcodes'),
 			'shortcode_field' => 'image_alt',
 			'id' => 'image_alt',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('image_alt', ''),
@@ -135,7 +135,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Top Indent (px)', 'tmm_shortcodes'),
+			'title' => esc_html__('Top Indent (px)', 'tmm_shortcodes'),
 			'shortcode_field' => 'margin_top',
 			'id' => 'margin_top',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('margin_top', ''),
@@ -149,7 +149,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Right Indent (px)', 'tmm_shortcodes'),
+			'title' => esc_html__('Right Indent (px)', 'tmm_shortcodes'),
 			'shortcode_field' => 'margin_right',
 			'id' => 'margin_right',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('margin_right', ''),
@@ -163,7 +163,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Bottom Indent (px)', 'tmm_shortcodes'),
+			'title' => esc_html__('Bottom Indent (px)', 'tmm_shortcodes'),
 			'shortcode_field' => 'margin_bottom',
 			'id' => 'margin_bottom',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('margin_bottom', ''),
@@ -177,7 +177,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
-			'title' => __('Left Indent (px)', 'tmm_shortcodes'),
+			'title' => esc_html__('Left Indent (px)', 'tmm_shortcodes'),
 			'shortcode_field' => 'margin_left',
 			'id' => 'margin_left',
 			'default_value' => TMM_Ext_Shortcodes::set_default_value('margin_left', ''),
@@ -192,7 +192,7 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'select',
-			'title' => __('Animation', 'tmm_shortcodes'),
+			'title' => esc_html__('Animation', 'tmm_shortcodes'),
 			'shortcode_field' => 'animation',
 			'id' => '',
 			'options' => TMM_Ext_Shortcodes::css_animation_array(),

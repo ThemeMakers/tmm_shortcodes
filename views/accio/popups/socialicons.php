@@ -76,7 +76,7 @@
 									'css_classes' => 'list_item_style save_as_one',
 									'default_value' => $links[$key],
 									'description' => '',
-									'placeholder' => __('http://', 'tmm_shortcodes')
+									'placeholder' => esc_html__('http://', 'tmm_shortcodes')
 								));
 								?>
 							</td>
