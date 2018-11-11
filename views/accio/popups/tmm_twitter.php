@@ -6,6 +6,20 @@
 		<?php
 		TMM_Ext_Shortcodes::draw_shortcode_option(array(
 			'type' => 'text',
+			'title' => esc_html__('Twitter screen name', 'tmm_shortcodes'),
+			'shortcode_field' => 'twitter_screen_name',
+			'id' => '',
+			'default_value' => TMM_Ext_Shortcodes::set_default_value('twitter_screen_name', 'ThemeMakers'),
+			'description' => ''
+		));
+		?>
+
+    </div><!--/ .one-half-->
+
+	<div class="one-half">
+		<?php
+		TMM_Ext_Shortcodes::draw_shortcode_option(array(
+			'type' => 'text',
 			'title' => esc_html__('Number of tweets', 'tmm_shortcodes'),
 			'shortcode_field' => 'count',
 			'id' => '',
@@ -66,4 +80,3 @@
 
 	});
 </script>
-

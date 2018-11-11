@@ -1,18 +1,18 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
 
 <?php
-wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/widgets/twitterFetcher.min.js');
+wp_enqueue_script('tmm_widget_twitterFetcher', TMM_THEME_URI . '/js/min/twitterFetcher.min.js');
 
 $limit = $count;
 if (!$limit) $limit = 5;
-$twitter_id =  $content;
+$twitter_screen_name = isset($twitter_screen_name) ? $twitter_screen_name : 'ThemeMakers';
 $hash = md5(rand(1, 999));
 ?>
 
 <script type="text/javascript">
 	jQuery(function() {
 			var config = {
-				"id": '<?php echo TMM::get_option('twitter_widget_id'); ?>',
+				"profile": {"screenName": '<?php echo esc_js($twitter_screen_name); ?>'},
 				"domId": 'tweets_<?php echo esc_js($hash); ?>',
 				"maxTweets": <?php echo (int) $limit; ?>,
 				"enableLinks": true,
