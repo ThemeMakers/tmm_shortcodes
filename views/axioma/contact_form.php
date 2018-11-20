@@ -12,7 +12,7 @@ if (!empty($contact_form['inputs'])) {
 
 	<form method="post" class="contact-form" enctype="multipart/form-data">
 
-		<input type="hidden" name="contact_form_name" value="<?php echo $form_name ?>" />
+		<input type="hidden" name="contact_form_name" value="<?php echo esc_attr( $form_name ) ?>" />
 
 		<?php foreach ($contact_form['inputs'] as $input) : ?>
 
@@ -27,7 +27,7 @@ if (!empty($contact_form['inputs'])) {
 				case "email":
 					?>
 					<p class="message-form-email">
-						<label for="email_<?php echo $unique_id ?>"><?php echo $input['label'] ?><?php echo($input['is_required'] ? ': <span class="required">(' . __('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><input id="email_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="email" name="<?php echo $name ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" /></span>
+						<label for="email_<?php echo esc_attr( $unique_id ) ?>"><?php echo esc_attr( $input['label'] ) ?><?php echo($input['is_required'] ? ': <span class="required">(' . esc_html__('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><input id="email_<?php echo esc_attr( $unique_id ) ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="email" name="<?php echo esc_attr( $name ) ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" /></span>
 					</p>
 					<?php
 					break;
@@ -35,7 +35,7 @@ if (!empty($contact_form['inputs'])) {
 				case "textinput":
 					?>
 					<p class="message-form-name">
-						<label for="name_<?php echo $unique_id ?>"><?php echo $input['label'] ?><?php echo($input['is_required'] ? ': <span class="required">(' . __('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><input id="name_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="text" name="<?php echo $name ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" /></span>
+						<label for="name_<?php echo esc_attr( $unique_id ) ?>"><?php echo esc_attr( $input['label'] ) ?><?php echo($input['is_required'] ? ': <span class="required">(' . esc_html__('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><input id="name_<?php echo esc_attr( $unique_id ) ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="text" name="<?php echo esc_attr( $name ) ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" /></span>
 					</p>
 					<?php
 					break;
@@ -45,7 +45,7 @@ if (!empty($contact_form['inputs'])) {
 					?>
 					<p class="message-form-checkbox">
 						<label>
-							<input type="checkbox" name="<?php echo $name ?>" value="0" class="contact_form_option_checkbox" /><?php echo $input['label'] ?>
+							<input type="checkbox" name="<?php echo esc_attr( $name ) ?>" value="0" class="contact_form_option_checkbox" /><?php echo esc_attr( $input['label'] ) ?>
 						</label>
 					</p>
 					<?php
@@ -59,7 +59,7 @@ if (!empty($contact_form['inputs'])) {
 
 							<?php foreach ($radio_items as $item) : ?>
 								<label>
-									<input type="radio" name="<?php echo $name ?>" value="<?php echo $item ?>" />&nbsp;<?php echo $item ?>
+									<input type="radio" name="<?php echo esc_attr( $name ) ?>" value="<?php echo esc_attr( $item ) ?>" />&nbsp;<?php echo esc_attr( $item ) ?>
 								</label>
 							<?php endforeach; ?>
 
@@ -71,7 +71,7 @@ if (!empty($contact_form['inputs'])) {
 				case "website":
 					?>
 					<p class="message-form-url">
-						<label for="url_<?php echo $unique_id ?>"><?php echo $input['label'] ?><?php echo($input['is_required'] ? ': <span class="required">(' . __('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><input id="url_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="url" name="<?php echo $name ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" /></span>
+						<label for="url_<?php echo esc_attr( $unique_id ) ?>"><?php echo esc_attr( $input['label'] ) ?><?php echo($input['is_required'] ? ': <span class="required">(' . esc_html__('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><input id="url_<?php echo esc_attr( $unique_id ) ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="url" name="<?php echo esc_attr( $name ) ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" /></span>
 					</p>
 					<?php
 					break;
@@ -82,7 +82,7 @@ if (!empty($contact_form['inputs'])) {
 					}
 					?>
 					<p class="message-form-message">
-						<label for="message_<?php echo $unique_id ?>"><?php echo $input['label'] ?><?php echo($input['is_required'] ? ': <span class="required">(' . __('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><textarea id="message_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> name="<?php echo $name ?>"><?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?></textarea></span>
+						<label for="message_<?php echo esc_attr( $unique_id ) ?>"><?php echo esc_attr( $input['label'] ) ?><?php echo($input['is_required'] ? ': <span class="required">(' . esc_html__('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><span class="icon-form"><textarea id="message_<?php echo esc_attr( $unique_id ) ?>" <?php echo($input['is_required'] ? "required" : "") ?> name="<?php echo esc_attr( $name ) ?>"><?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?></textarea></span>
 					</p>
 					<?php
 					break;
@@ -91,10 +91,10 @@ if (!empty($contact_form['inputs'])) {
 					$select_options = explode(",", $input['options']);
 					?>
 					<p>
-						<label for="url_<?php echo $unique_id ?>"><?php echo $input['label'] ?><?php echo($input['is_required'] ? ': <span class="required">(' . __('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><select id="url_<?php echo $unique_id ?>" name="<?php echo $name ?>">
+						<label for="url_<?php echo esc_attr( $unique_id ) ?>"><?php echo esc_attr( $input['label'] ) ?><?php echo($input['is_required'] ? ': <span class="required">(' . esc_html__('required', 'tmm_shortcodes') . ')</span>' : '') ?></label><select id="url_<?php echo esc_attr( $unique_id ) ?>" name="<?php echo esc_attr( $name ) ?>">
 							<?php if (!empty($select_options)): ?>
 								<?php foreach ($select_options as $value) : ?>
-									<option value="<?php echo $value; ?>"><?php echo $value; ?></option>
+									<option value="<?php echo esc_attr( $value ) ?>"><?php echo esc_attr( $value ) ?></option>
 								<?php endforeach; ?>
 							<?php endif; ?>
 						</select>
@@ -112,7 +112,7 @@ if (!empty($contact_form['inputs'])) {
 
 			<p class="input-block">
 				<?php $hash = md5(time()); ?>
-				<img class="contact_form_capcha" src="<?php echo get_stylesheet_directory_uri(); ?>/helper/capcha/image.php?hash=<?php echo $hash ?>" height="27" width="72" /><input type="text" value="" name="verify" class="verify" /><input type="hidden" name="verify_code" value="<?php echo $hash ?>" />
+				<img class="contact_form_capcha" src="<?php echo esc_js(get_template_directory_uri()); ?>/helper/capcha/image.php?hash=<?php echo esc_attr( $hash ) ?>" height="27" width="72" /><input type="text" value="" name="verify" class="verify" /><input type="hidden" name="verify_code" value="<?php echo esc_attr( $hash ) ?>" />
 			</p><!--/ .row-->
 
 		<?php endif; ?>
@@ -120,12 +120,12 @@ if (!empty($contact_form['inputs'])) {
 		<?php if ($contact_form['has_attach']): ?>
 			<?php if ((is_user_logged_in() AND ($contact_form['attach_only_logged_in'] OR !$contact_form['attach_only_logged_in'])) OR (!is_user_logged_in() AND !$contact_form['attach_only_logged_in'])): ?>
 				<?php wp_enqueue_script('js_http_request', TMM_THEME_URI . '/helper/js_http_request/JsHttpRequest.js'); ?>
-				<a href="#" class="button default small contact_form_add_attach" data-max-items="<?php echo $contact_form['attach_count'] ?>"><?php _e('Add file', 'axioma'); ?></a>
-				<ul id="list_attach_<?php echo $unique_id ?>" class="contact_form_attach_list"></ul>
+				<a href="#" class="button default small contact_form_add_attach" data-max-items="<?php echo esc_attr( $contact_form['attach_count'] ) ?>"><?php esc_html_e('Add file', 'axioma'); ?></a>
+				<ul id="list_attach_<?php echo esc_attr( $unique_id ) ?>" class="contact_form_attach_list"></ul>
 
 				<div class="desc-max-file">
-					<i><?php _e('Max file size', 'tmm_shortcodes'); ?>:&nbsp;<?php echo $contact_form['attach_item_max_weight'] ?>MB</i>
-					<i><?php _e('Max file count', 'tmm_shortcodes'); ?>:&nbsp;<?php echo $contact_form['attach_count'] ?></i>	
+					<i><?php esc_html_e('Max file size', 'tmm_shortcodes'); ?>:&nbsp;<?php echo esc_attr( $contact_form['attach_item_max_weight'] ) ?>MB</i>
+					<i><?php esc_html_e('Max file count', 'tmm_shortcodes'); ?>:&nbsp;<?php echo esc_attr( $contact_form['attach_count'] ) ?></i>
 				</div>
 
 			<?php endif; ?>
@@ -133,7 +133,7 @@ if (!empty($contact_form['inputs'])) {
 
 
 		<p>
-			<button class="button <?php echo $contact_form['submit_button'] ?> medium" type="submit"><?php if (!empty($contact_form['submit_button_text']) AND isset($contact_form['submit_button_text'])): ?><?php echo $contact_form['submit_button_text'] ?><?php else: ?><?php _e('Submit', 'tmm_shortcodes'); ?><?php endif; ?></button>
+			<button class="button <?php echo esc_attr( $contact_form['submit_button'] ) ?> medium" type="submit"><?php if (!empty($contact_form['submit_button_text']) AND isset($contact_form['submit_button_text'])): ?><?php echo esc_attr( $contact_form['submit_button_text'] ) ?><?php else: ?><?php esc_html_e('Submit', 'tmm_shortcodes'); ?><?php endif; ?></button>
 		</p>
 
 
@@ -145,4 +145,3 @@ if (!empty($contact_form['inputs'])) {
 }
 ?>
 <div class="clear"></div>
-
