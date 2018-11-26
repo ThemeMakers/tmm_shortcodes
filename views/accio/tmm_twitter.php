@@ -25,7 +25,7 @@ $hash = md5(rand(1, 999));
 		});
 </script>
 
-<div class="tmm_tweet <?php if($animation) echo $animation ?>" id="tweets_<?php echo $hash; ?>" data-timeout="<?php echo $timeout ?>"></div>
+<div class="tmm_tweet <?php if($animation) echo esc_attr($animation) ?>" id="tweets_<?php echo esc_attr($hash) ?>" data-timeout="<?php echo esc_attr($timeout) ?>"></div>
 
 <script type="text/javascript">
 
@@ -47,12 +47,10 @@ $hash = md5(rand(1, 999));
 			}
 		}
 
-		var $tweet = jQuery('#tweets_<?php echo $hash ?>');
+		var $tweet = jQuery('#tweets_<?php echo esc_attr($hash) ?>');
 
 		setTimeout(function(){
 			$tweets = $tweet.children('ul');
-
-			console.log($tweets.length);
 
 			$tweets.each(function(i) {
 
