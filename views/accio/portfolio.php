@@ -50,10 +50,10 @@ foreach ($query as $p) {
 	<div class="col-xs-12">
 
 		<ul class="portfolio-filter opacity controls">
-			<li class="filter control active" data-filter="all"><?php _e('All', 'tmm_shortcodes'); ?></li>
+			<li class="filter control active" data-filter="all"><?php esc_html_e('All', 'tmm_shortcodes'); ?></li>
 			<?php if (!empty($folio_cat)):?>
 				<?php foreach ($folio_cat as $term_id => $cat) : ?>
-					<li class="filter control" data-filter=".<?php echo $cat->slug ?>"><?php echo $cat->name ?></li>
+					<li class="filter control" data-filter=".<?php echo esc_attr( $cat->slug ) ?>"><?php echo esc_attr( $cat->name ) ?></li>
 				<?php endforeach; ?>
 			<?php endif; ?>
 		</ul><!--/ #portfolio-filter -->
@@ -64,7 +64,7 @@ foreach ($query as $p) {
 
 <section class="section padding-off">
 
-	<ul class="portfolio-items" data-ppp="<?php echo $posts_per_page ?>">
+	<ul class="portfolio-items" data-ppp="<?php echo esc_attr( $posts_per_page ) ?>">
 
 		<?php foreach ($query as $post): ?>
 
@@ -87,7 +87,7 @@ foreach ($query as $p) {
 
 			?>
 
-			<li class="<?php echo $categories_css_class ?> mix opacity2x">
+			<li class="<?php echo esc_attr( $categories_css_class ) ?> mix opacity2x">
 
 				<div class="work-item">
 
@@ -103,18 +103,27 @@ foreach ($query as $p) {
 
 								<h6 class="extra-category">
 									<?php
+									$featured_video = get_post_meta( $post->ID, 'featured_video', true );
+									$featured_image = TMM_Helper::get_post_featured_image($post->ID, '');
 									$cats = wp_get_post_terms($post->ID, 'folio_category');
+
 									foreach ($cats as $key => $value) {
 										if ($key > 0) {
 											echo ' / ';
 										}
-										echo $value->name;
+										echo esc_attr( $value->name );
 									}
 									?>
 								</h6>
 
+								<?php if (empty($featured_video)) { ?>
 								<a class="single-image link-icon" href="<?php the_permalink(); ?>">Permalink</a>
-								<a class="single-image plus-icon" data-fancybox-group="folio" href="<?php echo TMM_Helper::get_post_featured_image($post->ID, ''); ?>">Image</a>							
+								<?php } ?>
+								<a class="single-image plus-icon"
+								   title="<?php the_title(); ?>"
+								   data-gall="folio"
+								   <?php echo (!empty($featured_video) ? 'data-vbtype="video"' : ''); ?>
+								   href="<?php echo esc_url( !empty($featured_video) ? $featured_video : $featured_image ) ?>">Image</a>
 
 							</div><!--/ .inner-extra-->
 

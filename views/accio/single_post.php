@@ -83,7 +83,7 @@ $post_link = get_permalink($post_id);
 											
 											<div class="inner-extra">
 												<a class="single-image link-icon" href="<?php echo $post_link ?>"></a>
-												<a class="single-image plus-icon" data-fancybox-group="blog" href="<?php echo TMM_Helper::resize_image($source_url, '') ?>"></a>	
+												<a class="single-image plus-icon" data-gall="blog" href="<?php echo TMM_Helper::resize_image($source_url, '') ?>"></a>
 											</div><!--/ .inner-extra-->	
 										
 										</div><!--/ .extra-content-->
@@ -116,7 +116,7 @@ $post_link = get_permalink($post_id);
 							<div class="extra-content">
 								<div class="inner-extra">
 									<a class="single-image link-icon" href="<?php echo $post_link ?>"></a>
-									<a class="single-image plus-icon" data-fancybox-group="blog" href="<?php echo TMM_Helper::get_post_featured_image($post_id, ''); ?>"></a>	
+									<a class="single-image plus-icon" data-gall="blog" href="<?php echo TMM_Helper::get_post_featured_image($post_id, ''); ?>"></a>
 								</div><!--/ .inner-extra-->	
 							</div><!--/ .extra-content-->
 						</div><!--/ .image-extra-->	

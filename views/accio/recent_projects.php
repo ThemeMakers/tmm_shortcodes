@@ -34,7 +34,7 @@ $posts = get_posts($args);
 							<div class="inner-extra">
 
 								<a class="single-image link-icon" href="<?php  echo get_permalink($post->ID); ?>">Permalink</a>
-								<a class="single-image plus-icon" data-fancybox-group="gallery" href="<?php echo TMM_Helper::get_post_featured_image($post->ID, ''); ?>">Image</a>
+								<a class="single-image plus-icon" data-gall="gallery" href="<?php echo TMM_Helper::get_post_featured_image($post->ID, ''); ?>">Image</a>
 
 								<h4 class="extra-title"><?php echo $post->post_title ?></h4>
 								<span class="extra-category">

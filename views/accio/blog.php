@@ -49,7 +49,7 @@ global $post;
 							<div class="extra-content">
 								<div class="inner-extra">
 									<a class="single-image link-icon" href="<?php the_permalink() ?>"></a>
-									<a class="single-image plus-icon" data-fancybox-group="posts" href="<?php echo TMM_Helper::get_post_featured_image($post->ID, ''); ?>"></a>	
+									<a class="single-image plus-icon" data-gall="posts" href="<?php echo TMM_Helper::get_post_featured_image($post->ID, ''); ?>"></a>
 								</div><!--/ .inner-extra-->	
 							</div><!--/ .extra-content-->
 						</div><!--/ .image-extra-->	
