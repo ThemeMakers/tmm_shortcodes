@@ -17,6 +17,10 @@ if (isset($_GET['folio_page'])) {
 	$folio_page = $_GET['folio_page'];
 }
 
+$folio_order = !empty($folio_order) ? $folio_order : 'DESC';
+
+$folio_order_by = !empty($folio_order_by) ? $folio_order_by : 'none';
+
 global $post;
 $current_page_id = $post->ID;
 
@@ -24,7 +28,9 @@ $args = array(
 	'tax_query' => $cats_query_array,
 	'post_type' => TMM_Portfolio::$slug,
 	'posts_per_page' => -1,
-	'paged' => $folio_page		
+	'paged' => $folio_page,
+	'order' => $folio_order,
+	'orderby' => $folio_order_by
 );
 
 $w_query = new WP_Query();
@@ -136,6 +142,9 @@ foreach ($query as $p) {
 			</li><!--/ .mix-->
 			
 		<?php endforeach; ?>
+
+		<!-- Restore original Post Data -->
+		<?php wp_reset_postdata(); ?>
 
 	</ul><!--/ #portfolio-items-->
 
