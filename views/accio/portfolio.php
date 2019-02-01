@@ -125,9 +125,8 @@ foreach ($query as $p) {
 								<?php if (empty($featured_video)) { ?>
 								<a class="single-image link-icon" href="<?php the_permalink(); ?>">Permalink</a>
 								<?php } ?>
-								<a class="single-image plus-icon"
+								<a class="single-image lightbox-mixit"
 								   title="<?php the_title(); ?>"
-								   data-gall="folio"
 								   <?php echo (!empty($featured_video) ? 'data-vbtype="video"' : ''); ?>
 								   href="<?php echo esc_url( !empty($featured_video) ? $featured_video : $featured_image ) ?>">Image</a>
 
