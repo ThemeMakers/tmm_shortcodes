@@ -1,5 +1,5 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
 if ($show == 'mode1') {
 	$args = array(
 		'post_type' => TMM_Testimonials::$slug,
@@ -20,7 +20,7 @@ if ($show == 'mode1') {
 $query = new WP_Query($args);
 ?>
 
-<ul class="quotes <?php if (!empty($animation)) echo $animation ?>" data-timeout="<?php echo $timeout ?>">
+<ul class="quotes <?php if (!empty($animation)) echo esc_attr( $animation ) ?>" data-timeout="<?php echo esc_attr( $timeout ) ?>">
 	<?php
 	if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
 			?>
