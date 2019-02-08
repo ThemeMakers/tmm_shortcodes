@@ -1,11 +1,11 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
 switch ($type) {
 	case 'youtube':
 		?>
 		<?php if ($full_width): ?>
 
-			<a class="player" id="bgndVideo" data-property="{videoURL: '<?php echo $content ?>',
+			<a class="player" id="bgndVideo" data-property="{videoURL: '<?php echo esc_attr( $content ) ?>',
 				containment:'.video-full-container',
 				autoPlay: true,
 				mute: false,
@@ -30,7 +30,7 @@ switch ($type) {
 			}
 		?>
 
-		<iframe width="<?php echo $width ?>" height="<?php echo $height ?>" src="http://www.youtube.com/embed/<?php echo $source_code ?>?wmode=transparent"></iframe>
+		<iframe width="<?php echo esc_attr( $width ) ?>" height="<?php echo esc_attr( $height ) ?>" src="https://www.youtube.com/embed/<?php echo esc_attr( $source_code ) ?>?wmode=transparent"></iframe>
 
 		<?php endif; ?>
 
@@ -43,7 +43,7 @@ switch ($type) {
 			$source_code = $source_code[count($source_code) - 1];
 		}
 		?>
-			<iframe width="<?php echo $width ?>" height="<?php echo $height ?>" src="http://player.vimeo.com/video/<?php echo $source_code ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=f6e200"></iframe>
+			<iframe width="<?php echo esc_attr( $width ) ?>" height="<?php echo esc_attr( $height ) ?>" src="https://player.vimeo.com/video/<?php echo esc_attr( $source_code ) ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=f6e200"></iframe>
 		<?php
 		break;
 
