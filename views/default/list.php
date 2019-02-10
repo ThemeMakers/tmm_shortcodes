@@ -1,5 +1,5 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
 $type = "";
 $actions_array = array();
 
@@ -29,13 +29,13 @@ switch ($list_type) {
 }
 
 ?>
-<<?php echo $list_type ?> class="list <?php if ($type == 'circle-list'): ?>circle-list<?php endif; ?> <?php if ($animation) echo $animation ?>">
+<<?php echo esc_attr( $list_type ) ?> class="list <?php if ($type == 'circle-list'): ?>circle-list<?php endif; ?> <?php if ($animation) echo esc_attr( $animation ) ?>">
 <?php if (!empty($content)): ?>
 	<?php foreach ($content as $key => $text): ?>
-		<li <?php if (!empty($colors[$key])): ?> style="color: <?php echo $colors[$key] ?>" <?php endif; ?>>
-			<?php if ($type == 'unordered'): ?><i <?php if (!empty($colors[$key])) : ?> style="color: <?php echo $colors[$key] ?>" <?php endif; ?> class="<?php echo $actions_array[$key] ?>"></i><?php endif; ?>
-				<?php echo $text ?>
+		<li <?php if (!empty($colors[$key])): ?> style="color: <?php echo esc_attr( $colors[$key] ) ?>" <?php endif; ?>>
+			<?php if ($type == 'unordered'): ?><i <?php if (!empty($colors[$key])) : ?> style="color: <?php echo esc_attr( $colors[$key] ) ?>" <?php endif; ?> class="<?php echo esc_attr( $actions_array[$key] ) ?>"></i><?php endif; ?>
+				<?php echo esc_html( $text ) ?>
 		</li>
 	<?php endforeach; ?>
 <?php endif; ?>
-</<?php echo $list_type ?>>
+</<?php echo esc_attr( $list_type ) ?>>
