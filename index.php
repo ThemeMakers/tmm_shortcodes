@@ -74,10 +74,9 @@ class TMM_Ext_Shortcodes {
 		
 	}
    
-
-    public static function wp_head() {
-		wp_enqueue_style('tmm_ext_shortcodes', self::get_application_uri() . 'css/front.css');
-	}
+//    public static function wp_head() {
+//		wp_enqueue_style('tmm_ext_shortcodes', self::get_application_uri() . 'css/front.css');
+//	}
 
 	public static function wp_footer() {
 		wp_enqueue_script('tmm_ext_shortcodes', self::get_application_uri() . 'js/front.js', array('jquery'), false, true);
@@ -362,7 +361,7 @@ class TMM_Ext_Shortcodes {
 add_action('init', array('TMM_Ext_Shortcodes', 'register'), 1);
 
 // Enqueue front-end styles and scripts 
-add_action('wp_enqueue_scripts', array('TMM_Ext_Shortcodes', 'wp_head'), 1);
+//add_action('wp_enqueue_scripts', array('TMM_Ext_Shortcodes', 'wp_head'), 1);
 add_action('wp_enqueue_scripts', array('TMM_Ext_Shortcodes', 'wp_footer'), 1);
 
 // Enqueue admin styles and scripts
