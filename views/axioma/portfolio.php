@@ -1,7 +1,5 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
-TMM_Functions::enqueue_script('cycle');
-TMM_Functions::enqueue_script('isotope');
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
 //***
 $layout = $content;
 if (!$posts_per_page) {
