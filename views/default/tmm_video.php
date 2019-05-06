@@ -7,7 +7,7 @@ switch ($type) {
 
 			<a class="player" id="bgndVideo" data-property="{videoURL: '<?php echo esc_attr( $content ) ?>',
 				containment:'.video-full-container',
-				autoPlay: true,
+				autoPlay: false,
 				mute: false,
 				startAt: 0,
 				opacity: 1,
@@ -15,7 +15,7 @@ switch ($type) {
 				addRaster: false }">
 			</a>
 
-			<div style="height: <?php echo (int) $height . 'px' ?>" class="video-full-container">
+			<div style="height: <?php echo esc_attr( (int) $height ) . 'px' ?>" class="video-full-container">
 				<a class="video-button" id="buttonPlay"><i class="icon-play"></i></a>
 				<a class="video-button" id="buttonPause"><i class="icon-pause"></i></a>
 			</div>
@@ -48,6 +48,6 @@ switch ($type) {
 		break;
 
 	default:
-		_e('Unsupported video format', 'tmm_shortcodes');
+		esc_html_e( 'Unsupported video format', 'tmm_shortcodes' );
 		break;
 }
