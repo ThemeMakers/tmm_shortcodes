@@ -4,8 +4,8 @@
   Plugin URI: http://webtemplatemasters.com
   Description: Universal Shortcodes Package
   Author: ThemeMakers
-  Version: 1.1.1
-  Author URI: http://themeforest.net/user/ThemeMakers
+  Version: 1.1.2
+  Author URI: https://themeforest.net/user/thememakers
  */
 
 //16-12-2013
