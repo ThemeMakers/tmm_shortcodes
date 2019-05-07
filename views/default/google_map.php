@@ -29,10 +29,10 @@ if (TMM::get_option("api_key_google")){
 				$latitude = $output['results'][0]['geometry']['location']['lat'];
 				$longitude = $output['results'][0]['geometry']['location']['lng'];
 			} else {
-				printf( $output['error_message'] );
+				$error_message = $output['error_message'];
 			}
 		} else {
-			printf( 'GPS coordinates were not available because connection failed or malformed request' );
+			$error_message = esc_html_e('GPS coordinates were not available because connection failed or malformed request', 'accio');
 		}
 	}
 
@@ -50,7 +50,14 @@ if (TMM::get_option("api_key_google")){
 		wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/google_map.js', array(), false, true);
 		?>
 
-		<div class="google_map" id="google_map_<?php echo esc_attr($inique_id) ?>" style="height: <?php echo esc_attr($height) ?>px;"></div>
+		<div class="google_map" id="google_map_<?php echo esc_attr($inique_id) ?>" style="height: <?php echo esc_attr($height) ?>px;">
+			<?php
+				if( $output['status'] != 'OK' ) {
+					$err_image_url = 'https://via.placeholder.com/1130x' . esc_attr($height) . '?text=' . str_replace(" ", "+", $error_message);
+					echo '<img class="aligncenter" src=' . $err_image_url . '>';
+				}
+			?>
+		</div>
 
 		<script type="text/javascript">
 			jQuery(function() {
@@ -89,6 +96,6 @@ if (TMM::get_option("api_key_google")){
 } else {
 	$full_width = ($width == '' || $width == '100%') ? '1130' : $width;
 	$custom_height = ($height == '') ? '400' : $height;
-	$link_url = 'https://placeholdit.imgix.net/~text?txtsize=40&txt=Please+Enter+a+Valid+Google+API+key&w='. $full_width . '&h=' . $custom_height;
+	$link_url = 'https://via.placeholder.com/' . $full_width . 'x' . $custom_height . '?text=Please+Enter+a+Valid+Google+API+key';
 	echo '<img class="aligncenter" src=' . $link_url . '>';
 }
