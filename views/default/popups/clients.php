@@ -3,9 +3,9 @@
 
 	<div class="fullwidth">
 
-		<h4 class="label"><?php _e('Items', 'tmm_shortcodes'); ?></h4>
+		<h4 class="label"><?php esc_html_e('Items', 'tmm_shortcodes'); ?></h4>
 
-		<a class="button button-secondary js_add_accordion_item" href="#"><?php _e('Add item', 'tmm_shortcodes'); ?></a>
+		<a class="button button-secondary js_add_accordion_item" href="#"><?php esc_html_e('Add item', 'tmm_shortcodes'); ?></a>
 
 		<ul id="list_items" class="list-items">
 
@@ -35,7 +35,7 @@
 								));
 								?>
 							</td>
-							<td><a class="button button-secondary js_delete_accordion_item js_shortcode_template_changer" href="#"><?php _e('Remove', 'tmm_shortcodes'); ?></a></td>
+							<td><a class="button button-secondary js_delete_accordion_item js_shortcode_template_changer" href="#"><?php esc_html_e('Remove', 'tmm_shortcodes'); ?></a></td>
 						</tr>
 						<tr>
 							<td colspan="2">
@@ -49,7 +49,7 @@
 
 		</ul>
 
-		<a class="button button-secondary js_add_accordion_item" href="#"><?php _e('Add item', 'tmm_shortcodes'); ?></a><br />
+		<a class="button button-secondary js_add_accordion_item" href="#"><?php esc_html_e('Add item', 'tmm_shortcodes'); ?></a><br />
 
 	</div><!--/ .fullwidth-->
 	

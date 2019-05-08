@@ -29,8 +29,8 @@
 		}
 		?>
 
-		<h4 class="label"><?php _e('Progress bars', 'tmm_shortcodes'); ?></h4>
-		<a class="button button-secondary js_add_list_item" href="#"><?php _e('Add bar item', 'tmm_shortcodes'); ?></a><br />
+		<h4 class="label"><?php esc_html_e('Progress bars', 'tmm_shortcodes'); ?></h4>
+		<a class="button button-secondary js_add_list_item" href="#"><?php esc_html_e('Add bar item', 'tmm_shortcodes'); ?></a><br />
 
 		<ul id="list_items" class="list-items">
 			<?php foreach ($titles as $key => $title) : ?>
@@ -83,7 +83,7 @@
 							
 
 							<td>
-								<a class="button button-secondary js_delete_list_item" href="#"><?php _e('Remove', 'tmm_shortcodes'); ?></a>
+								<a class="button button-secondary js_delete_list_item" href="#"><?php esc_html_e('Remove', 'tmm_shortcodes'); ?></a>
 							</td>
 							<td><div class="row-mover"></div></td>
 						</tr>
@@ -93,7 +93,7 @@
 
 		</ul>
 
-		<a class="button button-secondary js_add_list_item" href="#"><?php _e('Add bar item', 'tmm_shortcodes'); ?></a><br />
+		<a class="button button-secondary js_add_list_item" href="#"><?php esc_html_e('Add bar item', 'tmm_shortcodes'); ?></a><br />
 
 	</div>
 	

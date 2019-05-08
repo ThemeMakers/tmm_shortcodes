@@ -4,7 +4,7 @@
   Plugin URI: http://webtemplatemasters.com
   Description: Universal Shortcodes Package (Accio)
   Author: ThemeMakers
-  Version: 1.1.3
+  Version: 1.1.4
   Author URI: http://themeforest.net/user/ThemeMakers
  */
 
@@ -91,7 +91,7 @@ class TMM_Ext_Shortcodes {
 		<script type="text/javascript">
 			var tmm_ext_shortcodes_app_link = "<?php echo TMM_Ext_Shortcodes::get_application_uri() ?>";
 			var tmm_ext_shortcodes_items = [];
-			var tmm_lang_loading = "<?php _e('Loading ...', 'tmm_shortcodes'); ?>";
+			var tmm_lang_loading = "<?php esc_html_e('Loading ...', 'tmm_shortcodes'); ?>";
 		<?php
 
 		$show_shortcode = substr_count($_SERVER['PHP_SELF'], '/wp-admin/post.php');
@@ -121,9 +121,9 @@ class TMM_Ext_Shortcodes {
 		<?php endif; ?>
 			
 			var tmm_ext_shortcodes_items_keys = /\[(<?php print join('|', array_keys(TMM_Ext_Shortcodes::$shortcodes)); ?>)\s?([^\]]*)(?:\s*\/)?\](([^\[\]]*)\[\/\1\])?/g;
-			var tmm_ext_shortcodes_lang1 = "<?php _e('Shortcode updated', 'tmm_shortcodes') ?>";
-			var tmm_ext_shortcodes_lang2 = "<?php _e('Insert Shortcode', 'tmm_shortcodes') ?>";
-			var tmm_ext_shortcodes_lang3 = "<?php _e('Edit shortcode', 'tmm_shortcodes') ?>";
+			var tmm_ext_shortcodes_lang1 = "<?php esc_html_e('Shortcode updated', 'tmm_shortcodes') ?>";
+			var tmm_ext_shortcodes_lang2 = "<?php esc_html_e('Insert Shortcode', 'tmm_shortcodes') ?>";
+			var tmm_ext_shortcodes_lang3 = "<?php esc_html_e('Edit shortcode', 'tmm_shortcodes') ?>";
 
 		</script>
 		<?php
@@ -320,7 +320,7 @@ class TMM_Ext_Shortcodes {
 
 				<input type="text" id="<?php echo $data['id'] ?>" value="<?php echo $data['default_value'] ?>" class="js_shortcode_template_changer data-input data-upload <?php echo @$data['css_classes']; ?>" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" />
 				<a title="" class="tmm_button_upload2 button-primary" href="#">
-					<?php _e('Upload', 'tmm_shortcodes'); ?>
+					<?php esc_html_e('Upload', 'tmm_shortcodes'); ?>
 				</a>
 				<span class="preset_description"><?php echo $data['description'] ?></span>
 				<?php

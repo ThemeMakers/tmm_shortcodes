@@ -185,18 +185,18 @@
 
 						<ul class="features">
 							<?php foreach ($options_content as $option_text) : ?>
-								<li><input type="text" class="price_table_option_row price_table_row_input data-input" value="<?php echo $option_text ?>" placeholder="<?php _e('Enter text here', 'tmm_shortcodes'); ?>" /></li>
+								<li><input type="text" class="price_table_option_row price_table_row_input data-input" value="<?php echo $option_text ?>" placeholder="<?php esc_html_e('Enter text here', 'tmm_shortcodes'); ?>" /></li>
 							<?php endforeach; ?>
 						</ul><!-- .features -->
 
 						<div class="footer">
-							<h4 class="label"><?php _e('Button Text', 'tmm_shortcodes'); ?></h4>
+							<h4 class="label"><?php esc_html_e('Button Text', 'tmm_shortcodes'); ?></h4>
 							<input type="text" class="price_table_button_text price_table_row_input data-input" value="<?php echo $_REQUEST["shortcode_mode_edit"]['button_text'] ?>" />
-							<h4 class="label"><?php _e('Button Link', 'tmm_shortcodes'); ?></h4>
+							<h4 class="label"><?php esc_html_e('Button Link', 'tmm_shortcodes'); ?></h4>
 							<input type="text" class="price_table_button_link price_table_row_input data-input" value="<?php echo $_REQUEST["shortcode_mode_edit"]['button_link'] ?>" />
-							<!--<h4 class="label"><?php _e('Is Featured', 'tmm_shortcodes'); ?></h4>-->
+							<!--<h4 class="label"><?php esc_html_e('Is Featured', 'tmm_shortcodes'); ?></h4>-->
 							<br /><input type="checkbox" value="<?php echo $_REQUEST["shortcode_mode_edit"]['featured'] ?>" <?php echo($_REQUEST["shortcode_mode_edit"]['featured'] == 1 ? 'checked' : '') ?> class="featured_price_list data-check js_shortcode_checkbox_self_update" />
-							<label class="label"><span></span><i class="description"><?php _e('Is Featured', 'tmm_shortcodes'); ?></i></label>
+							<label class="label"><span></span><i class="description"><?php esc_html_e('Is Featured', 'tmm_shortcodes'); ?></i></label>
 						</div><!-- .footer -->
 
 					</div><!-- .column -->

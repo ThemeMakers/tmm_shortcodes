@@ -140,7 +140,7 @@ $post_link = get_permalink($post_id);
 		<?php endif; ?>	
 			
 		<?php if (!TMM::get_option("blog_listing_show_comments")) : ?>	
-			<span class="comments"><a href="<?php echo $post_link ?>#comments"><?php echo get_comments_number($post->ID); ?></a>&nbsp;<?php _e('Comments', 'tmm_shortcodes'); ?></span>
+			<span class="comments"><a href="<?php echo $post_link ?>#comments"><?php echo get_comments_number($post->ID); ?></a>&nbsp;<?php esc_html_e('Comments', 'tmm_shortcodes'); ?></span>
 		<?php endif; ?>
 		
 	</div><!--/ .entry-meta-->			

@@ -3,7 +3,7 @@
 
 	<div class="one-half">
 		
-		<h4 class="label"><?php _e('Category', 'tmm_shortcodes'); ?></h4>
+		<h4 class="label"><?php esc_html_e('Category', 'tmm_shortcodes'); ?></h4>
 		<?php
 		wp_dropdown_categories(array(
 			'hide_empty' => 0,
@@ -115,7 +115,7 @@
 			tmm_ext_shortcodes.changer(shortcode_name);
 		});
 
-		jQuery("#posts_category").prepend('<option value="0" class="level--1"><?php _e('All categories', 'tmm_shortcodes'); ?></option>');
+		jQuery("#posts_category").prepend('<option value="0" class="level--1"><?php esc_html_e('All categories', 'tmm_shortcodes'); ?></option>');
 		jQuery("#posts_category option:eq(0)").attr('selected', 'selected');
 		tmm_ext_shortcodes.changer(shortcode_name);
 		

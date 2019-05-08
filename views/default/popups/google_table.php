@@ -90,7 +90,7 @@ if (isset($_REQUEST["shortcode_mode_edit"])) {
 ?>
 
 
-<h4 for="google_table_headers" class="label"><?php _e('Table headers', 'tmm_shortcodes'); ?></h4>
+<h4 for="google_table_headers" class="label"><?php esc_html_e('Table headers', 'tmm_shortcodes'); ?></h4>
 <ul id="google_table_headers">
 
 
@@ -122,7 +122,7 @@ if (isset($_REQUEST["shortcode_mode_edit"])) {
 </ul>
 <br />
 <div style="clear: both;"></div>
-<h4 for="google_table" class="label"><?php _e('Table data', 'tmm_shortcodes'); ?></h4>
+<h4 for="google_table" class="label"><?php esc_html_e('Table data', 'tmm_shortcodes'); ?></h4>
 <ul id="google_table">
 
 	<?php foreach ($rows_data as $key => $row_data) : ?>

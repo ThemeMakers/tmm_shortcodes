@@ -45,7 +45,7 @@
 				?>
 
 			<?php else: ?>
-				<?php _e("No one slider exists", 'tmm_shortcodes') ?>
+				<?php esc_html_e("No one slider exists", 'tmm_shortcodes') ?>
 			<?php endif; ?>
 		</div>
 
@@ -83,7 +83,7 @@
 					?>
 
 				<?php else: ?>
-					<?php _e("No one Layerslider group exists", 'tmm_shortcodes') ?>
+					<?php esc_html_e("No one Layerslider group exists", 'tmm_shortcodes') ?>
 				<?php endif; ?>
 
 			</div>

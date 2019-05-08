@@ -59,7 +59,7 @@ global $post;
 				<?php if ($show_metadata): ?>
 					<div class="entry-meta">
 						<span class="date"><a href="<?php echo home_url() ?>/<?php echo get_the_date('Y/m') ?>"><?php echo get_the_date() ?></a></span>
-						<span class="comments"><a href="<?php the_permalink() ?>#comments"><?php echo get_comments_number(); ?></a>&nbsp;<?php _e('Comments', 'accio') ?></span>
+						<span class="comments"><a href="<?php the_permalink() ?>#comments"><?php echo get_comments_number(); ?></a>&nbsp;<?php esc_html_e('Comments', 'accio') ?></span>
 					</div><!--/ .entry-meta-->
 				<?php endif; ?>
 

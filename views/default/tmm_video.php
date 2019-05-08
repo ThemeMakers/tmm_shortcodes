@@ -25,6 +25,6 @@ switch ($type) {
 		<?php
 		break;
 	default:
-		_e('Unsupported video format', 'tmm_shortcodes');
+		esc_html_e('Unsupported video format', 'tmm_shortcodes');
 		break;
 }

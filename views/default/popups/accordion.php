@@ -25,7 +25,7 @@
 
 	<div class="fullwidth">
 
-		<a class="button button-secondary js_add_accordion_item" href="#"><?php _e('Add item', 'tmm_shortcodes'); ?></a><br />
+		<a class="button button-secondary js_add_accordion_item" href="#"><?php esc_html_e('Add item', 'tmm_shortcodes'); ?></a><br />
 
 		<ul id="list_items" class="list-items">
 
@@ -42,13 +42,13 @@
 					<table class="list-table">
 						<tr>
 							<td valign="top" style="width: 100%;">
-								<input type="text" value="<?php echo $titles_edit_data[$key] ?>" placeholder="<?php _e('Title', 'tmm_shortcodes'); ?>" class="accordion_item_title js_shortcode_template_changer data-input" style="width: 50%;" />
-								&nbsp;<a class="button button-secondary js_delete_accordion_item js_shortcode_template_changer" href="#"><?php _e('Remove', 'tmm_shortcodes'); ?></a>
+								<input type="text" value="<?php echo $titles_edit_data[$key] ?>" placeholder="<?php esc_html_e('Title', 'tmm_shortcodes'); ?>" class="accordion_item_title js_shortcode_template_changer data-input" style="width: 50%;" />
+								&nbsp;<a class="button button-secondary js_delete_accordion_item js_shortcode_template_changer" href="#"><?php esc_html_e('Remove', 'tmm_shortcodes'); ?></a>
 							</td>
 						</tr>
 						<tr>
 							<td valign="top" style="width: 100%;" colspan="2">
-								<textarea class="accordion_item_content js_shortcode_template_changer data-area" placeholder="<?php _e('Content', 'tmm_shortcodes'); ?>"><?php echo $content_edit_text ?></textarea>
+								<textarea class="accordion_item_content js_shortcode_template_changer data-area" placeholder="<?php esc_html_e('Content', 'tmm_shortcodes'); ?>"><?php echo $content_edit_text ?></textarea>
 							</td>
 						</tr>
 					</table>
@@ -56,7 +56,7 @@
 			<?php endforeach; ?>
 
 		</ul>
-		<a class="button button-secondary js_add_accordion_item" href="#"><?php _e('Add item', 'tmm_shortcodes'); ?></a><br />
+		<a class="button button-secondary js_add_accordion_item" href="#"><?php esc_html_e('Add item', 'tmm_shortcodes'); ?></a><br />
 
 	</div><!--/ .fullwidth-->
 

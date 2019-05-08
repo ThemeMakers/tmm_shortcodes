@@ -43,7 +43,7 @@
 		
 		?>
 
-		<a class="button button-secondary js_add_list_item" href="#"><?php _e('Add item', 'tmm_shortcodes'); ?></a><br />
+		<a class="button button-secondary js_add_list_item" href="#"><?php esc_html_e('Add item', 'tmm_shortcodes'); ?></a><br />
 
 		<ul id="list_items" class="list-items">
 			
@@ -81,7 +81,7 @@
 								?>
 							</td>
 							<td>
-								<a class="button button-secondary js_delete_list_item" href="#"><?php _e('Remove', 'tmm_shortcodes'); ?></a>
+								<a class="button button-secondary js_delete_list_item" href="#"><?php esc_html_e('Remove', 'tmm_shortcodes'); ?></a>
 							</td>
 							<td><div class="row-mover"></div></td>
 						</tr>
@@ -92,7 +92,7 @@
 
 		</ul>
 
-		<a class="button button-secondary js_add_list_item" href="#"><?php _e('Add item', 'tmm_shortcodes'); ?></a><br />
+		<a class="button button-secondary js_add_list_item" href="#"><?php esc_html_e('Add item', 'tmm_shortcodes'); ?></a><br />
 
 	</div>
 
