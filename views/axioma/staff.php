@@ -33,7 +33,7 @@ $staff = explode('^', $staff);
 									if ($key > 0) {
 										echo ' / ';
 									}
-									echo $value;
+									echo esc_html( $value );
 								}
 							}
 							?>
@@ -42,19 +42,22 @@ $staff = explode('^', $staff);
 					<p><?php echo get_post($post_id)->post_excerpt; ?></p>
 					<ul class="social-icons">
 						<?php if (!empty($custom["email"])): ?>
-							<li class="email"><a target="_blank" href="mailto:<?php echo $custom["email"] ?>">Email</a></li>
+							<li class="email"><a href="<?php echo esc_url( 'mailto:' . $custom["email"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["twitter"])): ?>
-							<li class="twitter"><a target="_blank" href="<?php echo $custom["twitter"] ?>">Twitter</a></li>
+							<li class="twitter"><a target="_blank" href="<?php echo esc_url( $custom["twitter"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["facebook"])): ?>
-							<li class="facebook"><a target="_blank" href="<?php echo $custom["facebook"] ?>">Facebook</a></li>
+							<li class="facebook"><a target="_blank" href="<?php echo esc_url( $custom["facebook"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["dribble"])): ?>
-							<li class="dribbble"><a target="_blank" href="<?php echo $custom["dribble"] ?>">Dribbble</a></li>
+							<li class="dribbble"><a target="_blank" href="<?php echo esc_url( $custom["dribble"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["skype"])): ?>
-							<li class="skype"><a target="_blank" href="<?php echo $custom["skype"] ?>">Linked</a></li>
+							<li class="skype"><a target="_blank" href="<?php echo esc_url( $custom["skype"] ) ?>"></a></li>
+						<?php endif; ?>
+						<?php if (!empty($custom["phone"])): ?>
+							<li class="phone"><a href="<?php echo esc_url( 'tel:' . $custom["phone"] ) ?>"></a></li>
 						<?php endif; ?>
 					</ul><!--/ .social-icons-->
 				</article><?php endforeach; ?>
@@ -81,7 +84,7 @@ $staff = explode('^', $staff);
 									if ($key > 0) {
 										echo ' / ';
 									}
-									echo $value;
+									echo esc_html( $value );
 								}
 							}
 							?>
@@ -90,24 +93,27 @@ $staff = explode('^', $staff);
 					<p><?php echo get_post($post_id)->post_excerpt; ?></p>
 					<ul class="social-icons">
 						<?php if (!empty($custom["email"])): ?>
-							<li class="email"><a target="_blank" href="mailto:<?php echo $custom["email"] ?>">Email</a></li>
+							<li class="email"><a href="<?php echo esc_url( 'mailto:' . $custom["email"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["twitter"])): ?>
-							<li class="twitter"><a target="_blank" href="<?php echo $custom["twitter"] ?>">Twitter</a></li>
+							<li class="twitter"><a target="_blank" href="<?php echo esc_url( $custom["twitter"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["facebook"])): ?>
-							<li class="facebook"><a target="_blank" href="<?php echo $custom["facebook"] ?>">Facebook</a></li>
+							<li class="facebook"><a target="_blank" href="<?php echo esc_url( $custom["facebook"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["dribble"])): ?>
-							<li class="dribbble"><a target="_blank" href="<?php echo $custom["dribble"] ?>">Dribbble</a></li>
+							<li class="dribbble"><a target="_blank" href="<?php echo esc_url( $custom["dribble"] ) ?>"></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["skype"])): ?>
-							<li class="skype"><a target="_blank" href="<?php echo $custom["skype"] ?>">Linked</a></li>
-							<?php endif; ?>
-					</ul></article><?php endforeach; ?>
+							<li class="skype"><a target="_blank" href="<?php echo esc_url( $custom["skype"] ) ?>"></a></li>
+						<?php endif; ?>
+						<?php if (!empty($custom["phone"])): ?>
+							<li class="phone"><a href="<?php echo esc_url( 'tel:' . $custom["phone"] ) ?>"></a></li>
+						<?php endif; ?>
+					</ul><!--/ .social-icons-->
+				</article><?php endforeach; ?>
 		</section><!--/ .team-member-->
 
 	<?php endif; ?>
 
 <?php endif; ?>
-
