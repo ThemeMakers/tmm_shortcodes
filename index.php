@@ -4,7 +4,7 @@
   Plugin URI: http://webtemplatemasters.com
   Description: Universal Shortcodes Package (Accio)
   Author: ThemeMakers
-  Version: 1.1.4
+  Version: 1.1.5
   Author URI: http://themeforest.net/user/ThemeMakers
  */
 
