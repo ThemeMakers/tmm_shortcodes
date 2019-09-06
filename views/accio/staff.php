@@ -1,5 +1,5 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
 $staff = explode('^', $staff);
 $id = '';
 $uniqid = uniqid();
@@ -11,7 +11,7 @@ $uniqid = uniqid();
 		/*@cc_on
 
 		 @if (@_jscript_version == 11)
-		 document.write('<div class="items items_<?php echo $uniqid; ?>" data-id="<?php echo $uniqid; ?>">');
+		 document.write('<div class="items items_<?php echo esc_attr( $uniqid ) ?>" data-id="<?php echo esc_attr( $uniqid ); ?>">');
 
 		 @end
 
@@ -27,10 +27,10 @@ $uniqid = uniqid();
 
 		$custom = TMM_Staff::get_meta_data($post_id); ?>
 
-		<aside class="accHorizontal__item <?php if ($animation) echo $animation ?>">
+		<aside class="accHorizontal__item <?php if ($animation) echo esc_attr( $animation ) ?>">
 
-			<input type="checkbox" class="state" id="acc-<?php echo $id ?>" />
-			<label class="backdrop" for="acc-<?php echo $id ?>"><i class="fa fa-times"></i></label>
+			<input type="checkbox" class="state" id="acc-<?php echo esc_attr( $id ) ?>" />
+			<label class="backdrop" for="acc-<?php echo esc_attr( $id ) ?>"><i class="fa fa-times"></i></label>
 			<article class="acc_cBox">
 				<div class="acc_cImg">
 					<img src="<?php echo TMM_Helper::get_post_featured_image($post_id, '252*270') ?>" alt="" />
@@ -43,7 +43,7 @@ $uniqid = uniqid();
 									if ($key > 0) {
 										echo ' / ';
 									}
-									echo $value;
+									echo esc_html( $value );
 								}
 							}
 							?>
@@ -53,20 +53,26 @@ $uniqid = uniqid();
 				<div class="acc_cCont">
 					<p><?php echo substr(get_post($post_id)->post_excerpt, 0, 468); ?></p>
 					<ul class="social-icons">
+						<?php if (!empty($custom["mail"])): ?>
+							<li class="mail"><a href="<?php echo esc_url( 'mailto:' . $custom["mail"] ) ?>"><i class="icon-mail"></i></a></li>
+						<?php endif; ?>
+						<?php if (!empty($custom["phone"])): ?>
+							<li class="phone"><a href="<?php echo esc_url( 'tel:' . $custom["phone"] ) ?>"><i class="icon-phone"></i></a></li>
+						<?php endif; ?>
 						<?php if (!empty($custom["twitter"])): ?>
-							<li class="twitter"><a target="_blank" href="<?php echo $custom["twitter"] ?>"><i class="icon-twitter"></i>Twitter</a></li>
+							<li class="twitter"><a target="_blank" href="<?php echo esc_url( $custom["twitter"] ) ?>"><i class="icon-twitter"></i></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["facebook"])): ?>
-							<li class="facebook"><a target="_blank" href="<?php echo $custom["facebook"] ?>"><i class="icon-facebook"></i>Facebook</a></li>
+							<li class="facebook"><a target="_blank" href="<?php echo esc_url( $custom["facebook"] ) ?>"><i class="icon-facebook"></i></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["linkedin"])): ?>
-							<li class="linkedin"><a target="_blank" href="<?php echo $custom["linkedin"] ?>"><i class="icon-linkedin"></i>LinkedIn</a></li>
+							<li class="linkedin"><a target="_blank" href="<?php echo esc_url( $custom["linkedin"] ) ?>"><i class="icon-linkedin"></i></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["dribbble"])): ?>
-							<li class="dribbble"><a target="_blank" href="<?php echo $custom["dribbble"] ?>"><i class="icon-dribbble"></i>Dribbble</a></li>
+							<li class="dribbble"><a target="_blank" href="<?php echo esc_url( $custom["dribbble"] ) ?>"><i class="icon-dribbble"></i></a></li>
 						<?php endif; ?>
 						<?php if (!empty($custom["instagram"])): ?>
-							<li class="instagram"><a target="_blank" href="<?php echo $custom["instagram"] ?>"><i class="icon-instagram"></i>Instagram</a></li>
+							<li class="instagram"><a target="_blank" href="<?php echo esc_url( $custom["instagram"] ) ?>"><i class="icon-instagram"></i></a></li>
 						<?php endif; ?>
 					</ul><!--/ .social-icons-->
 				</div>
