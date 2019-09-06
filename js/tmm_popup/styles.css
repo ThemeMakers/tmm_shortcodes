@@ -22,7 +22,8 @@
 }
 
 .tmm_advanced_wp_popup_li .list-table .sel {
-	width: 34px;
+	width: 100%;
+	max-width: 175px;
     display: inline-block;
 }
 
