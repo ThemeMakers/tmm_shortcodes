@@ -9,14 +9,15 @@ if ($category > 0) {
 }
 
 $posts = get_posts($args);
+$animation = isset($animation) ? $animation : '';
 
 ?>
 
-<div class="row">
+<div class="row flex-row">
 
 	<?php foreach ($posts as $post): ?>
 	
-		<div class="col-sm-6 col-lg-4 <?php if ($animation) echo $animation ?>">
+		<div class="col-sm-6 col-lg-4 <?php echo esc_attr( $animation ) ?>">
 			
 			<div class="entry">		
 				<?php echo do_shortcode('[single_post show_content="1" char_count="' . $char_count . '" show_post_type_media="1" show_post_metadata="' . $show_post_metadata . '"]' . $post->ID . '[/single_post]'); ?>
@@ -45,8 +46,8 @@ $posts = get_posts($args);
 	}
 ?>
 
-<div class="align-center <?php if ($animation) echo $animation ?>">
-	<a class="button large default" href="<?php echo $permalink ?>"><?php echo esc_html__('View All Posts', 'accio') ?></a>
+<div class="align-center <?php echo esc_attr( $animation ) ?>">
+	<a class="button large default" href="<?php echo esc_url( $permalink ) ?>"><?php echo esc_html__('View All Posts', 'accio') ?></a>
 </div>
 
 <?php endif; ?>
