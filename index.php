@@ -167,7 +167,9 @@ class TMM_Ext_Shortcodes {
 		$results = array();
 		if (!empty(self::$shortcodes_keys_by_folders)) {
 			foreach (self::$shortcodes_keys_by_folders as $value) {
-				$results = array_merge($results, $value);
+				if(class_exists('TMM_Testimonials')) {
+					$results = array_merge($results, $value);
+				}
 			}
 		}
 		
@@ -192,15 +194,15 @@ class TMM_Ext_Shortcodes {
                 
 		return $wp;
 	}
-        public static function plugin_mce_css( $mce_css )
-		{
-			if ( ! empty( $mce_css ) )
-				$mce_css .= ',';
 
-			$mce_css .= plugins_url( '/css/tinymce.css' , __FILE__ );
-			
-			return $mce_css;
-		}
+    public static function plugin_mce_css( $mce_css ) {
+		if ( ! empty( $mce_css ) )
+			$mce_css .= ',';
+
+		$mce_css .= plugins_url( '/css/tinymce.css' , __FILE__ );
+
+		return $mce_css;
+	}
 	
 	public static function css_animation_array() {
 		return array(
