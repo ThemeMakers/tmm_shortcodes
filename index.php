@@ -14,6 +14,7 @@ class TMM_Ext_Shortcodes {
 	public static $shortcodes = array();
 	public static $shortcodes_folders = array();
 	public static $shortcodes_keys_by_folders = array();
+	public static $shortcodes_js_links = array();
 
 	//*****************************
 
@@ -23,6 +24,15 @@ class TMM_Ext_Shortcodes {
 
 	public static function get_application_uri() {
 		return plugin_dir_url(__FILE__);
+	}
+
+	//to call shorcodes by ajax
+	public static function add_shortcode_js_link($js_link) {
+		if (isset($_REQUEST['is_ajax_action'])) {
+			if (!in_array($js_link, self::$shortcodes_js_links)) {
+				self::$shortcodes_js_links[] = $js_link;
+			}
+		}
 	}
 
 	public static function register() {
@@ -359,6 +369,51 @@ class TMM_Ext_Shortcodes {
 	}
 
 }
+
+/* -------------------------------------------------- */
+/*	Row Shortcode
+/* -------------------------------------------------- */
+
+function shortcode_row( $atts, $content = null ) {
+
+	extract( shortcode_atts( array(
+		'type' => ''
+	), $atts ) );
+
+	return '<div class="row">' . do_shortcode( $content ) . '</div>';
+
+}
+
+add_shortcode('row', 'shortcode_row');
+
+/* -------------------------------------------------- */
+/*	Column Shortcode
+/* -------------------------------------------------- */
+
+function shortcode_column( $atts, $content = null ) {
+
+	extract( shortcode_atts( array(
+		'type' => ''
+	), $atts ) );
+
+	switch ($type) {
+		case '1/2':
+			$type = 'col-md-6 col-sm-6';
+			break;
+		case '1/3':
+			$type = 'col-md-4 col-sm-4';
+			break;
+		case '1/4':
+			$type = 'col-md-3 col-sm-3';
+			break;
+		default:
+	}
+
+	return '<div class="' . esc_attr($type) . '">' . do_shortcode( $content ) . '</div>';
+
+}
+
+add_shortcode('column', 'shortcode_column');
 
 add_action('init', array('TMM_Ext_Shortcodes', 'register'), 1);
 
