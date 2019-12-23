@@ -1,5 +1,5 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
-<?php
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
 //contact form on front by shortcode
 $form_name = $content;
 $contact_form = TMM_Contact_Form::get_form($form_name);
