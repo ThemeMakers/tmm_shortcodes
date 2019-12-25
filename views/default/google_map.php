@@ -20,8 +20,8 @@ if (TMM::get_option("api_key_google")){
 		$geocode = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=' . $address . '&' . $google_maps_api_key);
 		$output = json_decode($geocode, true);
 
-		$latitude = '';
-		$longitude = '';
+		$latitude = 0;
+		$longitude = 0;
 
 		// if latitude & longitude does not defined by user
 		if ($output) {
