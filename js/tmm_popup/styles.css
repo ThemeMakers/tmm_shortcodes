@@ -182,6 +182,7 @@
 	}
 
 	.advanced_wp_popup_content {
+		position: relative;
 		padding: 13px;
 		overflow: auto;
 		height: 100%;

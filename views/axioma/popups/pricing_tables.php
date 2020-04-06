@@ -200,6 +200,7 @@
 			do_shortcode($pt_shortcode_txt);
 			//$_REQUEST["shortcode_mode_edit"]; - attributes of shortcode are here
 			$options_content = explode('^', $_REQUEST["shortcode_mode_edit"]['content']);
+			$uid = uniqid();
 			?>
 			<li>
 				<section class="simple-pricing-table type-1 col-1 clearfix">
@@ -226,8 +227,8 @@
 							<h4 class="label"><?php _e('Button Link', 'tmm_shortcodes'); ?></h4>
 							<input type="text" class="price_table_button_link price_table_row_input data-input" value="<?php echo $_REQUEST["shortcode_mode_edit"]['button_link'] ?>" />
 							<!--<h4 class="label"><?php _e('Is Featured', 'tmm_shortcodes'); ?></h4>-->
-							<br /><input type="checkbox" value="<?php echo $_REQUEST["shortcode_mode_edit"]['featured'] ?>" <?php echo($_REQUEST["shortcode_mode_edit"]['featured'] == 1 ? 'checked' : '') ?> class="featured_price_list data-check js_shortcode_checkbox_self_update" />
-							<label class="label"><span></span><i class="description"><?php _e('Is Featured', 'tmm_shortcodes'); ?></i></label>
+							<br /><input type="checkbox" id="<?php echo esc_attr( $uid ) ?>" value="<?php echo $_REQUEST["shortcode_mode_edit"]['featured'] ?>" <?php echo($_REQUEST["shortcode_mode_edit"]['featured'] == 1 ? 'checked' : '') ?> class="featured_price_list data-check js_shortcode_checkbox_self_update" />
+							<label class="label" for="<?php echo esc_attr( $uid ) ?>"><span></span><i class="description"><?php _e('Is Featured', 'tmm_shortcodes'); ?></i></label>
 						</div><!-- .footer -->
 
 					</div><!-- .column -->
