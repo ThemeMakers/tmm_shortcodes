@@ -23,7 +23,7 @@ $uniqid = uniqid();
 	if (function_exists('icl_object_id')){
 		$post_id = icl_object_id($post_id, TMM_Staff::$slug, true, ICL_LANGUAGE_CODE);
 	}
-		$id = base_convert(microtime(), 10, 36);
+		$id = uniqid(rand(), false);
 
 		$custom = TMM_Staff::get_meta_data($post_id); ?>
 
