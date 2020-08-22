@@ -143,8 +143,5 @@
 
 			return true;
 		});
-		
-		selectwrap();
-
 	});
 </script>

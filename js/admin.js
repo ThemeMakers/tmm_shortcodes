@@ -374,11 +374,3 @@ jQuery(document).ready(function() {
 	tmm_ext_shortcodes.init();
 });
 
-function selectwrap() {
-	if (jQuery('select').length) {
-		jQuery('select').each(function(idx, val) {
-			jQuery(val).wrap('<div class="sel">');
-		});
-	}
-}
-

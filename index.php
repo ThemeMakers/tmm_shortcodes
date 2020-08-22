@@ -270,98 +270,104 @@ class TMM_Ext_Shortcodes {
 	public static function draw_shortcode_option($data) {
 		switch ($data['type']) {
 			case 'textarea':
+                $uid = uniqid();
 				?>
 				<?php if (!empty($data['title'])): ?>
-					<h4 class="label" for="<?php echo $data['id'] ?>"><?php echo $data['title'] ?></h4>
+					<h4 class="label" for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><?php echo esc_html( $data['title'] ) ?></h4>
 				<?php endif; ?>
 
-				<textarea id="<?php echo $data['id'] ?>" class="js_shortcode_template_changer data-area" data-shortcode-field="<?php echo $data['shortcode_field'] ?>"><?php echo $data['default_value'] ?></textarea>
-				<span class="preset_description"><?php echo $data['description'] ?></span>
+				<textarea id="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>" class="js_shortcode_template_changer data-area" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>"><?php echo esc_attr( $data['default_value'] ) ?></textarea>
+				<span class="preset_description"><?php echo esc_html( $data['description'] ) ?></span>
 				<?php
 				break;
 			case 'select':
+                $uid = uniqid();
 				if (!isset($data['display'])) {
 					$data['display'] = 1;
 				}
 				?>
 				<?php if (!empty($data['title'])): ?>
-					<h4 class="label" for="<?php echo $data['id'] ?>"><?php echo $data['title'] ?></h4>
+					<h4 class="label" for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><?php echo esc_html( $data['title'] ) ?></h4>
 				<?php endif; ?>
 
 				<?php if (!empty($data['options'])): ?>
-					<select <?php if ($data['display'] == 0): ?>style="display: none;"<?php endif; ?> class="js_shortcode_template_changer data-select <?php echo @$data['css_classes']; ?>" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" id="<?php echo $data['id'] ?>">
+					<select <?php if ($data['display'] == 0): ?>style="display: none;"<?php endif; ?> class="js_shortcode_template_changer data-select <?php echo esc_attr( $data['css_classes'] ) ?>" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>" id="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>">
 
 						<?php foreach ($data['options'] as $key => $text) : ?>
-							<option <?php if ($data['default_value'] == $key) echo 'selected' ?> value="<?php echo $key ?>"><?php echo $text ?></option>
+							<option <?php if ($data['default_value'] == $key) echo 'selected' ?> value="<?php echo esc_attr( $key ) ?>"><?php echo esc_attr( $text ) ?></option>
 						<?php endforeach; ?>
 
 					</select>
-					<span class="preset_description"><?php echo $data['description'] ?></span>
+					<span class="preset_description"><?php echo esc_html( $data['description'] ) ?></span>
 				<?php endif; ?>
 				<?php
 				break;
 			case 'text':
+                $uid = uniqid();
 				?>
 				<?php if (!empty($data['title'])): ?>
-					<h4 class="label" for="<?php echo $data['id'] ?>"><?php echo $data['title'] ?></h4>
+					<h4 class="label" for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><?php echo esc_html( $data['title'] ) ?></h4>
 				<?php endif; ?>
 
-				<input type="text" value="<?php echo $data['default_value'] ?>" <?php if (isset($data['placeholder'])): ?>placeholder="<?php echo $data['placeholder'] ?>"<?php endif; ?> class="js_shortcode_template_changer data-input <?php echo @$data['css_classes']; ?>" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" id="<?php echo $data['id'] ?>" />
-				<span class="preset_description"><?php echo $data['description'] ?></span>
+				<input type="text" value="<?php echo esc_attr( $data['default_value'] ) ?>" <?php if (isset($data['placeholder'])): ?>placeholder="<?php echo esc_attr( $data['placeholder'] ) ?>"<?php endif; ?> class="js_shortcode_template_changer data-input <?php echo esc_attr( $data['css_classes'] ) ?>" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>" id="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>" />
+				<span class="preset_description"><?php echo esc_html( $data['description'] ) ?></span>
 				<?php
 				break;
 			case 'color':
+                $uid = uniqid();
 				?>
 				<div <?php if (@$data['display'] == 0): ?>style="display: none;"<?php endif; ?> class="list-item-color">
 					<?php if (!empty($data['title'])): ?>
-						<h4 class="label" for="<?php echo $data['id'] ?>"><?php echo $data['title'] ?></h4>
+						<h4 class="label" for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><?php echo esc_html( $data['title'] ) ?></h4>
 					<?php endif; ?>
 
-					<input type="text" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" value="<?php echo $data['default_value'] ?>" class="bg_hex_color text small js_shortcode_template_changer <?php echo @$data['css_classes']; ?>" id="<?php echo $data['id'] ?>">
-					<div style="background-color: <?php echo $data['default_value'] ?>" class="bgpicker"></div>
-					<span class="preset_description"><?php echo $data['description'] ?></span>
+					<input type="text" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>" value="<?php echo esc_attr( $data['default_value'] ) ?>" class="bg_hex_color text small js_shortcode_template_changer <?php echo esc_attr( $data['css_classes'] ) ?>" id="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>">
+					<div style="background-color: <?php echo esc_attr( $data['default_value'] ) ?>" class="bgpicker"></div>
+					<span class="preset_description"><?php echo esc_html( $data['description'] ) ?></span>
 				</div>
 				<?php
 				break;
 			case 'upload':
+                $uid = uniqid();
 				?>
 				<?php if (!empty($data['title'])): ?>
-					<h4 class="label" for="<?php echo $data['id'] ?>"><?php echo $data['title'] ?></h4>
+					<h4 class="label" for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><?php echo esc_html( $data['title'] ) ?></h4>
 				<?php endif; ?>
 
-				<input type="text" id="<?php echo $data['id'] ?>" value="<?php echo $data['default_value'] ?>" class="js_shortcode_template_changer data-input data-upload <?php echo @$data['css_classes']; ?>" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" />
+				<input type="text" id="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>" value="<?php echo esc_attr( $data['default_value'] ) ?>" class="js_shortcode_template_changer data-input data-upload <?php echo esc_attr( $data['css_classes'] ) ?>" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>" />
 				<a title="" class="tmm_button_upload2 button-primary" href="#">
 					<?php esc_html_e('Upload', 'tmm_shortcodes'); ?>
 				</a>
-				<span class="preset_description"><?php echo $data['description'] ?></span>
+				<span class="preset_description"><?php echo esc_html( $data['description'] ) ?></span>
 				<?php
 				break;
 			case 'checkbox':
 				?>
 				<div class="radio-holder">
-					<input <?php if ($data['is_checked']): ?>checked=""<?php endif; ?> type="checkbox" value="<?php if ($data['is_checked']): ?>1<?php else: ?>0<?php endif; ?>" id="<?php echo $data['id'] ?>" class="js_shortcode_checkbox_self_update js_shortcode_template_changer data-check" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" />
-					<label for="<?php echo $data['id'] ?>"><span></span><i class="description"><?php if (!empty($data['title'])): ?><?php echo $data['title'] ?><?php endif; ?></i></label>
+					<input <?php if ($data['is_checked']): ?>checked=""<?php endif; ?> type="checkbox" value="<?php if ($data['is_checked']): ?>1<?php else: ?>0<?php endif; ?>" id="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>" class="js_shortcode_checkbox_self_update js_shortcode_template_changer data-check" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>" />
+					<label for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><span></span><i class="description"><?php if (!empty($data['title'])): ?><?php echo esc_html( $data['title'] ) ?><?php endif; ?></i></label>
 				</div><!--/ .radio-holder-->
 				<?php
 				break;
 			case 'radio':
+                $uid = uniqid();
 				?>
 				<?php if (!empty($data['title'])): ?>
-					<h4 class="label" for="<?php echo $data['id'] ?>"><?php echo $data['title'] ?></h4>
+					<h4 class="label" for="<?php echo esc_attr( $data['id'] . '_' . $uid ) ?>"><?php echo esc_html( $data['title'] ) ?></h4>
 				<?php endif; ?>
 
 				<div class="radio-holder">
 
 					<?php for ($i = 0; $i < count($data['values']); $i++): ?>
 
-						<input <?php if ($data['values'][$i]['checked'] == 1): ?>checked=""<?php endif; ?> type="radio" name="<?php echo $data['name'] ?>" id="<?php echo $data['values'][$i]['id'] ?>" value="<?php echo $data['values'][$i]['value'] ?>" class="js_shortcode_radio_self_update" />
-						<label for="<?php echo $data['values'][$i]['id'] ?>" class="label-form"><span></span><?php echo $data['values'][$i]['title'] ?></label>
+						<input <?php if ($data['values'][$i]['checked'] == 1): ?>checked=""<?php endif; ?> type="radio" name="<?php echo esc_attr( $data['name'] ) ?>" id="<?php echo esc_attr( $data['values'][$i]['id'] . '_' . $uid ) ?>" value="<?php echo esc_attr( $data['values'][$i]['value'] ) ?>" class="js_shortcode_radio_self_update" />
+						<label for="<?php echo esc_attr( $data['values'][$i]['id'] . '_' . $uid ) ?>" class="label-form"><span></span><?php echo esc_html( $data['values'][$i]['title'] ) ?></label>
 
 					<?php endfor; ?>
 
-					<input type="hidden" id="<?php echo @$data['hidden_id'] ?>" value="<?php echo $data['value'] ?>" class="js_shortcode_template_changer" data-shortcode-field="<?php echo $data['shortcode_field'] ?>" />
+					<input type="hidden" id="<?php echo esc_attr( $data['hidden_id'] ) ?>" value="<?php echo esc_attr( $data['value'] ) ?>" class="js_shortcode_template_changer" data-shortcode-field="<?php echo esc_attr( $data['shortcode_field'] ) ?>" />
 				</div><!--/ .radio-holder-->
-				<span class="preset_description"><?php echo $data['description'] ?></span>
+				<span class="preset_description"><?php echo esc_html( $data['description'] ) ?></span>
 				<?php
 				break;
 		}

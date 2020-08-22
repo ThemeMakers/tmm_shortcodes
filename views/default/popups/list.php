@@ -163,8 +163,7 @@
 	jQuery(function() {
 		
 		colorizator();
-		selectwrap();
-		
+
 		jQuery("#list_items").sortable({
 			stop: function(event, ui) {
 				tmm_ext_shortcodes.changer(shortcode_name);

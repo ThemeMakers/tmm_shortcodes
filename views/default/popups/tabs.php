@@ -86,8 +86,6 @@
 					return false;
 			});
 			
-			selectwrap();
-
 		});
 		
 </script>

@@ -259,8 +259,6 @@
 			slideDownUp(jQuery(this));
 		});
 		
-		selectwrap();
-
 	});
 
 	function app_shortcode_border_align_values(self) {

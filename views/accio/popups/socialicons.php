@@ -138,9 +138,6 @@
 
 			return false;
 		});
-		
-		selectwrap();
-		
 	});
 
 </script>

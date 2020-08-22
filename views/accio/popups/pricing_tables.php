@@ -291,8 +291,6 @@
 			tmm_ext_shortcodes.price_table_changer(shortcode_name);
 		});
 		
-		selectwrap();
-
 	});
 
 	function add_price_table_html() {

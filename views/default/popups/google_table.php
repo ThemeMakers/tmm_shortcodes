@@ -218,7 +218,5 @@ if (isset($_REQUEST["shortcode_mode_edit"])) {
 
 		});
 		
-		selectwrap();
-
 	});
 </script>

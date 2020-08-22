@@ -118,9 +118,6 @@
 		jQuery("#posts_category").prepend('<option value="0" class="level--1"><?php esc_html_e('All categories', 'tmm_shortcodes'); ?></option>');
 		jQuery("#posts_category option:eq(0)").attr('selected', 'selected');
 		tmm_ext_shortcodes.changer(shortcode_name);
-		
-		selectwrap();
-		
 	});
 	
 </script>

@@ -186,7 +186,6 @@
 			colorizator();
 		});
 		colorizator();
-		selectwrap();
 	});
 	
 </script>

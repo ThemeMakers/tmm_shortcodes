@@ -114,8 +114,6 @@
 
 			return false;
 		});
-		selectwrap();
-
 	});
 
 </script>
