@@ -131,8 +131,8 @@ $counter = 0;
 							
 							<div class="inner-extra">
 								
-								<a class="single-image link-icon" href="<?php echo get_permalink($foliopost) ?>">Permalink</a>
-								<a class="single-image plus-icon" data-fancybox-group="masonry" href="<?php echo $image ?>">Image</a>
+								<a class="single-image link-icon" href="<?php echo esc_url( get_permalink($foliopost) ) ?>">Permalink</a>
+								<a class="single-image plus-icon" data-fancybox="masonry" href="<?php echo esc_url( $image ) ?>">Image</a>
 
 								<?php if ($type == 2): ?>
 									<h4 class="extra-title"><?php echo $post->post_title ?></h4>

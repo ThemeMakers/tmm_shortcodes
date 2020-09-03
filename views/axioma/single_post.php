@@ -74,8 +74,8 @@ $post_link = post_permalink($post_id);
 											<div class="inner-extra">
 												
 												<div class="extra-content">
-													<a class="single-image link-icon" href="<?php echo $post_link ?>">Permalink</a>
-													<a class="single-image plus-icon" data-fancybox-group="gallery" href="<?php echo TMM_Helper::resize_image($source_url, '') ?>">Image</a>
+													<a class="single-image link-icon" href="<?php echo esc_url( $post_link ) ?>">Permalink</a>
+													<a class="single-image plus-icon" data-fancybox="gallery" href="<?php echo esc_url( TMM_Helper::resize_image($source_url, '') ) ?>">Image</a>
 												</div><!--/ .extra-content-->	
 												
 											</div><!--/ .inner-extra-->
