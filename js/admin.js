@@ -2,28 +2,22 @@ var TMM_APP_SHORTCODES = function() {
 	var self = {
 		html_buffer: null,
 		init: function() {
-			jQuery.fn.life = function(types, data, fn) {
-				jQuery(this.context).on(types, this.selector, data, fn);
-				return this;
-			};
-			//***
-			if (!jQuery("#tmm_shortcodes_html_buffer").size()) {
+			if (!jQuery("#tmm_shortcodes_html_buffer").length) {
 				jQuery('body').append('<div id="tmm_shortcodes_html_buffer" style="display: none;"></div>');
 			}
 			self.html_buffer = jQuery("#tmm_shortcodes_html_buffer");
 			//***
 
-			jQuery(".js_shortcode_checkbox_self_update").life('click', function() {
+			jQuery(document.body).on('click', '.js_shortcode_checkbox_self_update', function() {
 				self.checkbox_self_update(this);
 			});
 
 			//***
-			jQuery(".js_shortcode_radio_self_update").life('click', function() {
+			jQuery(document.body).on('click', '.js_shortcode_radio_self_update', function() {
 				jQuery("input[data-shortcode-field=" + jQuery(this).attr('name') + "]").val(jQuery(this).val()).trigger('change');
 			});
 			//***
-			jQuery('.tmm_button_upload2').life('click', function()
-			{
+			jQuery(document.body).on('click', '.tmm_button_upload2', function()	{
 				var input_object = jQuery(this).prev('input, textarea');
 				window.send_to_editor = function(html)
 				{

@@ -90,7 +90,7 @@
 		});
 
 
-		jQuery(".js_add_accordion_item").life('click',function() {
+		jQuery(document.body).on('click', '.js_add_accordion_item', function() {
 			var clone = jQuery(".list_item:last").clone(true);
 			var last_row = jQuery(".list_item:last");
 			jQuery(clone).insertAfter(last_row, clone);
@@ -102,7 +102,7 @@
 			return false;
 		});
 
-		jQuery(".js_delete_accordion_item").life('click',function() {
+		jQuery(document.body).on('click', '.js_delete_accordion_item', function() {
 			if (jQuery(".list_item").length > 1) {
 				jQuery(this).parents('li').hide(200, function() {
 					jQuery(this).remove();

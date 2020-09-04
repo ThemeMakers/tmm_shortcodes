@@ -123,7 +123,7 @@
 	var shortcode_name = "<?php echo basename(__FILE__, '.php'); ?>";
 	jQuery(function() {
 		tmm_ext_shortcodes.changer(shortcode_name);
-		jQuery("#tmm_shortcode_template .js_shortcode_template_changer").life('keyup change', function() {
+		jQuery('#tmm_shortcode_template').on('keyup change', '.js_shortcode_template_changer', function() {
 			tmm_ext_shortcodes.changer(shortcode_name);
 		});
 		//***
@@ -133,7 +133,7 @@
 			}
 		});
 
-		jQuery(".js_add_list_item").life('click',function() {
+		jQuery(document.body).on('click', '.js_add_list_item', function() {
 			var clone = jQuery(".list_item:last").clone(false);
 			var last_row = jQuery(".list_item:last");
 			jQuery(clone).insertAfter(last_row, clone);			
@@ -141,8 +141,7 @@
 			return false;
 		});
 
-
-		jQuery(".js_delete_list_item").life('click',function() {
+		jQuery(document.body).on('click', '.js_delete_list_item', function() {
 			if (jQuery(".list_item").length > 1) {
 				jQuery(this).parents('li').hide(200, function() {
 					jQuery(this).remove();

@@ -1,5 +1,5 @@
 jQuery(function() {
-	jQuery('.ajax_navigation_link').life('click', function() {
+	jQuery(document.body).on('click', '.ajax_navigation_link', function() {
 		jQuery('.ajax-content').show();
 		jQuery('.ajax-navigation-content > li').hide();
 		jQuery('.ajax_navigation_content_' + jQuery(this).data('page-id')).show(333);
