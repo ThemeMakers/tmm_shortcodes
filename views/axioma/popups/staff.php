@@ -1,4 +1,18 @@
-<?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
+<?php if (!defined('ABSPATH')) die('No direct access allowed');
+
+$args = array(
+    'post_type' => TMM_Staff::$slug,
+    'orderby' => 'date',
+    'order' => 'ASC',
+    'numberposts' => -1,
+    'post_status' => array('publish')
+);
+
+$wp_query = new WP_Query($args);
+global $post;
+
+if ( $wp_query->have_posts() ) {
+?>
 <div id="tmm_shortcode_template" class="tmm_shortcode_template clearfix">
 
 	<div class="one-half">
@@ -24,14 +38,11 @@
 	<div class="fullwidth">
 
 		<?php
-		$posts = get_posts(array('numberposts' => -1, 'post_type' => TMM_Staff::$slug));
 		$posts_array = array();
-		if (!empty($posts)) {
-			foreach ($posts as $value) {
-				$posts_array[$value->ID] = $value->post_title;
-			}
-		}
-		
+        while ( $wp_query->have_posts() ) : $wp_query->the_post();
+            $posts_array[$post->ID] = $post->post_title;
+        endwhile;
+
 		$albums_edit_data = array('');
 		if (isset($_REQUEST["shortcode_mode_edit"])) {
 			if (isset($_REQUEST["shortcode_mode_edit"]['staff'])) {
@@ -56,7 +67,7 @@
 									'type' => 'select',
 									'title' => '',
 									'shortcode_field' => 'staff',
-									'id' => '',
+									'id' => 'id_' . uniqid(),
 									'options' => $posts_array,
 									'css_classes' => 'list_item_style save_as_one js_shortcode_template_changer',
 									'default_value' => $staff_id,
@@ -65,7 +76,7 @@
 								?>
 							</td>
 							<td>
-								<a class="button button-secondary js_delete_list_item" href="#"><?php _e('Remove', 'tmm_shortcodes'); ?></a>
+								<a class="button button-secondary js_delete_list_item" href="#"><?php esc_html_e('Remove', 'tmm_shortcodes'); ?></a>
 							</td>
 							<td><div class="row-mover"></div></td>
 						</tr>
@@ -81,7 +92,7 @@
 
 </div>
 
-
+<?php } ?>
 
 <!-- --------------------------  PROCESSOR  --------------------------- -->
 <script type="text/javascript">
@@ -123,4 +134,3 @@
 	});
 
 </script>
-
