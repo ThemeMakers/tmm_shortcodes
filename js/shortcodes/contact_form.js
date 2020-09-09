@@ -26,10 +26,10 @@ jQuery(document).ready(function() {
 
 	jQuery('.contact_form_add_attach').click(function () {
 		var max_items = jQuery(this).data('max-items');
-		if (max_items <= jQuery(this).next('ul.contact_form_attach_list').find('li').size()) {
+		if (max_items <= jQuery(this).next('ul.contact_form_attach_list').find('li').length) {
 			var responce = jQuery(this).parents('form').find(".contact_form_responce ul");
 				responce.addClass("error type-2");
-			if (responce.children('li').size() == 0) {
+			if (responce.children('li').length === 0) {
 				responce.append('<li>' + lang_attach_more_else + '</li>');
 				jQuery(jQuery(this).parents('form')).find(".contact_form_responce").show(200);
 			}
