@@ -54,7 +54,7 @@ var TMM_APP_SHORTCODES = function() {
 			var save_as_one = {};
 
 			jQuery.each(items, function(key, value) {
-				var shortcode_field = jQuery(value).data('shortcode-field');
+				var shortcode_field = jQuery(value).data('shortcodeField');
 				
 				if (shortcode_field !== undefined) {
 					if (shortcode_field == 'content') {
