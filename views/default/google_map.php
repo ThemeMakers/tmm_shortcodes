@@ -47,7 +47,7 @@ if (TMM::get_option("api_key_google")){
 	if ($mode === 'map') {
 
 		wp_enqueue_script("tmm_shortcode_google_api_js", $map_link);
-		wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . '/js/shortcodes/google_map.js', array(), false, true);
+		wp_enqueue_script("tmm_shortcode_google_map_js", TMM_Ext_Shortcodes::get_application_uri() . 'js/shortcodes/google_map.js', array(), false, true);
 		?>
 
 		<div class="google_map" id="google_map_<?php echo esc_attr($inique_id) ?>" style="height: <?php echo esc_attr($height) ?>px;">

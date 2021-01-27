@@ -33,7 +33,7 @@ $lang = substr( get_bloginfo( 'language' ), 0, 2 );
         const initTweetSlider = () => {
             const $tweet = $('#tweets_<?php echo esc_attr($hash) ?>');
 
-            $tweets = $tweet.find('>ul');
+            const $tweets = $tweet.find('> ul');
 
             $tweets.each(function() {
 
@@ -57,7 +57,7 @@ $lang = substr( get_bloginfo( 'language' ), 0, 2 );
         };
 
         $.when(fetchTweets()).then(function(){
-            setTimeout(initTweetSlider,2000);
+            setTimeout(initTweetSlider,5000);
         })
 
 	});

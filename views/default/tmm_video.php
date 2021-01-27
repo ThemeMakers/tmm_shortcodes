@@ -21,7 +21,7 @@ switch ($type) {
 			$source_code = $source_code[count($source_code) - 1];
 		}
 		?>
-			<iframe width="<?php echo $width ?>" height="<?php echo $height ?>" src="https://player.vimeo.com/video/<?php echo $source_code ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=f6e200"></iframe>
+			<iframe width="<?php echo esc_attr( $width ) ?>" height="<?php echo esc_attr( $height ) ?>" src="https://player.vimeo.com/video/<?php echo esc_attr( $source_code ) ?>?title=0&amp;byline=0&amp;portrait=0&amp;color=f6e200"></iframe>
 		<?php
 		break;
 	default:
