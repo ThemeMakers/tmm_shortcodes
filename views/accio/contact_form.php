@@ -12,7 +12,7 @@ if (!empty($contact_form['inputs'])) {
 
 	<form method="post" class="contact-form">
 
-		<input type="hidden" name="contact_form_name" value="<?php echo $form_name ?>" />
+		<input type="hidden" name="contact_form_name" value="<?php echo esc_attr( $form_name ) ?>" />
 
 		<?php foreach ($contact_form['inputs'] as $input) : ?>
 
@@ -27,7 +27,7 @@ if (!empty($contact_form['inputs'])) {
 				case "email":
 					?>
 					<p class="input-block">
-						<input placeholder="<?php echo $input['label'] ?><?php echo($input['is_required'] ? ' *' : '') ?>" id="email_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="email" name="<?php echo $name ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" />
+						<input placeholder="<?php echo esc_attr( $input['label'] ) ?><?php echo wp_kses_post($input['is_required'] ? ' *' : '') ?>" id="email_<?php echo esc_attr( $unique_id ) ?>" <?php echo wp_kses_post($input['is_required'] ? "required" : "") ?> type="email" name="<?php echo esc_attr( $name ) ?>" value="<?php echo wp_kses_post(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" />
 					</p>
 					<?php
 					break;
@@ -35,7 +35,7 @@ if (!empty($contact_form['inputs'])) {
 				case "textinput":
 					?>
 					<p class="input-block">
-						<input placeholder="<?php echo $input['label'] ?><?php echo ($input['is_required'] ? ' *' : '') ?>" id="name_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="text" name="<?php echo $name ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" />
+						<input placeholder="<?php echo esc_attr( $input['label'] ) ?><?php echo wp_kses_post($input['is_required'] ? ' *' : '') ?>" id="name_<?php echo esc_attr( $unique_id ) ?>" <?php echo wp_kses_post($input['is_required'] ? "required" : "") ?> type="text" name="<?php echo esc_attr( $name ) ?>" value="<?php echo wp_kses_post(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" />
 					</p>
 					<?php
 					break;
@@ -43,7 +43,7 @@ if (!empty($contact_form['inputs'])) {
 				case "website":
 					?>
 					<p class="input-block">
-						<input placeholder="<?php echo $input['label'] ?><?php echo ($input['is_required'] ? ' *' : '') ?>" id="url_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> type="url" name="<?php echo $name ?>" value="<?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" />
+						<input placeholder="<?php echo esc_attr( $input['label'] ) ?><?php echo wp_kses_post($input['is_required'] ? ' *' : '') ?>" id="url_<?php echo esc_attr( $unique_id ) ?>" <?php echo wp_kses_post($input['is_required'] ? "required" : "") ?> type="url" name="<?php echo esc_attr( $name ) ?>" value="<?php echo wp_kses_post(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?>" />
 					</p>
 					<?php
 					break;
@@ -54,7 +54,7 @@ if (!empty($contact_form['inputs'])) {
 					}
 					?>
 					<p class="input-block">
-						<textarea placeholder="<?php echo $input['label'] ?><?php echo ($input['is_required'] ? ' *' : '') ?>" id="message_<?php echo $unique_id ?>" <?php echo($input['is_required'] ? "required" : "") ?> name="<?php echo $name ?>"><?php echo(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?></textarea>
+						<textarea placeholder="<?php echo esc_attr( $input['label'] ) ?><?php echo wp_kses_post($input['is_required'] ? ' *' : '') ?>" id="message_<?php echo esc_attr( $unique_id ) ?>" <?php echo wp_kses_post($input['is_required'] ? "required" : "") ?> name="<?php echo esc_attr( $name ) ?>"><?php echo wp_kses_post(!empty($_POST) ? $dont_fill_inputs ? "" : $_POST[$name]  : "") ?></textarea>
 					</p>
 					<?php
 					break;
@@ -63,10 +63,10 @@ if (!empty($contact_form['inputs'])) {
 					$select_options = explode(",", $input['options']);
 					?>
 					<p class="input-block">						
-						<label for="url_<?php echo $unique_id ?>"><?php echo $input['label'] ?><?php echo($input['is_required'] ? ': <span class="required">('.esc_html__('required', 'tmm_shortcodes').')</span>' : '') ?></label><select id="url_<?php echo $unique_id ?>" name="<?php echo $name ?>">
+						<label for="url_<?php echo esc_attr( $unique_id ) ?>"><?php echo esc_attr( $input['label'] ) ?><?php echo wp_kses_post($input['is_required'] ? ': <span class="required">('.esc_html__('required', 'tmm_shortcodes').')</span>' : '') ?></label><select id="url_<?php echo esc_attr( $unique_id ) ?>" name="<?php echo esc_attr( $name ) ?>">
 							<?php if (!empty($select_options)): ?>
 								<?php foreach ($select_options as $value) : ?>
-									<option value="<?php echo $value; ?>"><?php echo $value; ?></option>
+									<option value="<?php echo esc_attr( $value ); ?>"><?php echo esc_attr( $value ); ?></option>
 								<?php endforeach; ?>
 							<?php endif; ?>
 						</select>
@@ -84,15 +84,15 @@ if (!empty($contact_form['inputs'])) {
 
 			<p class="input-block">
 				<?php $hash = md5(time()); ?>
-				<img class="contact_form_capcha" src="<?php echo get_template_directory_uri(); ?>/helper/capcha/image.php?hash=<?php echo $hash ?>" height="27" width="72" />
+				<img class="contact_form_capcha" src="<?php echo esc_url(get_template_directory_uri()); ?>/helper/capcha/image.php?hash=<?php echo esc_attr( $hash ) ?>" alt="" height="27" width="72" />
 				<input type="text" value="" name="verify" class="verify" />
-				<input type="hidden" name="verify_code" value="<?php echo $hash ?>" />
+				<input type="hidden" name="verify_code" value="<?php echo esc_attr( $hash ) ?>" />
 			</p><!--/ .row-->
 
 		<?php endif; ?>
 
 		<p class="input-block">                        
-                    <button class="button <?php echo  $contact_form['submit_button'] ?> submit <?php echo ($contact_form['submit_button_text']) ? 'middle' : '' ?>" type="submit"><?php echo ($contact_form['submit_button_text']) ? $contact_form['submit_button_text'] : '<i class="icon-paper-plane-2"></i>'?></button>
+			<button class="button <?php echo esc_attr( $contact_form['submit_button'] ) ?> submit <?php echo wp_kses_post(($contact_form['submit_button_text']) ? 'middle' : '') ?>" type="submit"><?php echo wp_kses_post(($contact_form['submit_button_text']) ? $contact_form['submit_button_text'] : '<i class="icon-paper-plane-2"></i>') ?></button>
 		</p>
 
 	</form>
