@@ -4,7 +4,7 @@
   Plugin URI: http://webtemplatemasters.com
   Description: Universal Shortcodes Package (Accio)
   Author: ThemeMakers
-  Version: 1.1.9
+  Version: 1.2.0
   Author URI: http://themeforest.net/user/ThemeMakers
  */
 
@@ -67,7 +67,8 @@ class TMM_Ext_Shortcodes {
 	
 		$shortcodes_keys = array_keys(self::$shortcodes);
 		
-		function TMM_Ext_Shortcodes_do($attributes = array(), $content = "", $shortcode_key) {
+		function TMM_Ext_Shortcodes_do($attributes, string $content, $shortcode_key) {
+			$content = isset($content) ? $content : '';
 			$attributes["content"] = $content;
 			if (isset($_REQUEST["shortcode_mode_edit"])) {
 				$_REQUEST["shortcode_mode_edit"] = $attributes;
