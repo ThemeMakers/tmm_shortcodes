@@ -5,54 +5,54 @@
 
 		<?php
 		$type_array = array(
-			'icon-paper-plane-2' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'paper-plane-2',
-			'icon-pencil-7' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'pencil-7',
-			'icon-cog-6' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'cog-6',
-			'icon-beaker-1' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'beaker-1',
-			'icon-megaphone-3' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'megaphone-3',
-			'icon-search' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'search',
-            'icon-lightbulb-3' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'lightbulb-3',
-            'icon-thumbs-up-5' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'thumbs-up-5',
-			'icon-laptop' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'laptop',
-			'icon-wrench' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'wrench',
-			'icon-leaf' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'leaf',
-			'icon-cogs' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'cogs',
-			'icon-group' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'group',
-			'icon-folder-open' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'folder-open',
-			'icon-folder-close' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'folder-close',
-			'icon-cloud' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'cloud',
-			'icon-briefcase' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'briefcase',
-			'icon-beaker' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'beaker',
-			'icon-bullhorn' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'bullhorn',
-			'icon-comment' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'comment',
-			'icon-comments-alt' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'comments-alt',
-			'icon-comment-6' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'comment-6',
-			'icon-globe' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'globe',
-			'icon-globe-6' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'globe-6',
-			'icon-heart' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'heart',
-			'icon-rocket' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'rocket',
-			'icon-suitcase' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'suitcase',
-			'icon-pencil' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'pencil',
-			'icon-params' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'params',
-			'icon-cog' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'cog',
-			'icon-coffee' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'coffee',
-			'icon-gift' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'gift',
-			'icon-home' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'home',
-			'icon-lightbulb' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'lightbulb',
-			'icon-thumbs-up' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'thumbs-up',
-			'icon-umbrella' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'umbrella',
-			'icon-random' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'random',
-			'icon-th-list' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'th-list',
-			'icon-resize-small' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'resize-small',
-			'icon-download-alt' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'download-alt',
+			'icon-paper-plane-2' => 'paper plane',
+			'icon-pencil-7' => 'pencil',
+			'icon-cog-6' => 'cog',
+			'icon-beaker-1' => 'beaker',
+			'icon-megaphone-3' => 'megaphone',
+			'icon-search' => 'search',
+            'icon-lightbulb-3' => 'lightbulb',
+            'icon-thumbs-up-5' => 'thumbs up',
+			'icon-laptop' => 'laptop',
+			'icon-wrench' => 'wrench',
+			'icon-leaf' => 'leaf',
+			'icon-cogs' => 'cogs',
+			'icon-group' => 'group',
+			'icon-folder-open' => 'folder open',
+			'icon-folder-close' => 'folder close',
+			'icon-cloud' => 'cloud',
+			'icon-briefcase' => 'briefcase',
+			'icon-beaker' => 'beaker',
+			'icon-bullhorn' => 'bullhorn',
+			'icon-comment' => 'comment',
+			'icon-comments-alt' => 'comments alt',
+			'icon-comment-6' => 'comment',
+			'icon-globe' => 'globe',
+			'icon-globe-6' => 'globe',
+			'icon-heart' => 'heart',
+			'icon-rocket' => 'rocket',
+			'icon-suitcase' => 'suitcase',
+			'icon-pencil' => 'pencil',
+			'icon-params' => 'params',
+			'icon-cog' => 'cog 2',
+			'icon-coffee' => 'coffee',
+			'icon-gift' => 'gift',
+			'icon-home' => 'home',
+			'icon-lightbulb' => 'lightbulb',
+			'icon-thumbs-up' => 'thumbs up',
+			'icon-umbrella' => 'umbrella',
+			'icon-random' => 'random',
+			'icon-th-list' => 'th list',
+			'icon-resize-small' => 'resize small',
+			'icon-download-alt' => 'download alt',
 			//custom icons
-			'icon-butterfly' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'butterfly',
-			'icon-door' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'door',
-			'icon-house' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'house',
-			'icon-parquet' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'parquet',
-			'icon-toolbox' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'toolbox',
-			'icon-wardrobe' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'wardrobe',
-			'icon-window' => esc_html__('Icon', 'tmm_shortcodes') . ': ' . 'window'
+			'icon-butterfly' => 'butterfly',
+			'icon-door' => 'door',
+			'icon-house' => 'house',
+			'icon-parquet' => 'parquet',
+			'icon-toolbox' => 'toolbox',
+			'icon-wardrobe' => 'wardrobe',
+			'icon-window' => 'window'
                          
 		);
 		?>
@@ -87,13 +87,13 @@
 							<ul>
 								<li>
 									<h4 class="label"><?php esc_html_e('Icon View', 'tmm_shortcodes'); ?></h4>
-									<i class="<?php echo $icons_edit_data[$key] ?>"></i>
+									<i class="<?php esc_attr_e( $icons_edit_data[$key] ) ?>"></i>
 								</li>
 								<li>
 									<?php
 									TMM_Ext_Shortcodes::draw_shortcode_option(array(
 										'type' => 'select',
-										'title' => 'Select Icon',
+										'title' => esc_html__('Select Icon', 'tmm_shortcodes'),
 										'shortcode_field' => 'list_item_icon',
 										'id' => '',
 										'options' => $type_array,
@@ -105,7 +105,7 @@
 								</li>
 								<li>
 									<h4 class="label"><?php esc_html_e('Title', 'tmm_shortcodes'); ?></h4>
-									<input type="text" value="<?php echo $titles_edit_data[$key] ?>" class="list_item_title js_shortcode_template_changer data-input" />			
+									<input type="text" value="<?php esc_html_e( $titles_edit_data[$key], 'tmm_shortcodes' ) ?>" class="list_item_title js_shortcode_template_changer data-input" />			
 								</li>
 								<li>
 									<h4 class="label"><?php esc_html_e('Delete Block', 'tmm_shortcodes'); ?></h4>
@@ -117,7 +117,7 @@
 							<ul>
 								<li>
 									<h4 class="label"><?php esc_html_e('Content', 'tmm_shortcodes'); ?></h4>
-									<textarea class="list_item_content js_shortcode_template_changer data-area"><?php echo $content_edit_text ?></textarea>										
+									<textarea class="list_item_content js_shortcode_template_changer data-area"><?php esc_html_e( $content_edit_text, 'tmm_shortcodes' ) ?></textarea>										
 								</li>
 								<li>
 									<div class="row-mover"></div>
