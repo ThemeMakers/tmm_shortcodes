@@ -166,6 +166,7 @@
 		?>
 		<?php foreach ($shortcodes_texts_array as $pt_shortcode_txt): ?>
 			<?php
+			$uid = uniqid();
 			$_REQUEST["shortcode_mode_edit"] = 1;
 			do_shortcode($pt_shortcode_txt);
 			$options_content = explode('^', $_REQUEST["shortcode_mode_edit"]['content']);
@@ -185,7 +186,7 @@
 
 						<ul class="features">
 							<?php foreach ($options_content as $option_text) : ?>
-								<li><input type="text" class="price_table_option_row price_table_row_input data-input" value="<?php echo $option_text ?>" placeholder="<?php esc_html_e('Enter text here', 'tmm_shortcodes'); ?>" /></li>
+								<li><input type="text" class="price_table_option_row price_table_row_input data-input" value="<?php echo wp_kses_post( $option_text ) ?>" placeholder="<?php esc_html_e('Enter text here', 'tmm_shortcodes'); ?>" /></li>
 							<?php endforeach; ?>
 						</ul><!-- .features -->
 
@@ -195,8 +196,8 @@
 							<h4 class="label"><?php esc_html_e('Button Link', 'tmm_shortcodes'); ?></h4>
 							<input type="text" class="price_table_button_link price_table_row_input data-input" value="<?php echo $_REQUEST["shortcode_mode_edit"]['button_link'] ?>" />
 							<!--<h4 class="label"><?php esc_html_e('Is Featured', 'tmm_shortcodes'); ?></h4>-->
-							<br /><input type="checkbox" value="<?php echo $_REQUEST["shortcode_mode_edit"]['featured'] ?>" <?php echo($_REQUEST["shortcode_mode_edit"]['featured'] == 1 ? 'checked' : '') ?> class="featured_price_list data-check js_shortcode_checkbox_self_update" />
-							<label class="label"><span></span><i class="description"><?php esc_html_e('Is Featured', 'tmm_shortcodes'); ?></i></label>
+							<br /><input type="checkbox" id="featured_<?php echo esc_attr( $uid ); ?>" value="<?php echo $_REQUEST["shortcode_mode_edit"]['featured'] ?>" <?php echo($_REQUEST["shortcode_mode_edit"]['featured'] == 1 ? 'checked' : '') ?> class="featured_price_list data-check js_shortcode_checkbox_self_update" />
+							<label class="label" for="featured_<?php echo esc_attr( $uid ); ?>"><span></span><i class="description"><?php esc_html_e('Is Featured', 'tmm_shortcodes'); ?></i></label>
 						</div><!-- .footer -->
 
 					</div><!-- .column -->
@@ -220,7 +221,7 @@
 	jQuery(function() {
 
 		tmm_ext_shortcodes.price_table_changer(shortcode_name);
-		jQuery("#tmm_shortcode_template .js_shortcode_template_changer").on('keyup change', function() {
+		jQuery("#tmm_shortcode_template").on('keyup change', ".js_shortcode_template_changer", function() {
 			tmm_ext_shortcodes.price_table_changer(shortcode_name);
 		});
 
@@ -228,7 +229,7 @@
 			tmm_ext_shortcodes.price_table_changer(shortcode_name);
 		});
 
-		jQuery('#price_tables_list').on('click', '.featured_price_list', function() {
+		jQuery('#price_tables_list').on('change', '.featured_price_list', function() {
 			if (jQuery(this).is(":checked")) {
 				jQuery(this).val(1);
 			} else {
@@ -238,7 +239,7 @@
 			return true;
 		});
 
-		jQuery("#count").change(function() {
+		jQuery("#tmm_shortcode_template").on('change', "[data-shortcode-field='count']", function() {
 			var count = parseInt(jQuery(this).val(), 10);
 			var length = jQuery("#price_tables_list > li").length;
 
@@ -259,7 +260,7 @@
 			jQuery("#type").trigger('change');
 		});
 
-		jQuery("#row_count").change(function() {
+		jQuery("#tmm_shortcode_template").on('change', "[data-shortcode-field='row_count']", function() {
 			var row_count = parseInt(jQuery(this).val(), 10);
 			var current_inputs_count = jQuery("#price_tables_list > li:last ul.features > li").length;
 
@@ -280,15 +281,6 @@
 					}
 				}
 			}
-		});
-
-		jQuery("#type").change(function() {
-			var type = parseInt(jQuery(this).val(), 10);
-			var count = parseInt(jQuery("#count").val(), 10);
-			var css_class = 'simple-pricing-table type-' + type + ' col-' + count + ' clearfix';
-			jQuery("#price_tables_list > li > section").removeAttr('class');
-			jQuery("#price_tables_list > li > section").addClass(css_class);
-			tmm_ext_shortcodes.price_table_changer(shortcode_name);
 		});
 		
 	});

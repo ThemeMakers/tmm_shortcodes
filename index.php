@@ -4,7 +4,7 @@
   Plugin URI: http://webtemplatemasters.com
   Description: Universal Shortcodes Package (Accio)
   Author: ThemeMakers
-  Version: 1.2.0
+  Version: 1.2.1
   Author URI: http://themeforest.net/user/ThemeMakers
  */
 
@@ -111,7 +111,7 @@ class TMM_Ext_Shortcodes {
 
 		if ($show_shortcode):
 			wp_enqueue_script('tmm_ext_shortcodes_popup_js', self::get_application_uri() . 'js/tmm_popup/tmm_advanced_wp_popup.js', array('jquery', 'jquery-ui-core', 'jquery-ui-draggable'));
-			wp_enqueue_style('tmm_ext_shortcodes_popup_css', self::get_application_uri() . 'js/tmm_popup/styles.css');
+			// wp_enqueue_style('tmm_ext_shortcodes_popup_css', self::get_application_uri() . 'js/tmm_popup/styles.css');
 			?>
 
 			<?php foreach (TMM_Ext_Shortcodes::$shortcodes as $shortcode_key => $shortcode_name): ?>
